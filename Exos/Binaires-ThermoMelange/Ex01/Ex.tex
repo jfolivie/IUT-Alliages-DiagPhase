@@ -1,0 +1,84 @@
+%CCP 2010, Chimie 2, CCP
+
+\setcounter{equation}{0}
+\setcounter{Q}{0}
+
+Le plus souvent les procédés d'élaboration pyrométallurgiques conduisent à des métaux contenant des impuretés avec lesquelles peuvent se former des solutions solides. Cette partie propose une première approche thermodynamique des propriétés des solutions solides.
+
+On considère dans toute cette partie le cas d'une mole d'un alliage formé par la solution solide entre $n_A$ mole de À et $n_B$ mole de B, soit $n_A + n_B = 1$.
+
+\paragraph*{Enthalpie libre d'un mélange binaire}
+\Q  L'enthalpie libre est-elle une grandeur intensive ou extensive ? Donner trois autres exemples de fonctions et/ou variables d'état du même type.
+
+\Q Rappeler la définition du potentiel chimique $\mu_A$ de l'espèce \ce{A} en fonction de l'enthalpie libre $G$ du système fermé constitué de $n_A$ mole de \ce{A} et $n_B$ mole de \ce{B}.
+
+Comment s'exprime $G$ en fonction des potentiels chimiques des $2$ espèces ?
+
+Donner l'expression de l'identité thermodynamique donnant la différentielle de $G$, notée $dG$, pour ce système binaire fermé en fonction des variables $P$, $T$ et des quantités de matière $n_A$ et $n_B$.
+
+\Q \label{Q:01-03} Dans le cas du système fermé décrit ci-dessus et à $T$ et $P$ constantes, démontrer que
+\begin{align*}
+\mu_A &= G + (1-n_A) \frac{dG}{dn_A} \\
+\mu_B &= G - n_A \frac{dG}{dn_A}
+\end{align*}
+
+%\Q Reproduire sur votre feuille l'allure de G = f(n4) (à T et P constants) donnée ci-dessous.
+\Q \label{Q:01-04} Proposer une méthode de détermination graphique de $\mu_A$ et $\mu_B$ : l'illustrer sur la courbe $G = f(n_A)$ pour un paramètre de composition $n_A$ quelconque (point $M$).
+
+\paragraph*{Grandeur de mélange et solutions solides idéales}
+
+On appelle grandeur de mélange $\Delta X_m$, la variation de la grandeur $X$ lors de la formation isobare et isotherme d'une solution à partir des composés pris purs dans leur état le plus stable. Dans le cas d'une mole de solution solide où \ce{A} et \ce{B} sont solides dans leur état pur standard, $\Delta X_m$ s'identifie à la variation de $X$ pour la réaction suivante :
+
+\begin{align*}
+\ce{n_A A(s) + n_B B(s) = (A_{n_A}B_{n_B})(s)}
+\end{align*}
+
+\Q \label{Q:01-05} Soit $\mu_A^\star$ et $\mu_B^\star$ les potentiels chimiques des corps purs. Exprimer $\Delta G_m$ en fonction de l'enthalpie libre de la solution solide $G$, $\mu_A^\star$, $\mu_B^\star$ et $n_A$.
+
+\Q Déterminer l'expression de $\Delta G_m$ en fonction de la température, de $n_A$ et des activités $a_A$ et $a_B$ des espèces \ce{A} et \ce{B} dans la solution.
+
+\Q Que devient l'expression précédente de $\Delta G_m$ dans le cas d'une solution idéale ?
+
+Pour $n_A = 0$ et $n_A = 1$, calculer $\Delta G_m$ et déterminer les pentes des tangentes à la courbe $\Delta G_m = f(n_A)$.
+
+Quelle est la valeur de $n_A$ pour laquelle $\Delta G_m$ est extremum ?
+
+\Q En déduire l'allure de la courbe $\Delta G_m = f( n_A )$ dans le cas d'une solution idéale et justifier pourquoi il est difficile d'obtenir des matériaux de très haute pureté.
+
+En vous aidant des questions \ref{Q:01-05} et \ref{Q:01-03}, préciser les grandeurs qui peuvent être déterminées à partir de la courbe $\Delta G_m  = f ( n_A )$ par une exploitation graphique analogue à celle développée à la question \ref{Q:01-04}.
+
+L'enthalpie $\Delta H_m$ et l'entropie $\Delta S_m$ de mélange sont reliées à l'enthalpie libre de mélange par la relation :
+
+\begin{align*}
+\Delta G_m = \Delta H_m - T \Delta S_m
+\end{align*}
+
+\Q Déterminer les expressions de $\Delta S_m$ et $\Delta H_m$ dans le cas d'une solution idéale.
+
+Quelle est la valeur de $n_A$ pour laquelle $\Delta S_m$ est extremum ? S'agit-il d'un minimum ou d'un
+maximum ? Commenter.
+
+\Q On considère une solution solide où \ce{A} et \ce{B} pris purs cristallisent dans le système cubique avec Z atomes par maille : leurs paramètres de maille sont respectivement $a_A$ et $a_B$ à l'état
+pur.
+\begin{enumerate}
+\item Calculer le volume de mélange $\Delta V_m$ associé à la formation de la solution solide supposée idéale, sachant que : 
+
+\begin{align*}
+	\Delta V_m = \left( \frac{\partial \Delta G_m}{\partial P} \right)_{T, n_A}
+\end{align*}
+
+\item En déduire une relation entre le paramètre de maille $a$ de la solution solide, $a_A$ et $a_B$.
+
+Sachant que $a_B = (1+\epsilon) \cdot a_A$ avec $\epsilon \ll 1$, on admettra que la relation précédente permet de démontrer la loi de Végard qui stipule une évolution linéaire du paramètre de maille $a(n_A)$ de la solution solide entre $a_A$ et $a_B$ en fonction du paramètre de composition de l'alliage $n_A$.
+
+\end{enumerate}
+
+Le système nickel - cuivre est un exemple quasi-parfait de solution idéale. Le nickel cristallise dans le système cubique en formant un empilement C.F.C. (cubique à faces centrées).
+
+\Q Représenter la maille du nickel pur. Donner le nombre d'atomes par maille $Z$ et la coordinence $N$ des atomes de nickel.
+
+Les rayons du nickel et du cuivre sont respectivement $r_{Ni} = 125 ~ \si{\pico\meter}$ et $r_{Cu} = 128 ~ \si{\pico\meter}$. Est-ce que ces deux métaux conduisent à des solutions solides de substitution ou d'insertion ? Justifier.
+
+\Q Quel est selon vous le type structural du cuivre pur ? Justifier.
+
+\Q On considère une mole de solution solide constituée de $n_{Ni}$ mole de \ce{Ni} et $n_{Cu}$ mole de \ce{Cu}, et on note $a$ le paramètre de maille de la solution solide. En attribuant un rayon moyen aux atomes de la solution solide, qui tient compte de la composition de l'alliage, déterminer la relation entre $a$, $n_{Ni}$ et les paramètres de maille $a_{Ni}$ et $a_{Cu}$ des corps purs \ce{Ni} et \ce{Cu}. Ce résultat constitue la loi de Végard.

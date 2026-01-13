@@ -1,0 +1,29 @@
+CETATS0. Diagramme des phases (P, T). #
+Le naphtalène (noté N) donne lieu aux divers équilibres de changement d’état :
+
+== + 5566
+— + 7935
+
+On a donné ci-dessus en Pa la pression de la vapeur saturante en présence de liquide (P;) ou de
+
+solide (P°) au voisinage du point triple.
+
+E
+2:
+
+CE
+4.
+
+Déterminer les coordonnées du point triple.
+
+Dessiner l’allure du diagramme des phases (P, T) à l’aide-de quelques points. Que peut-on
+dire de la courbe de fusion ? Attribuer les divers domaines:
+
+On réalise une détente isotherme du naphtalène solide à = 335 K. Qu’observe-t-on ?
+
+On réalise un échauffement isobare (P — 2000 Pa) du naphtalène solide de 7, = 300 KR à T> =
+
+400 K. Qu’observe-t-on ? Représenter la courbe dite d’analyse thermique T = Âitemps) à
+puissance de chauffe constante.
+
+Re

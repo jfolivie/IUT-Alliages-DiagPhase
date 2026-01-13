@@ -1,0 +1,133 @@
+\setcounter{equation}{0}
+\setcounter{Q}{0}
+
+La glace font à $T^\star_{fus}\SI{0}{\celsius}$ sous une pression de $P_{atm} = \SI{1.013}{\bar}$. En hiver, l'épandage de sel fait fondre la neige en-dessous de la température de fusion du corps pur. Ce phénomène est appelé \og abaissement cryoscopique \fg{}.
+
+On va modéliser ce système. On se placera dans le cadre de l'idéalité en assimilant l'activité de l'eau $a ( \ce{H2O} )$ à sa fraction molaire $x$ dans le liquide.
+
+\begin{align*}
+a ( \ce{H2O} ) = x
+\end{align*}
+
+On notera d'un exposant $\star$ les grandeurs associées à l'eau dans une phase condensée corps pur (c.-à-d. pour $x = 1$).
+
+\Q\label{Q:01} \'{E}crire l'équation de réaction associée à la fusion de l'eau. Exprimer l'enthalpie libre de réaction associée à cette transformation en fonction du potentiel chimique de l'eau liquide $\mu_l (T_{fus}, P_{atm}, x)$ et du potentiel chimique de l'eau solide corps pur $\mu^\star_s (T_{fus}, P_{atm})$.
+\solution{
+\textbf{\'{E}quation de réaction : } \ce{H2O(s) <=> H2O(l)} \\
+\textbf{Enthalpie libre de réaction :} \`{A} $(T_{fus}, P_{atm})$,
+\begin{align*}
+\Delta_{fus} G (x) = \mu_l (T_{fus}, P_{atm}, x) - \mu_s^\star (T_{fus}, P_{atm})
+\end{align*}
+}
+
+\Q\label{Q:02} Exprimer la condition d'équilibre chimique sur l'enthalpie libre. En déduire trois égalités : 
+\begin{enumerate}
+\item une relation liant le potentiel chimique de l'eau liquide et le potentiel chimique de l'eau solide en l'absence de sels ;
+\item une relation liant le potentiel chimique de l'eau liquide et le potentiel chimique de l'eau solide en présence de sels ;
+\item une relation liant l'enthalpie de fusion et l'entropie de fusion en l'absence de sels.
+\end{enumerate}
+\solution{En écrivant le potentiel chimique du liquide sous la forme d'une fonction $\mu_l (T, P, x)$ où $x$ est la fraction molaire d'eau dans le mélange et celui du solide sous la forme d'une fonction $\mu^\star_s (T, P)$
+\begin{enumerate}
+\item $\mu_l (T^\star_{fus}, P_{atm}, 1) = \mu^\star_l (T^\star_{fus}, P_{atm}) = \mu_s^\star (T^\star_{fus}, P_{atm})$
+\item $\mu_l (T_{fus}, P_{atm}, x) = \mu_s^\star (T_{fus}, P_{atm})$
+\item en présence d'un équilibre de phase liquide-solide, $\Delta_{fus} G^\star = 0 \implies \Delta_{fus} S^\star = \frac{\Delta_{fus} H^\star}{T_{fus}^\star}$
+\end{enumerate}
+}
+
+\Q\label{Q:03} En vous appuyant sur la Q.\ref{Q:02}, démontrer la relation suivante : 
+\begin{align}
+T_{fus} - T^\star_{fus} = \frac{RT_{fus} T_{fus}^\star}{\Delta_{fus}H^\star}\ln (x)
+\end{align}
+\solution{
+\begin{align*}
+\mu^\star_l (T_{fus}, P_{atm}) + RT_{fus} \ln (x)  &= \mu_s^\star (T_{fus}, P_{atm}) \\
+\mu^\star_l (T^\star_{fus}, P_{atm}) &= \mu_s^\star (T^\star_{fus}, P_{atm})
+\end{align*}
+On va soustraire ces deux relations : 
+\begin{align*}
+\left( \mu^\star_l (T_{fus}, P_{atm}) - \mu^\star_l (T^\star_{fus}, P_{atm}) \right) + RT_{fus} \ln (x)  &= \mu_s^\star (T_{fus}, P_{atm}) - \mu_s^\star (T^\star_{fus}, P_{atm}) \\
+-S^\star_{m,l} (T_{fus} - T^\star_{fus}) + RT_{fus} \ln (x) &= -S^\star_{m,s} (T_{fus} - T^\star_{fus}) \\
+-(S^\star_{m,l}-S^\star_{m,s})(T_{fus} - T^\star_{fus}) &= -RT_{fus} \ln (x) \\
+-\Delta_{fus}S^\star (T_{fus} - T^\star_{fus}) &= -RT_{fus} \ln (x) \\
+-\Delta_{fus}H^\star (T_{fus} - T^\star_{fus}) &= -RT_{fus} T_{fus}^\star \ln (x) \\
+T_{fus} - T^\star_{fus} &= \frac{RT_{fus} T_{fus}^\star}{\Delta_{fus}H^\star}\ln (x)
+\end{align*}
+}
+
+\Q\label{Q:04} On va supposer que la quantité de sel \ce{NaCl} est infinitésimale (\ce{NaCl} est un impureté dans l'eau). Simplifier la relation de la Q.\ref{Q:03} et montrer que : 
+\begin{align}
+T^\star_{fus} - T_{fus} = \frac{RT^{\star 2}_{fus}}{\Delta_{fus}H^\star} \epsilon
+\end{align}
+\solution{On part de la conservation de la matière dans la phase liquide : $x + \epsilon = 1$
+\begin{align*}
+T_{fus} - T^\star_{fus} &= \frac{RT_{fus} T_{fus}^\star}{\Delta_{fus}H^\star}\ln (1 - \epsilon) \\
+T_{fus} - T^\star_{fus} &\approx - \frac{RT_{fus} T_{fus}^\star}{\Delta_{fus}H^\star} \epsilon \quad \text{en utilisant le DL d'ordre 1} \\
+T^\star_{fus} - T_{fus} &\approx \frac{R T_{fus}^{\star 2}}{\Delta_{fus}H^\star} \epsilon \quad \text{car }T_{fus} \approx T_{fus}^{\star}
+\end{align*}
+}
+
+En chimie physique, une propriété colligative d'une solution chimique correspond à la différence entre une propriété donnée d'un corps pur et la même propriété en présence d'une impureté. Dans des conditions de dilution, la relation colligative s'écrit comme : 
+\begin{align}
+X^\star - X = K^\star_{sol} \cdot c
+\label{eq:Xcp-X}
+\end{align}
+où $K_{sol}$ est une constante dépendant uniquement de la nature du solvant et $c$ la concentration en soluté. $X$ peut être n'importe quelle variable d'état (température, pression $\ldots$).
+
+\Q\label{Q:05} Justifier que l'abaissement cryoscopique est une propriété cryoscopique. Calculer la constante cryoscopique de l'eau liquide.
+\solution{
+\begin{align*}
+T^\star_{fus} - T_{fus} &\approx \frac{R T_{fus}^{\star 2}}{\Delta_{fus}H^\star} \epsilon
+\end{align*}
+On peut exprimer la relation entre $c$ et $\epsilon$ :
+\begin{align*}
+c &= \frac{n (\ce{NaCl})}{V_{tot}} = \frac{n_{tot}}{V_{tot}} \cdot \epsilon \\
+&\approx \frac{n (\ce{H2O})}{V (\ce{H2O})} \cdot \epsilon \approx \frac{m (\ce{H2O})}{M (\ce{H2O}) V (\ce{H2O})} \cdot \epsilon \\
+&\approx \frac{\rho^\star (\ce{H2O})}{M (\ce{H2O})} \cdot \epsilon
+\end{align*}
+d'où 
+\begin{align*}
+T^\star_{fus} - T_{fus} \approx \frac{R T_{fus}^{\star 2}M (\ce{H2O})}{\Delta_{fus}H^\star \rho^\star (\ce{H2O})} c \implies K^\star_{sol} = \frac{R T_{fus}^{\star 2}M (\ce{H2O})}{\Delta_{fus}H^\star \rho^\star (\ce{H2O})} 
+\end{align*}
+\textbf{Application numérique}
+\begin{align*}
+K^\star_{sol} = \frac{8.314 \times 273^2 \times 18.0}{6.01\cdot 10^3 \times 997 } = 1.86 ~ \si{\kelvin\liter\per\mole}
+\end{align*}
+\textbf{Analyse dimentionelle}
+\begin{align*}
+[K^\star_{sol}] = \frac{\si{\joule\per\mole\per\kelvin} \times \si{\kelvin\squared} \times \si{\gram\per\mole}}{\si{\joule\per\mole} \times \si{\gram\per\liter}} = \si{\kelvin\liter\per\mole}
+\end{align*}
+}
+
+On va chercher à comparer l'équation volligative obtenue au courbes de fusion expérimentales, représentées à la Fig. \ref{fig:33-01}.
+
+\begin{center}
+\begin{minipage}{0.58\textwidth}
+\includegraphics[width=\textwidth]{figures/Fig01}
+\end{minipage}\begin{minipage}{0.38\textwidth}
+\captionof{figure}{\'{E}volution de température de fusion d'un mélange eau-sel en fonction de la concentration en sel dans le cas \ce{NaCl} et \ce{CaCl2}.}
+[la relation colligative correspond ]
+\label{fig:33-01}
+\end{minipage}
+\end{center}
+
+\Q Dans la Fig. \ref{fig:33-01}, que remarque-t-on de l'Eq. \ref{eq:Xcp-X} ?
+\solution{
+On constate que l'Eq. \ref{eq:Xcp-X} est valable pour tous les sels du moment qu'on se trouve à une concentration en sel proche de 0.
+}
+
+\Q Donner une application en chimie organique faisant appel de l'abaissement cryoscopique.
+\solution{
+Le banc Köffler est une méthode permettant de vérifier la pureté d'un solide basée sur le principe de l'abaissement cryoscopique.
+}
+
+\paragraph*{Données}
+\begin{itemize}
+\item Développement limité à l'ordre 1 quand $x$ tend vers 0 : 
+\begin{align*}
+\ln (1 - x) \approx -x 
+\end{align*}
+\item Masse molaire : $M (\ce{H2O} ) = \SI{18}{\gram\per\mole}$ ;
+\item Enthalpie de fusion standard de l'eau liquide corps pur à \SI{298}{\kelvin} : $\Delta_{fus} H^{\circ \star} = 6.01 ~ \si{\kilo\joule\per\mole}$
+\item Masse volumique de l'eau liquide corps pur:  $\rho^\star = 997 ~ \si{\kilo\gram\per\meter\cubed}$ ;
+\item Constante des gaz parfaits : $R = 8.314 ~ \si{\joule\per\mole\per\kelvin}$.
+\end{itemize}

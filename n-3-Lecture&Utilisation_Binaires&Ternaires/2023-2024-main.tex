@@ -1,0 +1,1034 @@
+\documentclass[a4paper]{book}
+
+
+\usepackage[student]{Lecture}
+%\lhead{Cours n°1 : Lithium au sein du tableau périodique}
+\lhead{\leftmark} \chead{} \rhead{4.13}
+\lfoot{IUT d'Orsay - BUT 2 MAT - 2023-2024} \cfoot{\includegraphics[height=0.5cm]{cc-by-nc-sa.png}}  \rfoot{Jean-François Olivieri \quad \thepage}
+
+\begin{document}
+
+\begin{comment}
+\begin{titlepage}
+  \begin{sffamily}
+  \begin{center}
+
+    % Upper part of the page. The '~' is needed because \\
+    % only works if a paragraph has started.
+    \includegraphics[height=4cm]{logo.png}~\\[0.5cm]
+
+    \textsc{\LARGE Université Paris-Saclay}\\[0.5cm]
+    
+    \textsc{\Large IUT d'Orsay - Département de Chimie}\\[0.5cm]
+    
+    \textsc{\large BUT 2, module 3.06 - Propriété des matériaux}\\[3.0cm]
+
+    % Title
+    \HRule \\[0.4cm]
+    { \huge \bfseries Matériaux pour l'énergie\\[0.4cm] }
+
+    \HRule \\[0.4cm]
+    
+       
+    \textsc{\Large  Une introduction aux batteries}\\[0.5cm] 
+    
+    \textsc{\Large  Année 2024-2025}\\[5.0cm]
+    
+
+
+    % Author and supervisor
+    \begin{minipage}{0.48\textwidth}
+      \begin{flushleft} \large
+        \faPencil ~ Jean-François Olivieri\\
+        ~ \faPaperPlane ~ jean-francois.olivieri@universite-paris-saclay.fr
+      \end{flushleft}
+    \end{minipage} \hfill
+    \begin{minipage}{0.48\textwidth}
+      \begin{flushleft} \large
+      	\faUsers ~ Lionel Tinat \\
+      	~ \faPaperPlane ~ lionel.tinat@universite-paris-saclay.fr
+        \faUsers ~ Frederic Banse \\
+        ~ \faPaperPlane ~ frederic.banse@universite-paris-saclay.fr
+      \end{flushleft}
+    \end{minipage}
+
+    \vspace{2.8cm}
+
+   	{\scriptsize Photo de garde tirée de \href{https://chemistry-europe.onlinelibrary.wiley.com/toc/25666223/2023/6/2}{Batteries \& Supercaps, Improving Electrochemical Activity of P2-type \ce{Na_{2/3}Mn_{2/3} Ni_{1/3}O2} by Controlling its Crystallinity}, R. Kataoka \& co-workers.}
+
+    % Bottom of the page
+    
+    {\scriptsize \doclicenseThis}
+
+  \end{center}
+  \end{sffamily}
+\end{titlepage}
+\end{comment}
+
+\tableofcontents
+
+\setcounter{chapter}{0}
+\chapter{Diagrammes de phases binaires à pression constante}
+
+Le chimiste est souvent emmené à réaliser des alliages, qui sont le résultat de la fusion de deux corps purs (simple ou composé). Le chimiste est souvent emmené à faire varier les teneurs en chacun des corps afin d'obtenir un alliage avec les proprétés désirées : mécaniques, corrosive$\ldots$
+
+Pour quantifier la teneur en chacun des corps, noté \ce{A} et \ce{B} dans l'ensemble de ce cours, on définit les fractions molaire $x$ totales. La fraction molaire en $A$ dans le mélange est définit comme : 
+\begin{align*}
+x_A &= \frac{n_A}{n_A + n_B} \\
+1 &= x_A + x_B
+\end{align*}
+
+Expérimentalement, on est souvent emmené aussi à tracer en fonction des fractions massiques $w$ totales. La fraction massique en $A$ dans le mélange est définit comme : 
+\begin{align*}
+w_A &= \frac{m_A}{m_A + m_B} \\
+1 &= w_A + w_B
+\end{align*}
+
+Lorsque l'on étudie le mélange, on est souvent emmené à définir une fraction massique en $A$ pour chacune des phases $\phi$ qui existent, noté $x_A^\phi$ et $w_A^\phi$.
+
+Dans la suite du document, on considérera que les cristaux du corps pur \ce{B} a une cohésion plus grande que les cristaux du corps pur \ce{A}. Thermiquement, ceci se traduit par l'inégalité suivante :
+\begin{align*}
+T^\star_{fus} (\ce{B}) > T^\star_{fus} (\ce{A})
+\end{align*}
+
+%On note $T_0$ la température de début de refroidissement
+%$T_\infty$ la température de fin de refroidissement
+
+\section{Variance}
+
+En thermodynamique, il est parfois utile de savoir si les paramètres intensifs peuvent évoluer lors d'une transformation. Une façon de faire est de décompter les variables d'états intensives, et d'énumérer l'ensmble des relations mathématiques qui contraignent le système.
+
+Lorsque le système n'a aucun degré de liberté disponible, les variables d'état intensives sont contraintes, et par conséquent, constantes.
+
+\subsection{Variance d'un système multiphasé}
+\definition{La variance $v$ d'un système thermodynamique, non contraint, est le nombre de variables d'état intensives qu'un opérateur peut fixer sans rompre l'état d'équilibre d'un système. Ce nombre est donné par la relation : 
+\begin{equation}
+v = X - Y
+\end{equation}
+
+où $X$ est le nombre de variable d'état intensive décrivant le système thermodynamique, et $Y$ le nombre de relations entre ces grandeurs.}
+
+%\begin{boxedminipage}[t]{15cm}
+La variance correspond au nombre de degré de liberté thermodynamique intensif, soit le nombre de variable d'état intensive, indiqué par $X$, auquel on soustrait le nombre de relation entre ces variables, noté $Y$. Au bilan, on a : 
+
+\begin{align}
+v = X - Y
+\end{align}
+
+On peut alors énumérer tous les paramètres intensifs :
+\begin{equation}
+P, T, x^{\phi_1}_1, \ldots x^{\phi_1}_N, x^{\phi_i}_1, \ldots x^{\phi_i}_N, x^{\phi_M}_1, \ldots x^{\phi_M}_N
+\end{equation}
+
+soit $X = 2 + N \cdot \Phi $
+
+On peut alors énumérer le nombre de relation liant tous le paramètres : 
+\begin{enumerate}
+\item $M$ relations de conservation de la matière.
+\begin{align*}
+\forall k \in \llbracket 1, M \rrbracket, \quad \sum_{i = 1}^N x_i^{\phi_k} = 1
+\end{align*}
+
+\item $N \cdot (M-1)$ relations d'équilibre des constituants dans chacune des phases.
+
+\begin{align*}
+\forall i \in \llbracket 1, N \rrbracket, \quad \mu_i^{\phi_1} = \mu_i^{\phi_2} = \ldots =  \mu_i^{\phi_M}
+\end{align*}
+
+\end{enumerate}
+
+soit $Y = N (M-1) + M$
+
+On trouve alors que : 
+\begin{align*}
+v = 2 + N - M
+\end{align*}
+avc $N$ le nombre de constituant chimique et $M$ le nombre de phases.
+
+%\end{boxedminipage}
+
+\subsection{Variance particulière d'un système multiphasé}
+Expérimentalement, il est très courant que l'on fixe un (ou plusieurs) degré(s) de liberté.	
+
+\definition{La variance particulière $v_P$ d'un système thermodynamique, contraint expérimentalement, est le nombre de variables d'état intensives qu'un opérateur peut encore fixer sans rompre l'état d'équilibre d'un système. Ce nombre est donné par la relation : 
+\begin{align*}
+v_P &= v - Z \\
+&= X - Y - Z
+\end{align*}
+
+où $Z$ est le nombre de contraintes expérimentales.}
+
+\section{Anomalies thermiques d'un mélange de deux corps purs}
+
+Lorsque l'on mélange deux corps purs, il est nécessaire de les mélanger à haute température sous fforme liquide, puis de les laisser refroidir de manière contrôlée. Afin de garantir qui les cristaux sont formés à l'équilibre thermodynamique, le chimiste peut procéder à des recuits successifs.
+
+On considérera par la suite que des systèmes thermodynamiques, où le liquide de fusion forme un mélange homogène. Nous ne présenterons pas les éventuels polymorphismes que l'on peut aussi recontrer dans les mélanges.
+
+\subsection{Eventail des possibilités lors d'un refroidissement}
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/Fig01}
+\captionof{figure}{Devenir thermique d'un mélange de deux corps pur et schéma des observations microscopiques}
+\label{fig:03-01}
+\end{center}
+
+Dans la Fig. \ref{fig:03-01}, on constate qu'après formation d'un liquide homogène, refroidit de manière contrôlé, un chimiste peut obtenir : 
+\begin{enumerate}
+\item  une phase homogène à toute fraction $x$ en \ce{B} :
+\begin{align*}
+\forall x \in [0,1], \quad \ce{(1-x) A(s) + x B (s) -> A_{1-x} B_x (s)}
+\end{align*}
+Dans cette situation, \ce{B} est soluble dans la structure de \ce{A} à toute fraction. La formule brute du solide obtenu ne dépend que alors que de la composition initiale.
+
+\item une phase ou deux phases hétérogènes, appelées $\alpha$ et $\beta$ : 
+\begin{align*}
+\forall x \in [0, x_\alpha (T)], \quad \ce{(1-x) A(s) + x B (s) & -> A_{1-x} B_{x} (\alpha)} \\
+\forall x \in ]x_\alpha (T), x_\beta (T)[ \quad \ce{x A(s) + y B (s) & -> n(x,y,T) A_{1-x\alpha} B_{x\alpha} (\alpha) + m(x,y,T) A_{1-x\beta} B_{x\beta} (\beta)} \\
+\forall x \in [x_\beta (T), 1], \quad \ce{(1-x) A(s) + x B (s) & -> A_{1-x} B_{x}  (\beta)}
+\end{align*}
+
+La phase $\alpha$ est un phase enrichie en \ce{A} (resp. \ce{B}), c'est-à-dire une phase où \ce{B} (resp. \ce{A}) n'est que partiellement solude dans \ce{A} (resp. \ce{B}).
+
+Dans la phase $\alpha$ (resp. $\beta$), $x_\alpha (T)$ (resp. $1 - x_\beta (T)$) représente la solubilité de \ce{B} dans \ce{A} (resp. \ce{A} dans \ce{B}), qui ne dépend que de la température. Les proportions relatives, notées $n(x,y,T)$ et $m(x,y,T)$ en chacune des phases, ne dépendent que de la composition et de la température.
+
+\item une ou deux phases hétérogènes, dont une constituée d'un composé défini de composition fixe $\ce{A_{1 - x_I} B_{x_I}}$ et d'un corps pur :
+\begin{align*}
+\text{si } x = 0, \quad &\ce{A(s) -> A(s)} \\
+\forall x \in ]0, x_I[, \quad &\ce{(1 - x) A(s) + x B(s) -> n(x,y,T) A(s) + m(x,y,T) A_{1-xI} B_{xI} (s)} \\
+\text{si } x = x_I, \quad &\ce{(1 - x_I) A(s) + x_I B(s) -> A_{1-xI} B_{xI} (s)}
+\end{align*}
+
+Dans ce genre de situation, le composé \ce{A} n'est pas soluble dans le composé \ce{B}. Cependant, il existe des compositions particulières où \ce{A} et \ce{B} forment des structures cristallographiques stables. Cette structure n'est pas miscible dans \ce{A} (ou \ce{B}). 
+
+\item deux phases hétérogènes associées aux corps pur \ce{A} et \ce{B} :
+\begin{align*}
+\text{si } x = 0, \quad &\ce{A(s) -> A(s)} \\
+\forall x \in ]0, 1[, \quad &\ce{(1 - x) A(s) + x B(s) -> (1-x) A(s) + x B(s)} \\
+\text{si } x = 1, \quad &\ce{B(s) -> B(s)}
+\end{align*}
+
+Le mélange reste strictement hétérogène. Cependant, le solide initial est réorganisé avec formation de cristaux contenant exclusivement \ce{A} ou exclusivement \ce{B}, liés par des joints de grains.
+\end{enumerate}
+
+\subsection{Relation entre la structure cristallographique et le comportement thermique}
+
+\`{A} l'échelle atomique, il existe deux grand mécanismes de formation d'un alliage : par substitution et par insertion.
+
+\subsubsection{Alliage de substitution}
+
+\begin{figure}[H]
+\begin{minipage}{0.7\textwidth}
+\centering
+\subfloat[\label{fig:03-10a}]{\includegraphics[height=3cm]{figures/Fig10a}}
+\hspace{0.5cm}\subfloat[\label{fig:03-10b}]{\includegraphics[height=3cm]{figures/Fig10b}}
+\hspace{0.5cm}\subfloat[\label{fig:03-10c}]{\includegraphics[height=3cm]{figures/Fig10c}}
+\end{minipage}\hfill\begin{minipage}{0.3\textwidth}
+\caption{Structure d'un alliage de substitution \ref{fig:03-10a} une phase ordonnée ; \ref{fig:03-10b} une phase désordonnée ; \ref{fig:03-10c} deux phases distinctes}
+\label{fig:03-10}
+\end{minipage}
+\end{figure}
+
+Cas \ref{fig:03-10a} : Un composé défini est structure cristallographique où l'un des motifs occupe des positions régulières dans une structure donnée. Cette organisation régulière est thermodynamique stable, c'est-à-dire qu'enthalpiquement les interactions \ce{A-B} sont plus stables que les interactions \ce{A-A} et \ce{B-B} pris séparément. L'entropie ne joue aucun rôle dans la stabilité.
+
+Les alliages homogènes peuvent présentées des transitions ordre-désordre, en fonction de la température. Si les interactions \ce{A-B} sont plus stables que les interactions \ce{A-A} et \ce{B-B} pris séparément, il y aura une grande chance qu'une transition ordre - désordre existe avec un élevation de la température.
+
+Cas \ref{fig:03-10b} : Dans des alliages homogènes (phase homogène, phase $\alpha$, phase $\beta$), l'organisation des atomes est ordonnée. L'entropie stabilise nécessairement la formation d'un alliage stable. Enthalpiquement, si la phase formée n'est pas stable à toute composition, cela traduit enthalpiquement que les interactions \ce{A-A} et \ce{B-B} sont plus fortes que les interactions \ce{A-B}.
+
+Cas \ref{fig:03-10c} : Dans des alliages hétérogènes, l'entropie joue un rôle mineur devant l'enthalpie, les interactions \ce{A-A} et \ce{B-B} sont beaucoup plus fortes que les interactions \ce{A-B}. 
+
+\definition{La formation d'un alliage enthalpiquement stable par substitution (c.-à-d. une solution solide) satisfait les lois empiriques de Hume-Rothery (1935) suivantes, vues au semestre précédent :  %https://www.phase-trans.msm.cam.ac.uk/2004/titanium/hume.rothery.html
+\begin{itemize}
+\item rayons atomiques sont moins de \SI{15}{\percent} différents ;
+\item valences proches, c.-à-d. la même structure électronique ;
+\item modes cristallographiques proches, c.-à-d. des coordiations proches ;
+\item électronégativités proches.
+\end{itemize}
+Par conséquent, un alliage par substitution qui satisfait toute ces règle, est nécessairement homogène à toute composition. On peut le qualifier d'idéal.
+
+Tout écart à ces règles a pour conséquence de diminuer la solubilité d'un constituant dans une phase.
+}%https://archives.uness.fr/sites/campus-unf3s-2014/odontologie/enseignement/chap1/site/html/5_2.html
+
+
+
+\subsubsection{Alliage d'insertion}
+
+\begin{figure}[H]
+\begin{minipage}{0.7\textwidth}
+\centering
+\subfloat[\label{fig:03-11a}]{\includegraphics[height=3cm]{figures/Fig11a}}
+\hspace{0.5cm}\subfloat[\label{fig:03-11b}]{\includegraphics[height=3cm]{figures/Fig11b}}
+\hspace{0.5cm}\subfloat[\label{fig:03-11c}]{\includegraphics[height=3cm]{figures/Fig11c}}
+\end{minipage}\hfill\begin{minipage}{0.3\textwidth}
+\caption{Structure d'un alliage d'insertion \ref{fig:03-11a} une phase ordonnée ; \ref{fig:03-11b} une phase désordonnée ; \ref{fig:03-11c} deux phases distinctes}
+\label{fig:03-11}
+\end{minipage}
+\end{figure}
+
+Dans le cas des alliages d'insertion, les interprétations sont similaires aux alliages par substitution.
+
+%Cas \ref{fig:03-10a} : Un composé défini est structure cristallographique où l'un des motifs occupe des positions régulières dans une structure donnée. Cette organisation régulière est thermodynamique stable, c'est-à-dire qu'enthalpiquement les interactions \ce{A-B} sont plus stables que les interactions \ce{A-A} et \ce{B-B} pris séparément. L'entropie ne joue aucun rôle dans la stabilité.
+
+%Les alliages homogènes peuvent présentées des transitions ordre-désordre, en fonction de la température. Si les interactions \ce{A-B} sont plus stables que les interactions \ce{A-A} et \ce{B-B} pris séparément, il y aura une grande chance qu'une transition ordre - désordre existe avec un élevation de la température.
+
+%Cas \ref{fig:03-10b} : Dans des alliages homogènes (phase homogène, phase $\alpha$, phase $\beta$), l'organisation des atomes est ordonnée. L'entropie stabilise nécessairement la formation d'un alliage stable. Enthalpiquement, si la phase formée n'est pas stable à toute composition, cela traduit enthalpiquement que les interactions \ce{A-A} et \ce{B-B} sont plus fortes que les interactions \ce{A-B}.
+
+\definition{On peut poser des règles similaires aux règles de Hume-Rothery pour relativiser les comportements des alliages par insertion.
+\begin{itemize}
+\item rayons atomiques plus petits que la taille des sites interstitiels ;
+\item électronégativités relativement similaires entre les deux constituants.
+\end{itemize}
+}%https://fr.wikipedia.org/wiki/R%C3%A8gles_de_Hume-Rothery
+
+\subsection{Eventail des possibilités lors d'un refroidissement : DSC et refroidissement thermique}
+
+Nous allons chercher à traiter les différentes situations thermique que l'on peut rencontrer. Les expériences les plus communes permettant de déterminer les températures de transitions sont la DSC (c.-à-d. que l'on chauffe un solide avec une rampe de température contrôlée) ou les courbes de refroidissement thermique (c.-à-d. que l'on refroidit une liquide de manière homogène).
+
+\subsubsection{Corps purs}
+
+Les corps purs, c'est-à-dire \ce{A}, \ce{B} ou un quelconque composé défini \ce{A_{1-xI} B_{xI}}, présentent en général une fusion congruente (c'est-à-dire que la fusion conduit à la formation d'un liquide de même composition que le solide).
+
+En refroidissement thermique, on observe un palier de température lors de la solidification.
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig02}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{figure}{Exemple théorique de la fusion ou solidification du corps pur A à l'aide de la DSC ou du refroidissement thermique.}
+\label{fig:03-02}
+\end{minipage}
+\end{center}
+
+La présence d'un palier peut se justifier à l'aide de la variance particulière :
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{A}-\textbf{B}}
+\end{center}
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{B}-\textbf{C}}
+\end{center}
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{C}-\textbf{D}}
+\end{center}
+
+\subsubsection{Mélange homogène (solution solide)}
+
+On considère qu'à toute composition, l'alliage formé est homogène. Dans un tel alliage soumis à un refroidissement thermique, la solidification a lieu sur une plage de température délimitée par la température du liquidus (premier cristal de solide) et la température du solidus (dernière goutte de liquide).
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig03}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{figure}{Exemple théorique de la fusion ou solidification d'un mélange homogène \ce{A_xB_y} à l'aide de la DSC ou du refroidissement thermique en dehors du point indifférent}
+\label{fig:03-03}
+\end{minipage}
+\end{center}
+
+Lors de la transition, en DSC, on obtient un pic très étalé dont le flux thermique augmente progressivement. L'absence de palier peut se comprendre à l'aide de la variance.
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{A}-\textbf{B}}
+\end{center}
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{B}-\textbf{C}}
+\end{center}
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{C}-\textbf{D}}
+\end{center}
+
+\attention{Dans les solutions solides, il arrive très couramment qu'il existe une composition unique, dite indifférente, pour laquelle la température du liquidus et du solidus sont égales. En apparence, un tel mélange se comporte comme un corps pur et présente une fusion congruente. Cependant, toute modification de la pression a pour conséquence de changer la composition du point indifférent.
+
+L'existence du palier est justifiable par la variance.}
+
+\subsubsection{Mélange hétérogène}
+
+Les mélanges hétérogènes, lorsqu'ils fondent, présentent deux étapes : 
+\begin{enumerate}
+\item la coexistence d'un liquide, avec les deux corps purs initiaux qui a lieu à température constante, dites température eutectique jusqu'à fusion complète d'un des deux corps purs;
+\item la fusion du solide restant avec enrichissement progressif du liquide formé en ce constituant jusqu'à atteindre la température du liquidus à la tempéraure du mélange.
+\end{enumerate}
+
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig04}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{figure}{Exemple théorique de la fusion ou solidification d'un mélange hétérogène \ce{(1-x) A(s) + x B(s)} à l'aide de la DSC ou du refroidissement thermique dans lequel \ce{B(s)} fond avant \ce{A(s)}}
+\label{fig:03-04}
+\end{minipage}
+\end{center}
+
+La présence d'un palier, suivie de la plage de fusion, peut se justifier à l'aide de la variance particulière :
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{A}-\textbf{B}}
+\end{center}
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{B}-\textbf{C}}
+\end{center}
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{C}-\textbf{D}}
+\end{center}
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{D}-\textbf{E}}
+\end{center}
+
+Dans un tel mélange, il existe une composition en \ce{B}, notée $x_E$, appelée composition eutectique pour laquelle le mélange fond de manière congruente et donne un liquide de même composition que le solide initial. La transition se fait en une étape thermique et à température constante, notée $T_E$.
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig05}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{figure}{Exemple théorique de la fusion ou solidification d'un mélange hétérogène \ce{(1-x_E) A(s) + x_E B(s)} à l'aide de la DSC ou du refroidissement thermique dans lequel \ce{B(s)} fond simultanément à \ce{A(s)}}
+\label{fig:03-05}
+\end{minipage}
+\end{center}
+
+La présence d'un palier peut se justifier à l'aide de la variance particulière :
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{A}-\textbf{B}}
+\end{center}
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{B}-\textbf{C}}
+\end{center}
+
+\begin{center}
+\centering
+\begin{tabular}{c|C{6cm}|C{6cm}|C{3cm}}
+\toprule
+& X & Y & Z \\
+\midrule
+\multirow{3}{*}{Relations} & & & \\
+ & & & \\
+ & & & \\
+\midrule
+Variance & \multicolumn{3}{c}{} \\
+\bottomrule
+\end{tabular}
+\captionof{figure}{Détermination de la variance particulière sur le tronçon \textbf{C}-\textbf{D}}
+\end{center}
+
+\section{Diagramme de phase}
+
+Les diagrammes de phases, construient à partir des expériences de DSC ou de refroidissement thermique, ont des allures typiques caractéristiques qui dépendent de la structure de l'alliage.
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+\centering
+\begin{tabular}{cc}
+\toprule
+Cas & Nom du diagramme \\
+\midrule
+Cas (1) & Diagramme de phase à fuseau \\
+Cas (2) & Diagramme de phase à miscibilité partielle \\
+Cas (3) & Diagramme de phase à composé défini \\
+Cas (4) & Diagramme de phase à miscibilité nulle \\
+\bottomrule
+\end{tabular}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{table}{Relation entre les diagrammes de phase et la structure des solides}
+\end{minipage}
+\end{center}
+
+Dans ces diagrammes de phase, on représente les transitions de phases. Au minimum, on retrouve le liquidus et le solidus.
+\definition{
+Dans le diagramme de phase, \\
+le \textbf{liquidus} donne la composition en \ce{B} dans la phase liquide 
+\begin{align*}
+x^l_B (T)
+\end{align*}
+
+le \textbf{solidus} donne la composition en \ce{B} dans la phase solide
+\begin{align*}
+x^s_B (T)
+\end{align*}
+}
+
+\subsection{Diagramme à fuseau}
+
+Dans le cas où les interactions \ce{A-B} sont de même intensité que les interactions \ce{A-A} et \ce{B-B}, le diagramme en fuseau est dit idéal et présente un unique fuseau, parfaitement symétrique.
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig06a}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{figure}{Allure d'un diagramme de phase à fuseau, dit idéal, d'un mélange solide homogène \ce{A_{1-x} B_x (s)}}
+\label{fig:03-06a}
+\end{minipage}
+\end{center}
+
+Dans le cas où les interactions \ce{A-B} sont d'intensités différentes que les interactions \ce{A-A} et \ce{B-B}, le fuseau est déformé. Lorsque les interactions \ce{A-B} sont plus faibles que les interactions \ce{A-A} et \ce{B-B}, on a apparition de deux fuseaux avec un point, appelé point indifférent \textbf{I}.
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig06b}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{figure}{Allure d'un diagramme de phase à fuseau, non idéal, d'un mélange solide homogène \ce{A_{1-x} B_x (s)}}
+[le point indifférent a une température de fusion plus basse que les points de fusion des corps purs]
+\label{fig:03-06b}
+\end{minipage}
+\end{center}
+
+Lorsque les interactions \ce{A-B} sont plus fortes que les interactions \ce{A-A} et \ce{B-B}, on a apparition de deux fuseaux avec un point, appelé point indifférent \textbf{I}.
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig06c}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{figure}{Allure d'un diagramme de phase à fuseau, non idéal, d'un mélange solide homogène \ce{A_{1-x} B_x (s)}}
+[le point indifférent a une température de fusion plus haute que les points de fusion des corps purs]
+\label{fig:03-06c}
+\end{minipage}
+\end{center}
+
+\subsection{Diagramme à miscibilité nulle}
+
+Dans le diagramme eutectique, les interactions \ce{A-A} et \ce{B-B} sont beaucoup plus fortes que les interactions \ce{A-B}. Ce diagramme se caractérise par l'existence d'un palier de température, appelé palier eutectique, caractérisé par la coexistece de trois phases non miscibles : \ce{A(s)}, \ce{B(s)} et liquide.
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig07}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{figure}{Allure d'un diagramme de phase à fuseau d'un mélange solide hétérogène \ce{(1-x) A(s) +  x B (s)}}
+\label{fig:03-07}
+\end{minipage}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+60/40 & 80/20 & Diagramme de phase\\
+\midrule
+\includegraphics[width=0.18\textwidth]{figures/Fig17-Bi60Cd40.jpg} & \includegraphics[width=0.18\textwidth]{figures/Fig17-Bi80Cd20.jpg} & \includegraphics[width=0.22\textwidth]{figures/Fig17-PhaseDiagram.jpg}\\
+\bottomrule
+\end{tabular}
+\captionof{table}{Clichés de micrographie, réalisés par microscopie électronique à balayage, à différentes compositions en Bi/Cd [\si{\percent}/\si{\percent}], en diffraction d'électron rétrodiffusé (electron backscattering)}
+[le diagramme de phase accompagne les clichés]
+\end{center}%https://www.doitpoms.ac.uk/miclib/systems.php?id=8
+
+\subsection{Diagramme à miscibilité partielle}
+
+Pour les compositions limites, proches des corps purs, les composés forment des solutions solides (mélange homogène) où un constituant majoritaire, joue le rôle de solvant, et tolère la présence d'une quantité limité de soluté. Ces quantité de soluté dans un réseau sont données par des courbes appelées \textbf{solvus}.
+
+\definition{Le \textbf{solvus} est la (ou les) courbes qui donne la composition en \ce{B} dans chacune des phases enrichies :
+\begin{align*}
+x^\alpha_B (T) \quad \text{ou} \quad x^\beta_B (T)
+\end{align*}}
+
+Le diagramme à miscibilité partielle est un cas plus général que le diagramme à miscibilité nulle. Le diagramme présente toujous un palier eutectique, caractérisé par la coexistence de trois phases non miscibles : $\alpha$, $\beta$ et liquide.
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig08}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{figure}{Allure d'un diagramme de phase à fuseau d'un mélange hétérogène de deux phases $\alpha$ (enrichie en \ce{A}) et $\beta$ (enrichie en \ce{B})}
+\label{fig:03-08}
+\end{minipage}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+10/90 & 20/80 & 30/70 & 40/60 & 50/50 \\
+\midrule
+\includegraphics[width=0.18\textwidth]{figures/Fig15-Bi10Sn90.jpg} & \includegraphics[width=0.18\textwidth]{figures/Fig15-Bi20Sn80.jpg} & \includegraphics[width=0.18\textwidth]{figures/Fig15-Bi30Sn70.jpg} & \includegraphics[width=0.18\textwidth]{figures/Fig15-Bi40Sn60.jpg} & \includegraphics[width=0.18\textwidth]{figures/Fig15-Bi50Sn50.jpg} \\
+\midrule
+60/40 & 70/30 & 80/20 & 90/10 & Diagramme \\
+\midrule
+\includegraphics[width=0.18\textwidth]{figures/Fig15-Bi60Sn40.jpg} & \includegraphics[width=0.18\textwidth]{figures/Fig15-Bi70Sn30.jpg} & \includegraphics[width=0.18\textwidth]{figures/Fig15-Bi80Sn20.jpg} & \includegraphics[width=0.18\textwidth]{figures/Fig15-Bi90Sn10.jpg} & \includegraphics[width=0.18\textwidth]{figures/Fig15-PhaseDiagram.png}\\
+\bottomrule
+\end{tabular}
+\captionof{table}{Clichés de micrographie, réalisés par microscopie électronique à balayage, à différentes compositions en Bi/Sn [\si{\percent}/\si{\percent}], en diffraction d'électron rétrodiffusé (electron backscattering)}
+[le diagramme de phase accompagne les clichés]
+\end{center}%https://www.doitpoms.ac.uk/miclib/systems.php?id=97
+
+
+\subsection{Diagramme à composé défini (à fusion congruente)}
+
+Il arrive parfois, qu'il existe des compositions définies permettant la formation d'un composé stable, se comportant exactement comme un cors pur. Par conséquence, un composé défini à fusion congrunte peut être vu comme la justaposition de deux diagrammes de phases non miscibles ou à miscibilité partielle.
+
+\begin{center}
+\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig09}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{figure}{Allure d'un diagramme de phase contenant un composé défini, non miscible avec les composés \ce{A} et \ce{B}}
+\label{fig:03-09}
+\end{minipage}
+\end{center}
+
+\attention{Il est très fréquent de rencontrer des transitions conduisant à une fusion non congruente dans le cas de diagrammes à composé défini ou à miscibilité partielle. Dans ce cas, la fusion du composé défini a lieu à un plateau péritectique.
+
+\begin{center}\begin{minipage}{0.48\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig09b}
+\end{minipage}\hfill\begin{minipage}{0.48\textwidth}
+\captionof{figure}{Diagramme binaire isobare solide/liquide, de l'eau et du méthanol, à une pression de \SI{1}{\bar}}
+\label{fig:03-09b}
+\end{minipage}\end{center}
+
+Par exemple, le mélange eau-méthanol présente un composé défini \ce{CH3OH,H2O}, lequel, lorsqu'il fond conduit à l'apparition d'un liquide eau-méthanol, appauvri en eau (une partie étant toujours cristallisée au-dessus de la température péritectique) :
+\begin{align*}
+\ce{\ce{CH3OH,H2O}(s) -> CH3OH(l) + x^l H2O(l) + (1-x^l) H2O(s)}
+\end{align*}
+ }
+
+\section{Lecture et interprétation des courbes}
+\subsection{Axe des abscisses : fraction massique et/ou molaire}
+
+On peut avoir besoin de convertir la fraction massique en fraction molaire, et reciproqument. Dans un milieu ne contenant que deux constituants, dont les quantités de matières sont notées $n_A$ et $n_B$, et les masses correspondantes $m_A$ et $m_B$. En notant $x$ la fraction molaire en \ce{B} et $w$ la fraction massique en \ce{B}, il est possible d'établir les relations suivantes : 
+\begin{align*}
+w &= \frac{m_B}{m_A + m_B} \\
+&= \frac{x M(\ce{B})}{(1-x) M(\ce{A}) + x M(\ce{B})} \\
+x &= \frac{n_B}{n_A + n_B} \\
+&= \frac{w \frac{1}{M(\ce{B})}}{(1-w) \frac{1}{M(\ce{A})} + w \frac{1}{M(\ce{B})}}
+\end{align*}
+
+\exercice{Conversion fractions massiques et molaires de mélanges homogènes et hétérogènes}{
+\input{Chp3-Ex/Fractions-Ex01/Ex.tex}
+}
+
+\exercice{Détermination de la formule chimique de quelques composés définis}{
+\input{Chp3-Ex/Fractions-Ex02/Ex.tex}
+}
+
+\subsection{Théorème de l'horizontale : fraction en \ce{B} dans le liquide et le solide}
+
+\definition{Le théorème de l'horizontale permet de lire la fraction massique ou molaire en constituant $B$ dans chacune des phases d'un milieu biphasique.}
+
+Par exemple, dans la Fig. \ref{fig:03-13}, on a représenté différentes lectures, dans trois "types" de diagramme différents dans un des domaine biphasique liquide + solide.
+
+\begin{figure}[H]
+\begin{minipage}{0.82\textwidth}
+\centering
+\subfloat[\label{fig:03-13a}]{\includegraphics[height=3.8cm]{figures/Fig13a}}
+\hspace{0.2cm}\subfloat[\label{fig:03-13b}]{\includegraphics[height=3.8cm]{figures/Fig13b}}
+\hspace{0.2cm}\subfloat[\label{fig:03-13c}]{\includegraphics[height=3.8cm]{figures/Fig13c}}
+\end{minipage}\hfill\begin{minipage}{0.18\textwidth}
+\caption{Application du théorème de l'horizontale dans un diagramme à \ref{fig:03-13a} fuseau (miscible); \ref{fig:03-13b} non miscible ; \ref{fig:03-13c} miscibilité partielle}
+\label{fig:03-13}
+\end{minipage}
+\end{figure}
+
+La lecture de trois points $M$ (composition du mélange), $L$ (composition en $B$ dans le liquide) et $S$ (composition en B dans le solide) est essentiel pour déterminer le pourcentage de solide et de liquide à une composition $w_B$ et une température donnée.
+%Bi/Sn [\si{\percent}/[\si{\percent}]&
+
+\exercice{Hétérogéneité d'un grain \ce{Ni-Cu} au cours de la solidification}{
+\input{Chp3-Ex/Homogene-Ex02/Ex.tex}
+}
+
+\subsection{Théorème des moments : fraction en liquide et en solide}
+
+\definition{
+Le théorème des moments permet de déterminer permet de déterminer la proportion $w^\phi$ (ou $x^\phi$) en chacune des phases dans un milieu \textbf{biphasique}. En combinant deux conservations de la matière : 
+\begin{align*}
+\begin{cases}
+m_B &= m_B^s + m_B^l \\
+m &= m^s + m^l
+\end{cases} \iff w^s &\stackrel[]{def}{=} \frac{m^s}{m^l + m^s} = \frac{w_B - w_B^l}{w_B^s - w_B^l}
+\end{align*}
+Par conséquent, la fraction en solide est le rapport de deux segments dans le diagramme :
+\begin{align*}
+w^s &= \frac{ML}{SL}
+\end{align*}}
+
+On peut alors représenter l'évolution des masses des différentes phases en fonction de la température dans les trois cas représentés à la Fig. \ref{fig:03-13}.
+
+\begin{figure}[H]
+\begin{minipage}{0.82\textwidth}
+\centering
+\subfloat[\label{fig:03-14a}]{\includegraphics[height=3.8cm]{figures/Fig14}}
+\hspace{0.2cm}\subfloat[\label{fig:03-14b}]{\includegraphics[height=3.8cm]{figures/Fig14}}
+\hspace{0.2cm}\subfloat[\label{fig:03-14c}]{\includegraphics[height=3.8cm]{figures/Fig14}}
+\end{minipage}\hfill\begin{minipage}{0.18\textwidth}
+\caption{\'{E}volution des masses pour une composition donnée dans un diagramme à \ref{fig:03-14a} fuseau (miscible); \ref{fig:03-14b} non miscible ; \ref{fig:03-14c} miscibilité partielle}
+\label{fig:03-14}
+\end{minipage}
+\end{figure}
+
+\section{Distinction entre phases thermodynamiques et phases cinétiques}
+
+Les aciers sont un exemple typique où, lors du processus de refroidissement, il apparaît des phases métastables dans la structure.
+
+En particulier, industriellement, il est courant d'observer un composé défini, appelé carbure de fer \ce{Fe3C} (insertion ordonnée) qui est pourtant thermodynamiquement moins stable que la dissémination aléatoire du carbone dans le fer (insertion desordonnée). 
+
+\subsection{Diagramme de phase stable}
+
+Le diagramme thermodynamiquement stable est appelé diagramme fer-graphite, à cause de la grande tendance du carbone à se regrouper pour former du graphite.
+
+\begin{center}
+\begin{minipage}{0.6\textwidth}
+\includegraphics[width=\textwidth]{figures/Fig12a}
+\end{minipage}\hfill\begin{minipage}{0.36\textwidth}
+\captionof{figure}{Diagramme fer-carbone stable, aussi appelé fer-graphite}
+\end{minipage}\end{center}
+
+En général, en métallurgie, le temps de diffusion du carbone dans les structures de fer est extrêmement long ce qui empêche l'observation des phases stables. 
+
+
+Dans ce diagramme, ce qui est particulièrement remarquable, c'est la présence de domaine de miscibilité associée aux allotropes du fer. En particulier, la solubilité du carbone dans l'austénite $\gamma$ est bien plus grande que dans la ferrite $\alpha$ et $\delta$. 
+
+Selon la règle de Hume-Rothery pour les alliages d'insertion, ceci doit être mis en relation avec l'existence de sites d'insertion octaédriques dans les structures CFC ($\gamma$), dont la taille est supérieure aux sites d'insertion tétraédriques des structures CC ($\alpha$ et $\delta$).
+%EXO Calcul taille des sites ?
+
+Les chimistes sont capables de moduler la solubilité des allotropes du fer. Pour cela, ils ajoutent des impuretés (teneur inférieure à \SI{1}{\percent}) qui sont capables de moduler la taille des domaines de miscibilité partielle de la ferrite $\alpha$ et de l'austénite $\gamma$, comme illustré sur la Fig. \ref{fig:03-20}.
+
+\begin{center}
+\begin{minipage}{0.58\textwidth}
+\includegraphics[width=\textwidth]{figures/Fig20}
+\end{minipage}\hfill\begin{minipage}{0.38\textwidth}
+\captionof{figure}{Illustration de l'influence des éléments $\alpha$ et $\gamma$-gènes sur les températures de fusion du fer corps pur t la taille des domaines de solubilité du carbone.} \label{fig:03-20}
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$\alpha$-gènes & $\gamma$-gènes \\
+\midrule
+\ce{Si}, \ce{Cr}, \ce{Mo}, \ce{V}, \ce{W}, \ce{Ti}$\ldots$ & \ce{Ni}, \ce{Mn}, \ce{C}, \ce{N}$\ldots$ \\
+\bottomrule
+\end{tabular}\end{center}
+\end{minipage}
+\end{center}
+
+En particulier, lorsque les industriels souhaitent séparer le fer du carbone, ils sont souvent emmené à ajouter d'autres constituants comme le silicium ($\gamma$-gène), qui permettent de faire apparaître le graphite.
+
+
+\subsection{Diagramme de phase métastable}
+
+Le diagramme métastable fer-cémentite diffère du diagramme stable en dessous de \SI{6.7}{\percent} de carbone en masse, composition du composé défini \ce{Fe3C}.
+
+
+\begin{center}
+\begin{minipage}{0.6\textwidth}
+\includegraphics[width=\textwidth]{figures/Fig12b}
+\end{minipage}\hfill\begin{minipage}{0.36\textwidth}
+\captionof{figure}{Diagramme fer-carbone métastable, aussi appelé fer-cémentite (aciers et fontes blanches)}
+\end{minipage}\end{center}
+
+Le diagramme présente 4 corps purs, sous différents allotropes : $\ce{Fe(\alpha)}$ (ferrite), $\ce{Fe(\gamma)}$ (austénite), $\ce{Fe(\delta)}$ (ferrite) et $\ce{Fe3C}$ (carbure de fer ou cémentite). 
+
+Dans ce diagramme, on rencontre plusieurs noms d'usage en métallurgie, associé aux structures métallographiques observables en différents points remarquables de ce diagramme.
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+Point & Transformation & Température & Phases réactives & Phases produites & Structure métallographique\\
+ & [\si{\celsius}] & & & & \\
+ \midrule
+E' & eutectoïde & 723 & $\gamma (0.8 ~ \si{\percent})$ & $\alpha (0.02 ~ \si{\percent}) + \ce{Fe3C} (6.67~ \si{\percent})$ & Perlite\\
+E & eutectique & 1147 & $L (4.3 ~ \si{\percent})$ & $\gamma (2 ~ \si{\percent}) + \ce{Fe3C} (6.67~ \si{\percent}) $ & Lébédurite\\
+J & péritectique & 1493 & $L (0.51 ~ \si{\percent}) + \delta (0.1 ~ \si{\percent})$ & $\gamma (0.16 ~ \si{\percent})$ & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%  : fer $\alpha$ = ferrite, fer $\gamma$ = austénite, eutectoïde = perlite, eutectique = lébédurite et carbure de fer = cémentite.
+
+%https://www.doitpoms.ac.uk/miclib/compositions.php
+Ce diagramme permet de définir les grandes familles d'aciers en fonction de leurs teneurs massiques en carbone, repertoriées dans la Tab. \ref{tab:03-02}
+
+\begin{center}
+\begin{minipage}{0.53\textwidth}
+\centering
+\begin{tabular}{ccc}
+\toprule
+Teneur & domaine & Nom usuel \\
+\midrule
+$[0, 0.8] ~ \si{\percent}$ & aciers hypoeutectoïdes & \multirow{2}{*}{Aciers}  \\ 
+$[0.8, 2.03] ~ \si{\percent}$ & aciers hypereutectoïdes \\
+\midrule
+$[2.03, 4.30] ~ \si{\percent}$ & aciers hypoeutectiques & \multirow{2}{*}{Fontes (blanches)}\\
+$[4.30, 6.70] ~ \si{\percent}$ & aciers hypereutectiques \\
+\bottomrule
+\end{tabular}
+\end{minipage}\hfill\begin{minipage}{0.43\textwidth}
+\captionof{table}{Différents types d'aciers en fonction de la composition du mélange \ce{Fe}-\ce{C}}
+\label{tab:03-02}
+\end{minipage}
+\end{center}
+
+\subsubsection{Phase d'équilibre}
+
+L'observation microscopique des aciers, préalablement traité par des solutions réactives (souvent oxydante ou permettant l'apparitions de précipité) permet l'observation visuelle de l'histoire thermique d'un matériau.
+
+
+Prenons par exemple trois compositions situées au niveau de l'eutectoïde, dont les clichés son illustrés à la Fig. \ref{fig:03-23}. 
+
+
+\begin{figure}[H]
+\centering
+\subfloat[\label{fig:03-23a}]{\includegraphics[width=0.3\textwidth]{figures/Fig23-C0p40}}
+\hspace{0.2cm}\subfloat[\label{fig:03-23b}]{\includegraphics[width=0.3\textwidth]{figures/Fig23-C0p80}}
+\hspace{0.2cm}\subfloat[\label{fig:03-23c}]{\includegraphics[width=0.3\textwidth]{figures/Fig23-C1p30}}
+%\end{minipage}\hfill\begin{minipage}{0.18\textwidth}
+\caption{Clichés de microscopie optique de quelques aciers \ref{fig:03-23a} hypoeutectoïde, recuit à \SI{1100}{\celsius} ; \ref{fig:03-23b} eutectoïde recuit à \SI{900}{\celsius} ; \ref{fig:03-23c} hypereutectoïde, recuit à \SI{1000}{\celsius}}
+[les échantillons sont traités au Nital]
+\label{fig:03-23}
+%\end{minipage}
+\end{figure}
+%https://www.doitpoms.ac.uk/miclib/full_record.php?id=234
+%https://www.doitpoms.ac.uk/miclib/micrograph.php?id=263
+%https://www.doitpoms.ac.uk/miclib/micrographs/large/000234.jpg
+%https://www.doitpoms.ac.uk/miclib/micrographs/large/000249.jpg
+
+Ces clichés peuvent être compris à l'aide des courbes de refroidissement thermique, déduisibles du diagramme fer-cementite.
+
+
+\begin{figure}[H]
+\begin{minipage}{0.82\textwidth}
+\centering
+\includegraphics[width=\textwidth]{figures/Fig21}
+\end{minipage}\hfill\begin{minipage}{0.18\textwidth}
+\caption{Diagramme binaire simplifié Fer-Cementite}
+\label{fig:03-21}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\subfloat[\label{fig:03-22a}]{\includegraphics[width=0.3\textwidth]{figures/Fig22}}
+\hspace{0.2cm}\subfloat[\label{fig:03-22b}]{\includegraphics[width=0.3\textwidth]{figures/Fig22}}
+\hspace{0.2cm}\subfloat[\label{fig:03-22c}]{\includegraphics[width=0.3\textwidth]{figures/Fig22}}
+\hspace{0.2cm}\subfloat[\label{fig:03-22d}]{\includegraphics[width=0.3\textwidth]{figures/Fig22}}
+\hspace{0.2cm}\subfloat[\label{fig:03-22e}]{\includegraphics[width=0.3\textwidth]{figures/Fig22}}
+%\end{minipage}\hfill\begin{minipage}{0.18\textwidth}
+\caption{Courbes de refroidissement thermique, accompagnées de schémas de clichés optiques de micrographie pour 5 compositions d'acier.}
+\label{fig:03-22}
+%\end{minipage}
+\end{figure}
+
+Cependant, il arrive que l'on rencontre des phases formées, hors de condition d'équilibre thermodynamique. Ceci arrive couramment dans les transitions polymorphiques (c.-à-d. solide/solide).
+
+\subsubsection{Phases hors équilibre}
+
+Deux phases hors équilibre sont couramment rencontrées : la martensite et la bainite.
+
+La martensite se forme dans les aciers lorsque la vitesse de refroidissement de l'austénite est très rapide, ce qui empêche la diffusion du carbone et la formation de cémentite. Il s'agit d'une ferrite, au réseau sursaturée en carbone, dont la maille est déformée sous forme quadratique.
+
+\begin{figure}[H]
+\centering
+\subfloat[\label{fig:03-24a}]{\includegraphics[width=0.3\textwidth]{figures/Fig24a-MartensiteAciculaire.jpg}}
+\hspace{0.2cm}\subfloat[\label{fig:03-24b}]{\includegraphics[width=0.3\textwidth]{figures/Fig24b-MartensiteLatte.jpg}}
+\caption{Clichés de microscopie optique d'une structure martensite \ref{fig:03-24a} au-dessus de \SI{0.6}{\percent}, dite aciculaire ; \ref{fig:03-24a} en-dessous de \SI{0.3}{\percent}, dite en lattes}
+[pour des compositions intermédiaires, les deux structures sont observables]
+\label{fig:03-24}
+%\end{minipage}
+\end{figure}
+
+Comme représenté dans les clichés à la Fig. \ref{fig:03-24}, les structures micrographiques observées, dépendent de la teneur massique en carbone dans l'austénite initiale. Les propriétés mécaniques de la martensite (dureté extrêmement elevée) en font une phase très peu utilisée, car complexe à usiner.
+%https://wam-didacticiel.ecam.fr/notions-base-aciers-phases-constituants/
+
+La bainite a des propriétés mécaniques intermédiaires entre la perlite et la martensite. Elle se forme lorsque la vitesse de refroidissement de l'austénite est "intermédiaire", suffisamment lente pour permettre la formation de perlite, mais pas assez rapide pour permettre la formation de la martensite.
+
+\begin{center}
+\includegraphics[width=0.9\textwidth]{figures/Fig25}
+\captionof{figure}{Bilan : effet de la vitesse de refroidissement sur les transitions de phases de l'austénite}
+\end{center}
+
+%https://www.doitpoms.ac.uk/miclib/full_record.php?id=301 -> 0.5 quenched
+%https://www.doitpoms.ac.uk/miclib/full_record.php?id=307 -> 0.5 slow quenched
+%https://www.doitpoms.ac.uk/miclib/micrographs/large/000244.jpg -> 1.3%
+
+%\begin{comment}
+%\newpage
+
+%\appendix
+
+%\section{Diagramme à fuseau d'une solution solide \ce{Sb}-\ce{Bi}}
+%\input{Chp3-Ex/Homogene-Ex01/Ex.tex}
+
+%\section{Diagramme à fuseau d'une solution solide \ce{Cu}-\ce{Ni}}
+%\input{Chp3-Ex/Homogene-Ex03/Ex.tex}
+
+%\section{Diagramme à fuseau d'une solution solide \ce{Ti}-\ce{V}}
+%\input{Chp3-Ex/Homogene-Ex04/Ex.tex}
+
+%\section{Diagramme hétérogène \ce{Au}-\ce{Si}}
+%\input{Chp3-Ex/Heterogene-Ex01/Ex.tex}
+
+%\section{Diagramme hétérogène \ce{Cd}-\ce{Pb}}
+%\input{Chp3-Ex/Heterogene-Ex02/Ex.tex}
+
+%\section{Diagramme hétérogène}
+%\input{Chp3-Ex/Heterogene-Ex03/Ex.tex}
+
+%\section{Diagramme à composé défini à fusion (et non) congruente \ce{Ce}-\ce{Al}}
+%\input{Chp3-Ex/CompDefini-Ex01/Ex.tex}
+
+%\section{Diagramme à miscibilité partielle \ce{Bi}/\ce{Sn}}
+%\input{Chp3-Ex/MiscibilitePartielle-Ex01/Ex.tex}
+
+%\section{Diagramme à miscibilité partielle \ce{CaCl2}/\ce{NaCl}}
+%\input{Chp3-Ex/MiscibilitePartielle-Ex02/Ex.tex}
+
+%\section{Diagramme à miscibilité partielle \ce{Bi}/\ce{Sn}}
+%\input{Chp3-Ex/MiscibilitePartielle-Ex01/Ex.tex}
+
+
+%\section{Diagramme à miscibilité partielle \ce{Bi}/\ce{Sn}}
+%\input{Chp3-Ex/Aciers-Ex01/Ex.tex}
+
+
+%\section{Diagramme à miscibilité partielle \ce{Bi}/\ce{Sn}}
+%\input{Chp3-Ex/Aciers-Ex02/Ex.tex}
+%\end{comment}
+\end{document}

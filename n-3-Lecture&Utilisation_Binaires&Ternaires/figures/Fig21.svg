@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1191"
+   height="904"
+   viewBox="0 0 1191 904"
+   sodipodi:docname="Fig21.svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="Sketch"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Sketched arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:0.4;stroke-linecap:round"
+         d="m -4.5421538,-3.2452189 3.83900644,2.60235235 0.56348102,0.59255887 L -2.4921466,1.1808717 -4.4106004,2.139946 -4.5795251,2.8245356 -4.703996,3.0734773 -4.3128019,2.6822832 -3.9749524,2.3088707 0.66603196,-0.12720162 0.02589622,-0.32279868 -1.7613224,-0.60366199 -3.580874,-2.0472634 -4.3186004,-2.392437 l -1.2937699,-0.2549423 2.1825172,0.042166 0.6996091,1.0554873 1.4406512,0.1145833 1.20879971,0.91674665 1.53333299,0.47138389 -1.85995289,1.23785256 -2.03832621,0.9224332 -1.5469949,0.9779853"
+         sodipodi:nodetypes="ccc"
+         id="path21" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Stop"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Stop"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1"
+         d="M 0,4 V -4"
+         id="path23" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Sketch-8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Sketched arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:0.4;stroke-linecap:round"
+         d="m -4.5421538,-3.2452189 3.83900644,2.60235235 0.56348102,0.59255887 L -2.4921466,1.1808717 -4.4106004,2.139946 -4.5795251,2.8245356 -4.703996,3.0734773 -4.3128019,2.6822832 -3.9749524,2.3088707 0.66603196,-0.12720162 0.02589622,-0.32279868 -1.7613224,-0.60366199 -3.580874,-2.0472634 -4.3186004,-2.392437 l -1.2937699,-0.2549423 2.1825172,0.042166 0.6996091,1.0554873 1.4406512,0.1145833 1.20879971,0.91674665 1.53333299,0.47138389 -1.85995289,1.23785256 -2.03832621,0.9224332 -1.5469949,0.9779853"
+         sodipodi:nodetypes="ccc"
+         id="path21-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Sketch-8-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Sketched arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:0.4;stroke-linecap:round"
+         d="m -4.5421538,-3.2452189 3.83900644,2.60235235 0.56348102,0.59255887 L -2.4921466,1.1808717 -4.4106004,2.139946 -4.5795251,2.8245356 -4.703996,3.0734773 -4.3128019,2.6822832 -3.9749524,2.3088707 0.66603196,-0.12720162 0.02589622,-0.32279868 -1.7613224,-0.60366199 -3.580874,-2.0472634 -4.3186004,-2.392437 l -1.2937699,-0.2549423 2.1825172,0.042166 0.6996091,1.0554873 1.4406512,0.1145833 1.20879971,0.91674665 1.53333299,0.47138389 -1.85995289,1.23785256 -2.03832621,0.9224332 -1.5469949,0.9779853"
+         sodipodi:nodetypes="ccc"
+         id="path21-5-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Sketch-8-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Sketched arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:0.4;stroke-linecap:round"
+         d="m -4.5421538,-3.2452189 3.83900644,2.60235235 0.56348102,0.59255887 L -2.4921466,1.1808717 -4.4106004,2.139946 -4.5795251,2.8245356 -4.703996,3.0734773 -4.3128019,2.6822832 -3.9749524,2.3088707 0.66603196,-0.12720162 0.02589622,-0.32279868 -1.7613224,-0.60366199 -3.580874,-2.0472634 -4.3186004,-2.392437 l -1.2937699,-0.2549423 2.1825172,0.042166 0.6996091,1.0554873 1.4406512,0.1145833 1.20879971,0.91674665 1.53333299,0.47138389 -1.85995289,1.23785256 -2.03832621,0.9224332 -1.5469949,0.9779853"
+         sodipodi:nodetypes="ccc"
+         id="path21-5-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Sketch-8-1-8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Sketched arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:0.4;stroke-linecap:round"
+         d="m -4.5421538,-3.2452189 3.83900644,2.60235235 0.56348102,0.59255887 L -2.4921466,1.1808717 -4.4106004,2.139946 -4.5795251,2.8245356 -4.703996,3.0734773 -4.3128019,2.6822832 -3.9749524,2.3088707 0.66603196,-0.12720162 0.02589622,-0.32279868 -1.7613224,-0.60366199 -3.580874,-2.0472634 -4.3186004,-2.392437 l -1.2937699,-0.2549423 2.1825172,0.042166 0.6996091,1.0554873 1.4406512,0.1145833 1.20879971,0.91674665 1.53333299,0.47138389 -1.85995289,1.23785256 -2.03832621,0.9224332 -1.5469949,0.9779853"
+         sodipodi:nodetypes="ccc"
+         id="path21-5-0-0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.94098391"
+     inkscape:cx="493.63224"
+     inkscape:cy="497.88311"
+     inkscape:window-width="2560"
+     inkscape:window-height="1403"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1"
+     showguides="true">
+    <sodipodi:guide
+       position="1215.7487,-26.940466"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <g
+       id="g2"
+       inkscape:export-filename="Fig21.png"
+       inkscape:export-xdpi="500"
+       inkscape:export-ydpi="500">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-mid:url(#Stop)"
+         d="M 114.83082,801.1033 V 680.45285 557.88808 436.17966 314.10217 L 114.30241,192.10261 114.83082,67.385845 H 1095.3108 V 799.87933 l -97.9454,0.12072 -151.81872,1.6511 -150.59113,-1.27322 c 0,0 -95.16033,0.11978 -142.7405,0.17937 -48.01518,0.0601 -144.44686,0.17981 -144.44686,0.17981 l -145.38843,-1.19969 z"
+         id="path1"
+         sodipodi:nodetypes="ccccccccccccsccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="m 114.62809,480.96694 c 0,0 29.65967,48.53063 48.15384,68.94285 18.49418,20.41222 60.57758,53.32634 60.57758,53.32634 L 424.98059,347.2365 151.27083,138.6675 115.1983,210.59386 v 0"
+         id="path2"
+         sodipodi:nodetypes="czccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="m 114.32993,107.7938 21.17048,30.27929 -20.02873,60.30412"
+         id="path3" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="m 211.3796,136.83766 -76.60536,1.43768"
+         id="path4"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="m 114.02283,101.76013 c 0,0 212.15756,76.76151 346.78864,124.05648 68.56741,24.08726 141.44989,54.01501 196.73382,76.5279 53.90728,21.95229 88.33867,45.7202 88.33867,45.7202 0,0 23.49238,-11.96185 56.07255,-21.32225 40.32124,-11.58442 76.41147,-16.92741 115.06631,-23.59113 74.22592,-12.79583 177.88378,-22.98135 177.88378,-22.98135"
+         id="path5"
+         sodipodi:nodetypes="csscssc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="M 1095.6095,348.5263 424.10546,347.2602"
+         id="path6"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="m 128.21269,603.06354 966.85691,0.77108"
+         id="path7" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="m 114.20534,492.18059 14.30142,110.7845 -13.66032,191.50709"
+         id="path8" />
+      <path
+         style="opacity:0.5;fill:#7879ff;fill-opacity:1;stroke-width:4;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 212.66168,593.52281 c -27.2804,-22.35507 -45.01386,-38.84582 -54.81371,-50.97252 -9.34657,-11.56579 -23.90974,-32.5072 -36.34282,-52.25991 l -4.27822,-6.79691 v -22.29376 -22.29377 l 6.95096,-0.21606 6.95095,-0.21606 v -2.25437 -2.25436 l -6.95095,-0.21607 -6.95096,-0.21606 v -58.58527 -58.58526 h 7.13882 7.13882 v -2.25437 -2.25436 h -7.01757 -7.01758 l -0.46036,-51.26308 -0.46036,-51.26309 3.90853,-7.34639 3.90852,-7.34638 3.19368,-0.004 c 3.04668,-0.004 3.19369,-0.10778 3.19369,-2.25838 0,-1.90368 -0.29224,-2.25436 -1.87864,-2.25436 -1.03325,0 -1.87864,-0.16772 -1.87864,-0.37271 0,-1.52478 24.59711,-49.17283 25.2541,-48.92072 0.45863,0.176 61.73886,46.72427 136.17829,103.44061 l 135.3444,103.12062 -3.16977,4.00217 c -1.74338,2.2012 -46.79172,59.4489 -100.10743,127.21713 -53.31571,67.76822 -97.10674,123.21851 -97.31339,123.22285 -0.20665,0.005 -4.94081,-3.73299 -10.52036,-8.30518 z"
+         id="path9" />
+      <path
+         style="opacity:0.5;fill:#78dcff;fill-opacity:1;stroke-width:4;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 117.22693,619.19867 V 560.5852 h 2.48722 2.48722 l 2.75192,21.60433 2.75193,21.60432 -2.59433,35.31837 c -1.42687,19.4251 -2.60094,36.07922 -2.60905,37.00914 -0.0124,1.42854 -0.42265,1.69078 -2.64482,1.69078 h -2.63009 z"
+         id="path10" />
+      <path
+         style="opacity:0.5;fill:#78dcff;fill-opacity:1;stroke-width:4;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 117.32136,713.6941 -0.0944,-30.62178 h 2.25437 c 2.78756,0 2.784,-2.63931 0.0451,33.43973 l -2.11066,27.80383 z"
+         id="path11" />
+      <path
+         style="opacity:0.5;fill:#78dcff;fill-opacity:1;stroke-width:4;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 117.33952,540.10806 c 0.0619,-8.36932 0.25205,-14.30176 0.42249,-13.18319 0.17044,1.11856 1.07868,7.96619 2.01831,15.21695 l 1.70842,13.1832 h -2.1309 -2.13091 z"
+         id="path12" />
+      <path
+         style="opacity:0.5;fill:#16b631;fill-opacity:1;stroke-width:4;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 116.57413,169.41546 c 0.0543,-11.55174 0.30787,-28.74705 0.56359,-38.2118 l 0.46494,-17.20865 8.50982,12.15615 8.50983,12.15614 -8.41586,25.34178 c -4.62872,13.93798 -8.71176,25.66302 -9.07341,26.05566 -0.37693,0.4092 -0.61546,-8.24994 -0.55891,-20.28928 z"
+         id="path13" />
+      <path
+         style="fill:none;stroke:#fb0000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         d="M 1095.7349,797.54156 V 280.5095"
+         id="path15" />
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="279.0054"
+         y="841.44049"
+         id="text15"><tspan
+           sodipodi:role="line"
+           id="tspan15"
+           x="279.0054"
+           y="841.44049">1.0</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="423.90277"
+         y="842.4577"
+         id="text15-0"><tspan
+           sodipodi:role="line"
+           id="tspan15-4"
+           x="423.90277"
+           y="842.4577">2.0</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="571.24298"
+         y="842.0672"
+         id="text15-6"><tspan
+           sodipodi:role="line"
+           x="571.24298"
+           y="842.0672"
+           id="tspan17">3.0</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="711.0401"
+         y="838.84448"
+         id="text15-62"><tspan
+           sodipodi:role="line"
+           id="tspan15-1"
+           x="711.0401"
+           y="838.84448">4.0</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="863.74359"
+         y="841.50665"
+         id="text15-4"><tspan
+           sodipodi:role="line"
+           id="tspan15-18"
+           x="863.74359"
+           y="841.50665">5.0</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="1013.4841"
+         y="837.64331"
+         id="text15-3"><tspan
+           sodipodi:role="line"
+           id="tspan15-8"
+           x="1013.4841"
+           y="837.64331">6.0</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="1125.2554"
+         y="838.57764"
+         id="text15-9"><tspan
+           sodipodi:role="line"
+           id="tspan15-6"
+           x="1125.2554"
+           y="838.57764">6.7</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="129.80557"
+         y="836.24091"
+         id="text15-8"><tspan
+           sodipodi:role="line"
+           id="tspan15-60"
+           x="129.80557"
+           y="836.24091">0.0</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="82.088516"
+         y="811.25366"
+         id="text15-8-9"><tspan
+           sodipodi:role="line"
+           id="tspan15-60-7"
+           x="82.088516"
+           y="811.25366">400</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="82.088516"
+         y="564.43622"
+         id="text15-8-9-0"><tspan
+           sodipodi:role="line"
+           id="tspan15-60-7-3"
+           x="82.088516"
+           y="564.43622">800</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="82.088516"
+         y="442.09448"
+         id="text15-8-9-9"><tspan
+           sodipodi:role="line"
+           id="tspan15-60-7-2"
+           x="82.088516"
+           y="442.09448">1000</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="82.088516"
+         y="319.82166"
+         id="text15-8-9-5"><tspan
+           sodipodi:role="line"
+           id="tspan15-60-7-4"
+           x="82.088516"
+           y="319.82166">1200</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="82.088516"
+         y="202.13184"
+         id="text15-8-9-93"><tspan
+           sodipodi:role="line"
+           id="tspan15-60-7-6"
+           x="82.088516"
+           y="202.13184">1400</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="82.088516"
+         y="75.857651"
+         id="text15-8-9-05"><tspan
+           sodipodi:role="line"
+           id="tspan15-60-7-1"
+           x="82.088516"
+           y="75.857651">1600</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="82.088516"
+         y="680.77338"
+         id="text15-8-9-4"><tspan
+           sodipodi:role="line"
+           id="tspan15-60-7-0"
+           x="82.088516"
+           y="680.77338">600</tspan></text>
+      <path
+         style="opacity:0.5;fill:#16b699;fill-opacity:1;stroke:none;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 732.2123,338.35323 C 714.2646,327.48461 679.73646,310.42635 655.16529,300.28897 565.09519,263.12858 511.62952,242.73922 405.95806,205.25272 333.62714,179.59363 260.92976,153.58057 163.3928,118.45638 L 116.89892,101.71339 V 87.30477 72.89615 l 4.08012,3.984134 c 3.58303,3.498734 4.246,3.784265 5.44163,2.343617 1.1369,-1.369876 0.89316,-2.254548 -1.47741,-5.362534 l -2.83892,-3.722017 h 483.26762 483.26764 l -3.3904,3.498006 c -3.193,3.294319 -3.2851,3.603365 -1.5811,5.307367 1.704,1.704001 2.0131,1.611938 5.3074,-1.581042 l 3.498,-3.390401 v 102.68424 102.68423 l -5.5793,0.63113 c -94.844,10.72906 -124.51908,14.65921 -177.50744,23.50901 -77.38596,12.92455 -117.65744,23.05061 -151.69979,38.14418 -5.97889,2.6509 -11.1677,4.80895 -11.53071,4.79569 -0.36299,-0.0133 -6.63777,-3.64411 -13.94396,-8.06853 z"
+         id="path16" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:8, 2;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#Sketch)"
+         d="M 159.31829,68.166052 V 103.08378 287.06667 471.04956 655.03245 800.46498"
+         id="path17"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:8, 2;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#Sketch-8)"
+         d="m 294.68296,68.209726 v 34.917724 183.9829 183.98289 183.98289 145.43253"
+         id="path17-4"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:8, 2;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#Sketch-8-1)"
+         d="m 626.1617,67.428725 v 34.917725 183.9829 183.98289 183.98289 145.43253"
+         id="path17-4-0"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:8, 2;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#Sketch-8-1-8)"
+         d="m 876.91566,70.686507 v 34.917733 183.9829 183.98289 183.98289 145.43253"
+         id="path17-4-0-6"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:8, 2;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#Sketch-8-5)"
+         d="m 223.57769,491.29981 v 77.0016 77.0016 77.0016"
+         id="path17-4-8"
+         sodipodi:nodetypes="cccc" />
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="270.54865"
+         y="39.247234"
+         id="text18"><tspan
+           sodipodi:role="line"
+           id="tspan18"
+           x="270.54865"
+           y="39.247234">Températion [°C]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:26.6667px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="1128.9082"
+         y="863.86597"
+         id="text19"><tspan
+           sodipodi:role="line"
+           id="tspan19"
+           x="1128.9082"
+           y="863.86597">wC [%]</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:20px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="174.73106"
+         y="826.19843"
+         id="text21"><tspan
+           sodipodi:role="line"
+           id="tspan21"
+           x="174.73106"
+           y="826.19843">(a)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:20px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="239.11942"
+         y="745.44507"
+         id="text21-0"><tspan
+           sodipodi:role="line"
+           id="tspan21-6"
+           x="239.11942"
+           y="745.44507">(b)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:20px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="309.67841"
+         y="826.19843"
+         id="text21-8"><tspan
+           sodipodi:role="line"
+           id="tspan21-1"
+           x="309.67841"
+           y="826.19843">(c)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:20px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="640.59338"
+         y="825.01642"
+         id="text21-8-6"><tspan
+           sodipodi:role="line"
+           id="tspan21-1-9"
+           x="640.59338"
+           y="825.01642">(d)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:20px;line-height:1.25;font-family:'TeX Gyre Schola Math';-inkscape-font-specification:'TeX Gyre Schola Math';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end"
+         x="892.48956"
+         y="827.48413"
+         id="text21-8-6-6"><tspan
+           sodipodi:role="line"
+           id="tspan21-1-9-2"
+           x="892.48956"
+           y="827.48413">(e)</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{\numberline {2}Potentiel chimique et construction d'un diagramme de phase}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Expression du potentiel chimique}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Potentiel chimique d'un mélange de gaz parfait}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Potentiel chimique dans un mélange quelconque}{4}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Etats de référence}{4}{subsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}Etat de référence corps pur (ERCP)}{4}{subsubsection.2.1.3.1}%
+\contentsline {subsubsection}{\numberline {2.1.3.2}Etat de référence infiniment dilué (ERID)}{5}{subsubsection.2.1.3.2}%
+\contentsline {subsubsection}{\numberline {2.1.3.3}Interprétation}{5}{subsubsection.2.1.3.3}%
+\contentsline {section}{\numberline {2.2}Miscibilité totale, partielle ou nulle}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Théorie des mélanges}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Idéalité}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Solution régulière}{7}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Miscibilité partielle à nulle}{8}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Mise en relation qualitative de l'enthalpie libre d'un système avec l'allure d'un diagramme binaire}{8}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Lecture qualitative des potentiels chimiques}{9}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Comparaison d'un système hétérogène et d'un système homogène}{9}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Exemple de la démixion}{10}{subsection.2.2.8}%
+\contentsline {section}{\numberline {2.3}Diagramme binaire à fuseau idéal}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Equations du liquidus et solidus}{11}{subsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.1}Transformation étudiée}{11}{subsubsection.2.3.1.1}%
+\contentsline {subsubsection}{\numberline {2.3.1.2}Equation de Schröder-van Laar}{12}{subsubsection.2.3.1.2}%
+\contentsline {subsection}{\numberline {2.3.2}Comparaison à quelques données expérimentales}{12}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Influence de paramètres expérimentaux sur la forme des fuseaux}{13}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Diagramme binaire hétérogène idéal à miscibilité nulle}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Equations du liquidus}{15}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Comparaison à quelques données expérimentales}{15}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Influence de paramètres expérimentaux sur la forme des fuseaux}{15}{subsection.2.4.3}%

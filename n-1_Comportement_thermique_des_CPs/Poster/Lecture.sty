@@ -1,0 +1,285 @@
+\ProvidesPackage{Lecture}
+
+\synctex=1
+\RequirePackage[utf8]{inputenc}
+\usepackage[default,oldstyle,scale=0.95]{opensans}
+\usepackage[T1]{fontenc}
+\RequirePackage[french]{babel}
+\RequirePackage{chemfig}
+\RequirePackage{lmodern}
+%\RequirePackage{hyperref}
+\PassOptionsToPackage{hyphens}{url}\RequirePackage{hyperref} % liens longs
+\RequirePackage{fancybox,fancyhdr,verbatim}
+%\RequirePackage{lastpage}
+\RequirePackage{graphicx,graphics}
+
+%\RequirePackage[top=15mm,bottom=15mm,left=5mm,right=20mm]{geometry}
+\RequirePackage{geometry}
+\RequirePackage{adjustbox}
+\RequirePackage{calc}
+\RequirePackage{ifthen}
+%\RequirePackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\RequirePackage{tikzorbital}
+
+\RequirePackage{braket}
+\RequirePackage[labelfont={bf},textfont={}]{caption}
+\RequirePackage{amsmath,amsfonts,amssymb,mathrsfs}
+\RequirePackage{enumitem} % Personnalisation des listes à puces
+\RequirePackage[version=4]{mhchem} % utiliser \ce
+\RequirePackage[load-configurations=abbreviations]{siunitx}
+\RequirePackage[many]{tcolorbox} %fancy colorbox
+\RequirePackage{caption}
+\RequirePackage{amsthm} %theorem style
+
+\RequirePackage{amsfonts}
+
+\RequirePackage[
+    type={CC},
+    modifier={by-nc-sa},
+    version={3.0},
+]{doclicense} %package creative common
+
+\RequirePackage{wrapfig}
+\RequirePackage{fontawesome}
+
+%tables
+\RequirePackage{array} %adjust size of columns
+\RequirePackage{multirow}
+\RequirePackage{booktabs}
+
+%Setup background
+%\RequirePackage[firstpage=true,pages=some]{background}
+
+%\backgroundsetup{
+%scale=1,
+%color=black,
+%opacity=0.8,
+%angle=0,
+%contents={%
+%  \includegraphics[width=\paperwidth,height=\paperheight]{garde.pdf}
+%  }%
+%}  
+
+%Subfig
+\RequirePackage{wrapfig}
+\RequirePackage{float} 
+\RequirePackage{subfig}
+
+%Colors Used
+\definecolor{gray}{gray}{0.65}
+\definecolor{tagada}{RGB}{237,162,153}
+\definecolor{schtroumpf}{RGB}{240,248,255}
+\definecolor{lavender}{RGB}{230,230,250}
+\definecolor{glory}{RGB}{205,182,0}
+
+%Theorem style
+\newtheoremstyle{definition}%
+{\topsep}% espace avant
+{\topsep}% espace après
+{\upshape}% police du corps du théorème
+{}% indentation (vide pour rien, \parindent)
+{\bfseries}% police du titre du théorème
+{.}% ponctuation après le théorème
+{ }% après le titre du théorème (espace ou \newline)
+{}% spécifications du titre
+
+%Theorem Command
+\theoremstyle{definition}
+\newtheorem{Q}{Q.}[section]
+
+%Columns Spacing
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+
+%Cadre
+%https://ctan.tetaneutral.net/macros/latex/contrib/tcolorbox/tcolorbox.pdf
+
+\newcommand{\renseigner}[1]{
+\begin{tcolorbox}[breakable,colback=tagada!5!white,colframe=tagada!75!black,title={\textsc{Je me renseigne} }] 
+#1
+\end{tcolorbox}
+}
+
+\newcommand{\objectif}[1]{
+\begin{tcolorbox}[breakable,colback=red!5!white,colframe=red!75!black,title={\textsc{Notions exigibles} }] 
+#1
+\end{tcolorbox}
+}
+
+\newcommand{\definition}[1]{
+\begin{tcolorbox}[colback=tagada!5!white,colframe=tagada!75!black]%[breakable,colback=tagada!5!white,colframe=tagada!75!black,title={\textsc{Définition} }] 
+#1
+\end{tcolorbox}
+}
+
+\newcommand{\example}[1]{
+\begin{tcolorbox}[breakable,colback=lavender!5!white,colframe=lavender!75!black]%[breakable,colback=tagada!5!white,colframe=tagada!75!black,title={\textsc{Définition} }] 
+#1
+\end{tcolorbox}
+}
+
+
+\newcommand{\bilan}[1]{
+\begin{tcolorbox}[breakable,colback=tagada!5!white,colframe=tagada!75!black,title={\textsc{Bilan} }] 
+#1
+\end{tcolorbox}
+}
+
+\newcommand{\exercice}[1]{
+\begin{tcolorbox}[breakable,colback=lavender!5!white,colframe=lavender!75!black,title={\faBook ~ \textsc{Exercice} }] 
+#1
+\end{tcolorbox}
+}
+
+\newcommand{\attention}[1]{
+\begin{tcolorbox}[breakable,colback=glory!5!white,colframe=glory!75!black,title={\faWarning ~ \textsc{Attention} }] 
+#1
+\end{tcolorbox}
+}
+
+%Rules First Page
+%\setlength{\parindent}{0cm}
+%\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+%\newcommand{\hsp}{\hspace{20pt}}
+%\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%\sisetup{inter-unit-product = \ensuremath{\cdot}}
+%\hypersetup{
+%    colorlinks=true,
+%    linkcolor=blue, % Couleur des liens internes
+%    citecolor=red, % Couleur des numéros de la biblio dans le corps
+%    urlcolor=blue} % Couleur des url
+%\setlength{\oddsidemargin}{0cm}
+%\setlength{\topmargin}{-2cm}
+%\setlength{\textheight}{26cm}
+%\setlength{\marginparwidth}{0.2cm}
+%\setlength{\textwidth}{16cm}
+%\setlength{\voffset}{0cm}
+%\setlength{\unitlength}{1mm}
+
+% listes à puces
+%\setitemize{label=\textbullet}
+
+%\newcommand{\deriv}{\mathrm{d}}
+%\newcommand\moll{\ensuremath{\;\mathrm{mol\cdot L^{-1}}}}
+
+%\pagestyle{fancy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Cadre blanc pour élèves
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{boxedminipage}
+%\usepackage{changepage}
+
+\newcommand{\cadreblanc}[1]{%
+\framebox[\linewidth][c]{%
+\rule{0mm}{#1mm}}\par}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Texte à trou - OPTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareOption{student}{
+\newlength{\hblanc} %Espace blanc
+\newcommand*{%
+\blanc}[1]{\settowidth{\hblanc}%
+{#1}\hspace*{\hblanc}}
+
+\newlength{\hblancbis} %Espace avec trait
+\newcommand*{%
+\blancbis}[1]{\settowidth{\hblancbis}{#1}%
+\rule[-1pt]{\hblancbis}{1pt}}
+}
+
+
+\DeclareOption{teacher}{
+\newlength{\hblanc} %Espace blanc
+\newcommand*{%
+\blanc}[1]{#1}
+
+\newlength{\hblancbis} %Espace avec trait
+\newcommand*{%
+\blancbis}[1]{\underline{#1}}
+}
+
+\ProcessOptions
+
+
+%\geometry{
+% a4paper,
+% total={6in, 8in},
+% top=20mm,
+% bottom=20mm,
+% left=10mm,
+% right=20mm}
+
+
+%Create two kinds of chapter environment
+%https://tex.stackexchange.com/questions/395205/two-column-document-with-annotations-between-columns
+\RequirePackage{afterpage}
+\RequirePackage{etoolbox}
+\usepackage{ragged2e}
+
+%%Section without margin
+\newcommand{\normchapter}[1]{%
+    \newgeometry{left=1.0cm,right=1.0cm,top=2.0cm,bottom=2.0cm}
+    \chapter{#1}
+    \afterpage{%
+        \global\setlength{\oddsidemargin}{0in}%
+        \global\setlength{\evensidemargin}{0in}%
+        %\global\setlength{\hsize}{\dimexpr\paperwidth-2in\relax}
+    }}
+
+
+%%section with margin
+\newcommand{\anachapter}[1]{%
+    \newgeometry{left=1.0cm,right=6.0cm,top=2.0cm,bottom=2.0cm}
+    \chapter{#1}
+    \afterpage{%
+        \global\setlength{\oddsidemargin}{0in}%
+        \global\setlength{\evensidemargin}{0in}%
+        %\global\setlength{\hsize}{\dimexpr\paperwidth-2in\relax}
+    }}
+    
+\setlength\columnsep{3.5cm}
+\setlength\marginparsep{0.2cm}
+\setlength\marginparwidth{5cm}
+
+%%Add notes on the right notes
+\newcounter{mySideNoteCounter}
+
+\makeatletter
+\def\mySideNote#1{{%
+\refstepcounter{mySideNoteCounter}\textsuperscript{\themySideNoteCounter}
+   \if@firstcolumn
+     \marginpar{\RaggedRight\fussy\footnotesize\textit{\textcolor{red}{\faCaretLeft~}\textsuperscript{\themySideNoteCounter}\\ #1}}
+   \else
+     \marginpar{\textsuperscript{\themySideNoteCounter}\RaggedLeft\fussy\footnotesize\textit{\textcolor{red}{~\faCaretRight}\\ #1}}
+   \fi
+}}
+
+\makeatother
+
+\makeatletter
+  \patchcmd\@addmarginpar{\if@firstcolumn}{\unless\if@firstcolumn}{}{}
+\makeatother
+
+
+\RequirePackage{todonotes} % to indicate missing things
+
+%Allow itemize customization
+\usepackage{enumitem}
+
+% Adjust TOC numbering : neglect paragraph numbering
+\setcounter{secnumdepth}{3} % only chapter and sections will be numbered
+\setcounter{tocdepth}{3}    % entries down to \subsubsections in the TOC
+
+\RequirePackage{adjustbox}
+
+% End of package
+\endinput
+
+
+
+

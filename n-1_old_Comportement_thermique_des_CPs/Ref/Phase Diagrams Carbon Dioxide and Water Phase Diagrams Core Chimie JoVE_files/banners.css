@@ -1,0 +1,416 @@
+/************* TRIAL BANNER ****************/
+.mktb-banner {
+	position: sticky; overflow: hidden; z-index: 10;
+	top: 50px; left: 0px; width: 100%;
+	max-height: 0px;
+	transition: max-height 0.5s ease-in;
+} .mktb-banner.expand { max-height: 150px; }
+
+.mktb-banner.assessments span.beta{
+	display: inline-block;
+    margin: 0 20px;
+    color: #FFF;
+    background-color: #F94B68;
+    padding: 0px 8px;
+    border-radius: 3px;
+	font-size:14px;
+}
+#jove-trial-banner.assessments .jove-trial-banner-text-container p{
+	font-size:16px;
+}
+#jove-trial-banner.assessments .jove-trial-free-trial-link{
+	background-color:#5da2f5;
+	color:#FFF;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+
+.mktb-popup {
+	position: fixed; overflow: hidden; z-index: 1000;
+	right: 10px; bottom: 10px; width: 330px; height: 220px;
+	/* max-height: 0px; */
+	transition: max-height 0.5s ease-out;
+} .mktb-popup.expand { max-height: 300px; }
+#jove-trial-banner.mktb-popup .jove-trial-banner-container { flex-wrap: wrap; padding: 20px; }
+#jove-trial-banner.mktb-popup .jove-trial-banner-container p { padding-bottom: 10px; }
+#jove-trial-banner.mktb-popup .jove-trial-banner-close { position: absolute; top: 5px; right: 0; }
+#jove-trial-banner.mktb-popup .jove-trial-banner-actions { margin: auto; }
+@media screen and (max-width: 510px){ #jove-trial-banner.mktb-popup { width:100%; bottom: 0; right: 0; } }
+
+
+#jove-trial-banner {
+	background-color: #2284EF;
+	box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+#jove-trial-banner .jove-trial-banner-container {
+	padding: 10px;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1366px;
+	position: relative;
+}
+#jove-trial-banner .jove-trial-banner-text-container { flex-wrap: wrap; }
+#jove-trial-banner .jove-trial-banner-text-container p {
+	color: #FFFFFF;
+	font-size: 14px;
+	letter-spacing: 0.29px;
+	line-height: 20px;
+	margin: 0;
+}
+#jove-trial-banner .jove-trial-banner-text-container p.jove-trial-banner-text-bold {
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 21px;
+	letter-spacing: 0.37px;
+}
+#jove-trial-banner .jove-trial-free-trial-link {
+	border-radius: 18px;
+	background-color: #FFFFFF;
+	color: #2284EF;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.29px;
+	line-height: 32px;
+	padding: 0 22px;
+	width: 291px;
+	text-align: center;
+}
+#jove-trial-banner .jove-trial-banner-close {
+	background: url(/img/icons/times-light.svg) no-repeat;
+	display: block;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	text-indent: -10000px;
+	margin-left: 18px;
+}
+@media screen and (max-width: 711px){
+	#jove-trial-banner .jove-trial-banner-container { flex-wrap: wrap; }
+	#jove-trial-banner .jove-trial-banner-close { position: absolute; top: 5px; right: 0; }
+	#jove-trial-banner .jove-trial-banner-actions { margin: auto; }
+}
+/************* LIBRIRIAN CONTACT BANNER ************/
+#jove-trial-banner.mktb-popup.librarian-contact {
+	width: 265px;
+	height: 205px;
+	bottom: 30px;
+	right: 30px;
+	border-radius: 4px;
+	background-color: rgba(39,39,39,0.95);
+	box-shadow: 0 11px 30px 0 rgb(0 0 0 / 46%);
+}
+#jove-trial-banner.mktb-popup.librarian-contact .jove-trial-banner-container p {
+	font-size: 19px;
+	letter-spacing: 0.39px;
+	line-height: 25px;
+	text-align: center;
+}
+#jove-trial-banner.mktb-popup.librarian-contact .jove-trial-free-trial-link {
+	color: #151515;
+	width: 202px;
+}
+/************* COOKIES BANNER ************/
+#cookie-banner {
+	display: none;
+	background-color: #03CA7F;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 1000;
+}
+#cookie-banner .cookie-banner-container {
+	height: 72px;
+	align-items: center;
+	justify-content: space-between;
+}
+#cookie-banner .cookie-banner-text-container {
+	align-items: center;
+}
+#cookie-banner .cookie-banner-icon {
+	background: url(/img/user-shield-regular.svg) no-repeat;
+	display: block;
+	height: 25px;
+	width: 31px;
+	margin-right: 36px;
+}
+#cookie-banner .cookie-banner-text p {
+	margin: 0;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 0.08px;
+	line-height: 22px;
+}
+#cookie-banner .cookie-banner-text p.cookie-banner-text-bold {
+	font-weight: 500;
+}
+#cookie-banner .cookie-banner-actions {
+	align-items: center;
+}
+#cookie-banner .cookie-banner-actions > * {
+	margin: 0 15px;
+}
+#cookie-banner .accept-cookie-btn {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.07px;
+	line-height: 16px;
+	text-align: center;
+	padding: 10px 30px;
+	border-radius: 20px;
+	background-color: #36D499;
+	border: 0;
+}
+#cookie-banner .accept-cookie-learn-more {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.07px;
+	line-height: 16px;
+	text-transform: none;
+}
+#cookie-banner .accept-cookie-close {
+	background: url(/img/icons/times-light.svg) no-repeat;
+	display: block;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	text-indent: -10000px;
+}
+#back-to-top {
+	bottom: 72px!important;
+}
+.jove-footer.add-banner-bottom {
+	padding-bottom: 72px;
+}
+#jove-trial-banner.dark-popup {background-color: rgba(39,39,39,0.95);}
+#jove-trial-banner.dark-popup .jove-trial-free-trial-link {color: #151515;}
+#jove-trial-banner.dark-popup .jove-trial-banner-container p{text-align: center;line-height: 25px;}
+/************* BEGIN COUNTRY PREFERENCE POPUP ************/
+#country-popup.mktb-popup {
+	height: 170px;
+	top: 50px;
+	right: 0;
+	border-radius: 4px;
+	z-index: 100000;
+	position: absolute;
+	white-space: normal;
+	text-align: left;
+	padding-top: 10px;
+}
+#country-popup.mktb-popup .jove-trial-banner-container { 
+	flex-wrap: wrap; 
+	padding: 20px;
+	background-color: rgba(39,39,39,0.95); 
+}
+#country-popup.mktb-popup .jove-trial-banner-container p { 
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 28px;
+}
+#country-popup.mktb-popup .jove-trial-banner-actions {
+	justify-content: space-between;
+	width: 100%;
+}
+#country-popup.mktb-popup .jove-trial-banner-actions .accept-country-btn { 
+	border-radius: 18px;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.29px;
+	padding: 5px 22px;
+	width: 315px;
+	text-align: center;
+}
+#country-popup.mktb-popup .jove-trial-banner-actions .jove-trial-banner-close {
+	background: url(/img/icons/times-light.svg) no-repeat;
+	display: block;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	text-indent: -10000px;
+	margin-left: 18px;
+	position: absolute; 
+	top: 15px; 
+	right: 0;
+}
+/* Styles for caret icons */
+.caret {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border: 10px solid transparent;
+}
+.caret.up{
+	border-bottom-color: rgba(39,39,39,0.95);
+}
+#country-popup .caret.up{
+	position: absolute;
+	top: -10px;
+	right: 40px;
+}
+#jove-trial-banner.embed-directions {
+	background-color: #C52E36;
+}
+#jove-trial-banner.embed-directions .jove-trial-banner-container {
+	justify-content: center;
+	padding: 14px;
+}
+#jove-trial-banner.embed-directions .jove-trial-free-trial-link {
+	display: none;
+}
+#jove-trial-banner.embed-directions #mktb-description a {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+#jove-trial-banner.embed-directions .jove-trial-banner-close {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	border: 1px solid #FFFFFF;
+	background-position: center;
+	background-size: 50%;
+	margin-right: 14px;
+}
+#jove-trial-banner.embed-directions .bold-text {
+	font-weight: 500;
+}
+#jove-trial-banner.embed-directions .medium-text {
+	font-weight: 400;
+}
+#jove-trial-banner.embed-directions .jove-trial-banner-text-container p.jove-trial-banner-text-bold {
+	margin-right: 0;
+}
+
+/**New Popup-banner style**/
+#jove-trial-banner-advance.mktb-popup.expand { max-height: 300px; }
+#jove-trial-banner-advance {
+	position: fixed;
+	width: 280px;
+	right: 20px;
+	bottom: 20px;
+	border-top: 8px solid #4193F4;
+	border-radius: 5px;    
+	padding: 14px 6px 0;
+	box-shadow: 0px 5px 10px 0px #00000045;
+	background-color:#ffff;
+}
+
+#jove-trial-banner-advance .jove-trial-banner-container {
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1366px;
+	position: relative;
+}
+#jove-trial-banner-advance .jove-trial-banner-text-container { flex-wrap: wrap; }
+
+#jove-trial-banner-advance .jove-trial-banner-close {
+	  position: absolute;
+      right: -10px;
+      top: -16px;
+      border: 3px solid #000;
+      font-weight: bolder;
+      border-radius: 50%;
+      width: 23px;
+      height: 23px;
+      text-align: center;
+      background: #fff;
+      color:#000000;
+}
+#jove-trial-banner-advance .jove-trial-free-trial-link {
+	color: #2284EF;
+	font-size: 12px;
+	letter-spacing: 1.40px;
+	line-height: 32px;
+}
+#jove-trial-banner-advance.mktb-popup{overflow:unset;height: 225px;} 
+#jove-trial-banner-advance.mktb-popup .jove-trial-banner-container { flex-wrap: wrap; }
+
+#jove-trial-banner-advance .jove-trial-banner-text-container p {
+	color: #2C3137;
+    font-size: 22px;
+	letter-spacing: 0.29px;
+	line-height: 24px;
+	margin: 0;
+}
+#jove-trial-banner-advance .jove-trial-banner-text-container p.jove-trial-banner-text-bold {
+	font-size: 14px;
+    color: #4091F0;
+	font-weight: bold;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	letter-spacing: 0.37px;
+}
+
+#jove-trial-banner-advance #show-arrow{
+	font-size: 16px;
+    margin: auto;
+    float: right;
+    margin-left: 20px;
+    border: 2px solid #4193F4;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    line-height: 30px;
+    text-align: center;
+    color:#4193F4;
+}
+/**new popup banner dark theme**/
+#jove-trial-banner-advance.dark-theme{background-color: #000000;}
+#jove-trial-banner-advance.dark-theme .jove-trial-banner-text-container p.jove-trial-banner-text{color: #FFFFFF;}
+#jove-trial-banner-advance.dark-theme .jove-trial-free-trial-link{color:#A9A9A9;}
+/****/
+
+/**New banner ends**/
+/************* END COUNTRY PREFERENCE POPUP ************/
+@media screen and (max-width: 1200px){
+	#country-popup .caret.up{
+		right: 26px;
+	}
+}
+@media screen and (max-width: 1023px){
+	#cookie-banner .cookie-banner-icon {
+		display: none;
+	}
+}
+@media screen and (max-width: 767px){
+	#cookie-banner .cookie-banner-text p {
+		font-size: 13px;
+		line-height: 13px;
+	}
+	#cookie-banner .cookie-banner-actions > * {
+		margin: 0 5px;
+	}
+}
+@media screen and (max-width: 480px){
+	#cookie-banner .cookie-banner-container {
+		height: auto;
+		flex-wrap: wrap;
+		padding:10px;
+	}
+	#cookie-banner .cookie-banner-actions {
+		margin: auto;
+		padding-top: 11px;
+	}
+	
+	
+	#country-popup.mktb-popup {
+		width: 100%;
+		top: 50px;
+		right: 0;
+		border-radius: 0;
+		height: 200px;
+	}
+	#country-popup .caret.up{
+		right: 16px;
+	}
+	#back-to-top {
+	    bottom: 0px !important;
+	    font-size: 22px !important;
+	}
+}
+

@@ -1,0 +1,326 @@
+
+/* - mediaqueries.css - */
+/* https://planet-terre.ens-lyon.fr/portal_css/mediaqueries.css?original=1 */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+@media screen and (min-width : 1625px)  {
+body { width: 100%;}
+/* */
+#visual-portal-wrapper {
+width: 100em !important;
+margin: 0px auto !important;
+display: block;
+float: none;
+}
+}
+/* */
+/* */
+@media screen and (max-width : 800px) {
+div#portal-searchbox {
+margin-right: 2% !important;
+}
+#portal-searchbox input.searchButton {
+display:block;
+margin-top:2px;
+}
+#portal-searchbox input#datas,
+#portal-searchbox input#programmes,#portal-searchbox input#infos,#portal-searchbox br,#portal-searchbox label{display:none;}
+#portal-globalnav li.selected {
+background-image:none!important;
+padding:0.5em 0.2em!important;
+}
+/* */
+#portal-column-two, #portal-column-one {
+clear: both;
+margin-left: -97% !important;
+width: 100% !important;
+margin:1em 0;
+width: 87% !important;
+}
+/* */
+div#portal-column-content, div#portal-column-content2 {
+width: 94%;
+margin-left: -97%;
+}
+}
+/* */
+@media screen and (max-width : 800px) {
+/* */
+body { min-width: 320px !important;}
+#visual-portal-wrapper { width: 100% !important;}
+div#logo {
+position: absolute;
+top: 15px !important;
+display: inline-block;
+}
+#portal-logo {
+margin-left: 30px;
+display: inline-block;
+clear: both;
+margin: 0px;}
+#portal-logo img { max-width: 300% !important; height: auto;}
+/* */
+div.width-full {
+width: 100% !important;
+}
+a#portal-logo-enslyon,a#portal-logo-eduscol{
+display:none;
+}
+a#portal-banner {
+margin: 0.5em 0 0 0.5em!important;
+}
+#globalnav-wrapper {
+background:none!important;
+}
+/* */
+div.expanded ul.submenu {
+display:none;
+}
+#portal-globalnav li a {
+top:0px!important;
+border-right:none;
+}
+/* */
+div.position-0 {
+margin-left: -100%;
+}
+/* */
+#visual-portal-wrapper {
+border: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+/* */
+#portal-column-two, #portal-column-one {
+clear: both;
+margin-left: -97% !important;
+width: 100% !important;
+margin:1em 0;
+width: 82.47368421052632% !important;
+}
+/* */
+#collage .two-columns-equal .block_1,#collage .two-columns-equal .block_2 {
+width:auto!important;
+padding-left:0!important;
+float:none!important;
+}
+/* */
+div#portal-column-content {
+width: 94%;
+margin-left: -97%;
+}
+dl#portal-personaltools {
+margin-right: 34px;
+float: right;
+}
+/* */
+#portal-searchbox {
+margin: 0!important;
+font-size: 0.7em !important;
+}
+#searchGadget {
+width: 81%;
+}
+.searchform #searchString { width: 211px; }
+.portletHeader span {background:none!important;padding:0!important;}
+#portal-personaltools {display:none!important;}
+#portal-searchbox,.LSBox {0!important;position:relative;top:20px;}
+#portal-searchbox input.searchButton,#portal-searchbox input#datas,
+#portal-searchbox input#programmes,#portal-searchbox input#infos,#portal-searchbox br,#portal-searchbox label{display:none;}
+#portal-personaltools {
+font-size: 70%;
+}
+/* */
+#portal-globalnav {
+margin-left: 0px !important;
+}
+ul#portal-globalnav {
+padding: 0px;
+background-color: white !important;
+background: white !important;
+width: 100% !important;
+border-bottom:none!important;
+box-shadow:none!important;
+-moz-box-shadow:none!important;
+-webkit-box-shadow:none!important;
+-o-box-shadow:none!important;
+}
+ul#portal-globalnav:before {
+display: block;
+margin-top: 20px;
+font-size: 2em;
+}
+#portal-globalnav {
+height: auto!important;
+clear: both;
+padding: 0px;
+margin: 7px auto;
+width: 100% !important;
+}
+#portal-globalnav li {
+display: list-item !important;
+margin-top: 5px;
+border-top: 1px solid #E7E7E7;
+border-bottom: 1px solid #E7E7E7;
+background-color: white;
+width: 100%;
+}
+.nav-menu .nav-primary.expanded #portal-globalnav li, .nav-menu .nav-primary #portal-globalnav li.navigation-pulldown { display: list-item !important; }
+.nav-menu .nav-primary #portal-globalnav li { display: none !important; }
+#portal-globalnav li.navigation-pulldown {
+padding: 0.5em 1em 2em;
+background-color: #E3E3E3;
+}
+#portal-globalnav li a {
+padding: 13px 13px 13px 20px;
+display: block !important;
+text-align: center!important;
+}
+/* */
+#portal-breadcrumbs {
+display: none;
+}
+/* */
+#content {
+font-size: 0.9em;
+}
+#content h1 { font-size: 1.4em;}
+#content h2 { font-size: 1.2em;}
+div#footer {
+width: 99%;
+}
+#search-exist > div {
+display: table;
+}
+#search-exist .criteresSearch {
+display: table-footer-group;
+float: inherit;
+width: auto;
+}
+} /* */
+@media screen and (max-width: 486px) {
+div.row #portal-searchbox {
+margin:0!important;
+}
+body {
+font-size:70%;
+}
+#portal-searchbox,#portal-searchbox:focus{
+float:none!important;
+clear:left!important;
+text-align:center!important;
+display:none;
+}
+#portal-searchbox, .LSBox,#portal-searchbox:focus {
+position:relative!important;
+top:0!important;
+margin:0!important;
+}
+#logos {
+width:170px!important;
+margin:0 auto!important;
+}
+input{
+-webkit-user-modify: read-write-plaintext-only;
+-webkit-tap-highlight-color:#3072af;
+}
+a:hover div.ImageBg p {
+opacity:1!important;
+}
+a#portal-banner {
+margin:0.5em 0 0 0!important;
+}
+div#portal-columns {
+margin-bottom:0!important;
+}
+}
+/* */
+@media screen and (orientation:landscape) and (max-device-width: 1080px) {
+body {
+font: 1em!important;
+}
+#visual-portal-wrapper {
+width: 100% !important;
+margin: 0 !important;
+}
+#portal-columns {
+font-size: 1.7em;
+}
+#portal-logo a#logo-site { padding-top: 2%;}
+}
+/* */
+@media screen and (orientation:portrait) and  (max-device-width: 768px) {
+#visual-portal-wrapper {
+width: 100% !important;
+margin: 0 !important;
+}
+#portal-columns {
+font-size: 1.7em;
+}
+#portal-logo a#logo-site { padding-top: 2%;}
+} /* */
+/* */
+@media screen and (orientation:landscape) and (max-device-width: 480px), screen and (orientation:portrait) and  (max-device-width: 320px) {
+/* **/
+body { display: inline !important;}
+/* */
+#portal-logo {
+display: inline-block;
+}
+div#logo {
+position: absolute;
+top: 15px !important;
+display: inline-block;
+}
+#portal-logo {
+clear: both !important;
+margin: 0;
+display: inline-block;
+width: 80% !important;
+}
+#portal-logo img { max-width: 300% !important; height: auto;}
+#portal-globalnav { margin-left: 0px !important; }
+ul#portal-globalnav {
+padding: 0px;
+background-color: transparent;
+width: 100% !important;
+}
+ul#portal-globalnav:before {
+display: block;
+margin-top: 20px;
+font-size: 2em;
+}
+#portal-globalnav {
+height: auto;
+clear: both;
+padding: 0px;
+margin: 7px auto;
+width: 100% !important;
+}
+#portal-globalnav li {
+display: inline-block !important;
+margin-top: 4px;
+border-top: 1px solid #E7E7E7;
+border-bottom: 1px solid #E7E7E7;
+background-color: white;
+width: 100%;
+}
+.portletHeader span {background:none!important;padding:0!important;}
+#portal-personaltools {display:none!important;}
+    #portal-searchbox,.LSBox {margin:0 !important;}
+#portal-searchbox input.searchButton,#portal-searchbox input#datas,
+#portal-searchbox input#programmes,#portal-searchbox input#infos,#portal-searchbox br,#portal-searchbox label{display:none;}
+#portal-globalnav li a {
+padding: 13px 13px 13px 20px;
+display: block !important;
+}
+.field input[type="text"][size] {
+width: 10em;
+}
+} /* */
+

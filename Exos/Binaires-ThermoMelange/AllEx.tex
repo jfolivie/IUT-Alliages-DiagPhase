@@ -1,0 +1,156 @@
+\documentclass[a4paper]{article}
+\synctex=1
+\usepackage[utf8]{inputenc}
+\usepackage[default,oldstyle,scale=0.95]{opensans}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{chemfig}
+\usepackage{lmodern}
+%\usepackage{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref} % liens longs
+\usepackage{fancybox,fancyhdr,verbatim}
+\usepackage{lastpage}
+\usepackage{graphicx,graphics}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\usepackage{tikzorbital}
+\usepackage{braket}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{amsmath,amsfonts,amssymb,mathrsfs}
+\usepackage{enumitem} % Personnalisation des listes à puces
+\usepackage[version=4]{mhchem} % utiliser \ce
+\usepackage[load-configurations=abbreviations]{siunitx}
+\usepackage[many]{tcolorbox} %fancy colorbox
+\usepackage[labelfont={bf},textfont={}]{caption}
+%\usepackage{caption}
+\usepackage{amsthm} %theorem style
+\usepackage{array} %adjust size of columns
+\usepackage{multirow}
+\usepackage{amsfonts}
+
+
+
+%Colors Used
+\definecolor{gray}{gray}{0.65}
+\definecolor{tagada}{RGB}{237,162,153}
+\definecolor{schtroumpf}{RGB}{240,248,255}
+\definecolor{lavender}{RGB}{230,230,250}
+\definecolor{glory}{RGB}{205,182,0}
+
+%Theorem style
+
+\newtheoremstyle{definition}%
+{\topsep}% espace avant
+{\topsep}% espace après
+{\upshape}% police du corps du théorème
+{}% indentation (vide pour rien, \parindent)
+{\bfseries}% police du titre du théorème
+{.}% ponctuation après le théorème
+{ }% après le titre du théorème (espace ou \newline)
+{}% spécifications du titre
+
+%Theorem Command
+
+\theoremstyle{definition}
+\newtheorem{Q}{Q.}[section]
+
+%Columns Spacing
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%Cadre
+\newcommand{\definition}[1]{
+\begin{tcolorbox}[breakable,colback=tagada!5!white,colframe=tagada!75!black,title={\textsc{Définition} }] 
+#1
+\end{tcolorbox}
+}
+
+\newcommand{\exercice}[1]{
+\begin{tcolorbox}[breakable,colback=lavender!5!white,colframe=lavender!75!black,title={\textsc{Exercice} }] 
+#1
+\end{tcolorbox}
+}
+
+\newcommand{\attention}[1]{
+\begin{tcolorbox}[breakable,colback=glory!5!white,colframe=glory!75!black,title={\textsc{Attention !} }] 
+#1
+\end{tcolorbox}
+}
+
+%Rules First Page
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\newcommand{\hsp}{\hspace{20pt}}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\sisetup{inter-unit-product = \ensuremath{\cdot}}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue, % Couleur des liens internes
+    citecolor=red, % Couleur des numéros de la biblio dans le corps
+    urlcolor=blue} % Couleur des url
+\setlength{\oddsidemargin}{0cm}
+\setlength{\topmargin}{-2cm}
+\setlength{\textheight}{26cm}
+\setlength{\marginparwidth}{0.2cm}
+\setlength{\textwidth}{16cm}
+\setlength{\voffset}{0cm}
+\setlength{\unitlength}{1mm}
+
+% listes à puces
+\setitemize{label=\textbullet}
+
+\newcommand{\deriv}{\mathrm{d}}
+\newcommand\moll{\ensuremath{\;\mathrm{mol\cdot L^{-1}}}}
+
+\pagestyle{fancy}
+
+\lhead{Chp. 4 - Thermodynamique des mélanges} \chead{} \rhead{IUT d'Orsay - 4.13}
+\title{Réactivité}
+\author{Jean-François Olivieri (jean-francois.olivieri@universite-paris-saclay.fr)}
+\date{2023-2024} 
+
+\newcommand*{%
+\solution}[1]{}
+
+
+%Changer l'interligne par défaut.
+%\renewcommand{\baselinestretch}{1.2}  
+
+\begin{document}
+
+%\maketitle
+
+\section{Construction d'un diagramme à fuseau}
+\label{ex:fuseau}
+
+\graphicspath{{Ex01/}}
+\input{Ex01/Ex.tex}
+
+\newpage
+
+\section{Lecture et interprétation de la fonction enthalpie libre isobare et isotherme}
+\label{ex:enthalpie_libre_isoP_isoT}
+
+\graphicspath{{Ex02/}}
+\input{Ex02/Ex.tex}
+
+\newpage
+
+
+\section{\'{E}volution de l'enthalpie de fusion avec la température}
+\label{ex:enthalpie_fusion_heterogene}
+
+\graphicspath{{Ex03/}}
+\input{Ex03/Ex.tex}
+
+%\newpage
+
+%\section{Abaissement cryoscopique : salage des routes}
+%\label{ex:relation_potentiel_chimique_melange-abaissement_cryoscopique}
+
+%\graphicspath{{Ex04/}}
+%\input{Ex04/Ex.tex}
+
+
+\end{document}

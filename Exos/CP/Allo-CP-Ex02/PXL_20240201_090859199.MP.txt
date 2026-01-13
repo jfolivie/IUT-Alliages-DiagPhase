@@ -1,0 +1,8 @@
+Le soufre existe à l’état solide sous deux variétés S, (orthorhombique) et Sg (monoclinique). Les
+volumes molaires sont V#,4= 15,3 cm° mol'! pour le soufre Sa et V#*»,#= 16,4 cm° mol ! pour Ss. Sous P°,
+le point de transition réversible entre les deux phases est & = 95,5 °C. On suppose les solides
+
+incompressibles. Déterminer l’accroissement AT de la température de transition réversible consécutif à une
+augmentation de pression de 10,0 bars.
+
+Donnée : mt — Sn [F(S*m(D — S*n(d)] = 7,87 J mol! K°1= CE
