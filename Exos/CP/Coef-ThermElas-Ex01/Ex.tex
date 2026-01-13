@@ -1,0 +1,48 @@
+\begin{exercise}[Détermination expérimentale du c{\oe}fficient de dilatation thermique]
+La structure de l'alliage, de composition définie \ce{FeSi}, a été étudiée par diffraction  de neutrons sur poudre entre 4 et \SI{1173}{\kelvin}. Aucune transition polymorphique n'a été observée, la structure restant cubique de groupe d'espace $P2_13$ sur toute la plage de température.
+
+\begin{questions}
+\question Selon vous, quel avantage comporte l'utilisation de la diffraction de neutrons par rapport à la diffraction d'électrons dans ce système ?
+
+\`{A} pression constante, le paramètre de maille a été relevé à différentes températures, permettant le calcul du volume de maille.
+
+\begin{center}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{/home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Coef-ThermElas-Ex01/figures/Fig20}
+\end{minipage}\begin{minipage}{0.5\textwidth}
+\captionof{figure}{\'{E}volution du volume de la maille cubique en fonction de la température en échelle lin-log. Le point $(300 ~ \si{\kelvin}, 90.22 ~ \si{\angstrom\cubed})$ a servi de point de référence à la courbe.}
+Le modèle a pour équation : 
+\begin{align*}
+\frac{V}{V_r} = \exp \left( 4.85 \cdot 10^{-5} \cdot (T-300) \right)
+\end{align*}
+\end{minipage}
+\end{center}
+
+Sachant que le système a une température de Debye de \SI{445}{\kelvin}, on va chercher à évaluer l'évolution du volume pour $T > T_r = 300 ~ \si{\kelvin}$, sachant que ce cristal a un volume de $V_r = V(\SI{300}{\kelvin}) = 90.22(1) \si{\angstrom\cubed}$.
+
+\question \'{E}crire le développement limité au premier ordre du volume en fonction de la température.
+
+\question Faire apparaître le c{\oe}fficient de dilatation thermique $\alpha$.
+
+On va supposer que le solide \ce{FeSi} est faiblement dilatable sur la plage de température d'étude, ce qui permet d'écrire que $\alpha = \alpha_0 = cste$.
+
+\question Montrer que le volume du solide peut s'écrire comme : 
+\begin{align*}
+V = V_r \exp \left( \alpha_0 (T - T_r) \right)
+\end{align*}
+
+\question En déduire la valeur de $\alpha_0$ de \ce{FeSi} du modèle simple utilisé.
+
+Un modèle thermodynamique plus complexe, appelé modèle de Grünseisen, a permis d'obtenir l'évolution du c{\oe}fficient de dilatation thermique sur toute la plage de température. 
+
+\begin{center}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{/home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Coef-ThermElas-Ex01/figures/Fig21}
+\end{minipage}\begin{minipage}{0.5\textwidth}
+\captionof{figure}{\'{E}volution du c{\oe}fficient de dilatation thermique à pression constante de \ce{FeSi} entre 4 et \SI{1173}{\kelvin}.}
+\end{minipage}
+\end{center}
+
+\question Commenter l'allure de la courbe du c{\oe}fficient de dilatation thermique de l'alliage \ce{FeSi}.
+\end{questions}
+\end{exercise}

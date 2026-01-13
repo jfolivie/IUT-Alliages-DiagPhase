@@ -1,22 +1,26 @@
-\exercice{Etats physiques du carbone}{
-\label{subsubsection:relation_potentiel_chimique_CP-transition_phase}
+%\exercice{Etats physiques du carbone}{
+%\label{ex:relation_potentiel_chimique_CP-transition_phase}
 
+\begin{exercise}[États physiques du carbone]
 
-\setcounter{equation}{0}
-\setcounter{Q}{0}
+%\setcounter{equation}{0}
+%\setcounter{Q}{0}
 
 Le carbone existe à l'état solide sous deux variétés allotropiques principales : le graphite et le diamant.
 
-\Q Calculer les volumes molaires $V^\star_{m,i}$ (supposé indépendant de la pression) du carbone graphite et du carbone diamant.
-\solution{On peut calculer le volume molaire à partir de la masse molaire du carbone et de la masse volumique du solide : 
+\begin{questions}
+\question Calculer les volumes molaires $V^\star_{m,i}$ (supposé indépendant de la pression) du carbone graphite et du carbone diamant.
+\begin{solution}
+
+On peut calculer le volume molaire à partir de la masse molaire du carbone et de la masse volumique du solide : 
 \begin{align*}
 V_m^\star (\text{C (graphite)} ) &= \frac{M( \ce{C} )}{\rho ( \text{graphite} )} \stackrel{AN}{=} 5.31 \cdot 10^{-6} ~ \si{\meter\cubed\per\mole} \\
 V_m^\star (\text{C (diamant)} ) &= \frac{M( \ce{C} )}{\rho ( \text{diamant} )} \stackrel{AN}{=} 3.41 \cdot 10^{-6} ~ \si{\meter\cubed\per\mole} \\
 \end{align*}
-}
+\end{solution}
 
-\Q Exprimer le potentiel chimique d'un corps pur condensé $\mu^\star (T,P)$ en fonction de postentiel chimique standard $\mu^{\star, \circ}(T)$, de son volume molaire $V^\star_{m}$, de la pression $P$ ainsi que de la pression standard $P^\circ$.
-\solution{
+\question Exprimer le potentiel chimique d'un corps pur condensé $\mu^\star (T,P)$ en fonction de postentiel chimique standard $\mu^{\star, \circ}(T)$, de son volume molaire $V^\star_{m}$, de la pression $P$ ainsi que de la pression standard $P^\circ$.
+\begin{solution}
 \begin{align*}
 V = \left( \frac{\partial G}{\partial P} \right)_{T} \implies V^\star_m = \left( \frac{\partial \mu^\star}{\partial P} \right)_{T}
 \end{align*}
@@ -25,19 +29,19 @@ On intègre entre un état standard de variables d'état $(T, P^\circ)$ et un é
 \int_{\mu^\star (T, P^\circ)}^{\mu^\star (T, P)} d\mu' &= \int_{P^\circ}^P V^\star_m dP' \\
 \mu^\star (T, P) &= \mu^{\star \circ} (T) +  V^\star_m (P - P^\circ)
 \end{align*}
-}
+\end{solution}
 
-\Q \'{E}crire l'équation de réaction associée à la transition de phase diamant-graphite. Exprimer l'enthapie libre de réaction et en déduire une condition d'équilibre chimique sur les potentiels chimiques.
-\solution{
+\question \'{E}crire l'équation de réaction associée à la transition de phase diamant-graphite. Exprimer l'enthapie libre de réaction et en déduire une condition d'équilibre chimique sur les potentiels chimiques.
+\begin{solution}
 \textbf{\'{E}quation de réaction : } \ce{C(graphite) <=> C(diamant)}
 \textbf{Enthalpie libre de réaction : } \`{A} une température $T$ et une pression $P$ donnée :
 \begin{align*}
 \Delta_r G = \mu^\star_{grp} (T,P) - \mu^\star_{dia}(T,P) \stackrel{\implies}{eq} \mu^\star_{grp} (T,P) = \mu^\star_{dia} (T,P)
 \end{align*}
-}
+\end{solution}
 
-\Q Sous quelle pression faut-il opérer à \SI{298}{\kelvin} pour préparer du carbone diamant à partir du carbone graphite. 
-\solution{
+\question Sous quelle pression faut-il opérer à \SI{298}{\kelvin} pour préparer du carbone diamant à partir du carbone graphite. 
+\begin{solution}
 On peut développer l'expression pour trouver la pression $P$ d'équilibre des phases :
 \begin{align*}
 \mu^\star_{grp} (T,P) &= \mu^\star_{dia} (T,P) \\
@@ -48,7 +52,8 @@ d'où au final :
 P (T) = P^\circ + \frac{\mu^{\star \circ}_{dia} (T) - \mu^{\star \circ}_{grp} (T)}{V^\star_{m, grp} - V^\star_{m, dia}}
 \end{align*}
 \textbf{Application numérique :} $P = 1.51 \cdot 10^9 ~ \si{\pascal}$ à \SI{298}{\kelvin}
-}
+\end{solution}
+\end{questions}
 
 
 \paragraph*{Données}
@@ -66,4 +71,6 @@ diamant & 2.87 & 3513 \\
 \bottomrule
 \end{tabular}
 \end{center}
-\end{itemize}}
+\end{itemize}
+
+\end{exercise}

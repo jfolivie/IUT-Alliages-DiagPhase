@@ -4,7 +4,7 @@
 \usepackage[student]{Lecture}
 %\lhead{Cours n°1 : Lithium au sein du tableau périodique}
 \lhead{\leftmark} \chead{} \rhead{4.13}
-\lfoot{IUT d'Orsay - BUT 2 MAT - 2023-2024} \cfoot{\includegraphics[height=0.5cm]{cc-by-nc-sa.png}}  \rfoot{Jean-François Olivieri \quad \thepage}
+\lfoot{IUT d'Orsay - BUT 2 MAT - 2025-2026} \cfoot{\includegraphics[height=0.5cm]{cc-by-nc-sa.png}}  \rfoot{Jean-François Olivieri \quad \thepage}
 
 \begin{document}
 
@@ -67,11 +67,6 @@
 
 \tableofcontents
 
-
-%\def \FigPath{/home/jeff/Documents/IUTOrsay/1-Cours/3p06-Cours_Batterie/01-Cours/figures-ChpIntro/}
-%\graphicspath{{/home/jeff/Documents/IUTOrsay/1-Cours/3p06-Cours_Batterie/01-Cours/figures-ChpIntro/}}
-%\input{/home/jeff/Documents/IUTOrsay/1-Cours/3p06-Cours_Batterie/01-Cours/Chp-Intro}
-
 \chapter{Corps purs, phases et états de la matière}
 
 \section{Corps, phases et états de la matière}
@@ -81,39 +76,38 @@
 \definition{
 Portion de matière, partie homogène et continue d'un système thermodynamique à l'équilibre caracterisée par sa composition et sa structure.}
 
-\propriete{
 Dans une phase, les paramètres thermodynamiques intensifs sont constants, homogènes et continus.
-\begin{itemize}
+\begin{multicols}{3}\begin{itemize}
 \item masse volumique ; 
 \item volume molaire ;
 \item température ;
 \item pression ;
 \item $\ldots$
-\end{itemize}
-}
+\end{itemize}\end{multicols}
 
 \subsubsection{Transitions de phases}
 
 Un sous-ensemble des transitions de phases sont les changements d'états de la matière. On dénombre quatre états de la matière usuels : les solides, les liquides, les gaz et les plasmas. La Fig. \ref{fig:transitions_phases} résume les changements d'états usuels.
 
 \begin{center}
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.45\textwidth}
 \centering
-\includegraphics[width=\textwidth]{figures/Fig04}
+\includegraphics[width=\textwidth]{figures/Fig04} 
+\end{minipage}\begin{minipage}{0.5\textwidth}
 \captionof{figure}{Représentations schématiques des transitions de phases les plus courantes}
 \label{fig:transitions_phases}
-\end{minipage}
-\end{center}
 
-\propriete{
+
 Un chimiste modélisera les transitions de phase par les équations de réaction suivantes : 
 \begin{align*}
-\ce{X(s) &<=>[fusion][solidification] X(l)} \\
-\ce{X(l) &<=>[vaporisation][liquefaction] X(g)} \\
+\ce{X(s) &<=>[fusion][solidification] X(l)} \quad 
+\ce{X(l) <=>[vaporisation][liquefaction] X(g)} \\
 \ce{X(s) &<=>[sublimation][condensation] X(g)} \\
 \end{align*}
 
-}
+\end{minipage}
+\end{center}
+
 
 %\subsubsection{Exemples}
 
@@ -126,7 +120,7 @@ Un chimiste modélisera les transitions de phase par les équations de réaction
 \item \textbf{corps simples} : entité moléculaire constituée d'atomes de même natures (c.-à-d. constituée du même élément chimique).
 \item \textbf{corps composés} : entité moléculaire constituée d'atomes de natures différents.
 \end{itemize}
-\textbf{Mélanges} : Association de plusieurs entités moléculaires différentes formant un ou plusieurs phases.
+\textbf{Mélanges} : Association de plusieurs entités moléculaires différentes formant une ou plusieurs phases.
 \begin{itemize}
 \item \textbf{homogènes}  : une phase ;
 \item \textbf{hétérogènes} : plusieurs phases distinguables à l'{\oe}il nu ou au microscope ;
@@ -138,7 +132,7 @@ Attention à la confusion courant entre solution et mélange. Certains termes en
 
 \subsubsection{Exemples de mélanges}
 
-Vous n'aurez pas de difficulé à trouver par vous même des exemples de corps purs, puisque chaque éléments du tableau périodique en présentes. Les mélanges, sont aussi extrêmement communs dans les solides, qu'ils soient organiques ou inorganiques.
+Vous n'aurez pas de difficulté à trouver par vous même des exemples de corps purs, puisque chaque éléments du tableau périodique en présentes. Les mélanges, sont aussi extrêmement communs dans les solides, qu'ils soient organiques ou inorganiques.
 
 
 Par exemple, l'argent, l'or et le cuivre forment des mélanges homogènes (ou solutions solides) pour toute teneur en chacun des éléments. Une des conséquences immédiate, importante dans le domaine de la bijouterie, est la variation de la couleur des métaux en fonction des teneurs relatives en chacun des éléments :  
@@ -165,7 +159,7 @@ Les mélanges hétérogènes sont très communs, notamment dans les roches natur
 \end{minipage}
 \end{center}%http://www.jpb-imagine.com/Sharjah/2nouv/22enjeuxplanet/doc22/TP10/AltGranit_Cor.html
 
-Bien entendu, cette hétérogéneité à l'{\oe}il nu peut se retrouver en présence à l'échelle microscopique.
+Bien entendu, cette hétérogénéité à l'{\oe}il nu peut se retrouver en présence à l'échelle microscopique.
 
 Les mélanges colloïdaux sont des cas assez particuliers. Un exemple à avoir en tête sont les solutions de nanoparticules d'or que vous allez synthétiser à l'IUT, où une phase (ici des particules d'or solides) sont dispersées dans une phase dispersante (par ex. l'eau). En apparence, le mélange parait homogène à l'{\oe}il nu et pourtant, il est diphasé comme le montre l'observation à l'aide d'un microscope électronique, de l'échelle microscopique. On parle de suspension colloïdale.
 
@@ -182,7 +176,7 @@ Les mélanges colloïdaux sont des cas assez particuliers. Un exemple à avoir e
 Contrairement à ce que l'on peut penser, ces systèmes sont présents en grand nombre dans notre quotidien.
 
 
-\subsection{Etats de la matière} 
+\subsection{États de la matière} 
 \subsubsection{Définition macroscopique}
 
 \definition{
@@ -206,7 +200,7 @@ V_m^\star (T, P) = \frac{V(T,P,n)}{n}
 \end{align*}
 \`{A} une composition $n$ donnée, sous des conditions de température
 
-\textbf{Masse volumique} La masse volumique d'un corps purs, dans une pahse donnée, indique la masse correspondant à un mètre cube à température et pression fixée. On le définit par : 
+\textbf{Masse volumique} La masse volumique d'un corps purs, dans une phase donnée, indique la masse correspondant à un mètre cube à température et pression fixée. On le définit par : 
 \begin{align*}
 \rho_m^\star (T, P) = \frac{m(n)}{V(T, P, n)}
 \end{align*}
@@ -215,7 +209,7 @@ V_m^\star (T, P) = \frac{V(T,P,n)}{n}
 \subsubsection{Définition microscopique}
 
 \paragraph{\'{E}tude d'un système microscopique simple}
-Considèrons un gaz noble : l'argon, constitué dans $n$ \si{\mole} de particules, dans une enceinte fermée, thermostatée à la température $T$. 
+Considérons un gaz noble : l'argon, constitué dans $n$ \si{\mole} de particules, dans une enceinte fermée, thermostatée à la température $T$. 
 
 L'interaction entre les particules d'argon n'est soumis qu'à un seul type d'interaction attractive, dite de van der Waals : les interactions de London. Nous savons que l'interactions entre deux particules est régi par :
 \begin{itemize}
@@ -228,12 +222,9 @@ Un calcul, non trivial, de mécanique quantique permettrait de montrer que l'én
 E_{p, London, i,j} (r_{ij}) \propto - \frac{\alpha_i \alpha_j}{r_{ij}^6}
 \end{align*}
 
-Bien entendu, les particules ne peuvent être soumises uniquement à un potentiel attractif de London, sinon elles finiraient par s'interpenetrer. Il faut aussi prendre en compte un terme "répulsif".
-
-Une façon relativement courante de modéliser ce type de système est d'utiliser une énergie potentielle, de type Lennard-Jones, aussi appelé potentiel 12-6, pour modéliser l'interaction entre deux particules : 
+Bien entendu, les particules ne peuvent être soumises uniquement à un potentiel attractif de London, sinon elles finiraient par s’interpénétrer, voire coalescer. Il faut aussi prendre en compte un terme "répulsif". Une façon relativement courante de modéliser ce type de système est d'utiliser une énergie potentielle, de type Lennard-Jones, aussi appelé potentiel 12-6, pour modéliser l'interaction entre deux particules : 
 \begin{align*}
-E_p (r) &= \underbrace{ 4 \epsilon \left( \frac{\sigma}{r} \right)^{12}}_{\text{repulsif}} - \underbrace{4 \epsilon \left( \frac{\sigma}{r} \right)^6}_{\text{attractif}} \\
-&= 4 \epsilon \left[ \left( \frac{\sigma}{r} \right)^{12} - \left( \frac{\sigma}{r} \right)^6 \right]
+E_p (r) &= \underbrace{ 4 \epsilon \left( \frac{\sigma}{r} \right)^{12}}_{\text{repulsif}} - \underbrace{4 \epsilon \left( \frac{\sigma}{r} \right)^6}_{\text{attractif}} = 4 \epsilon \left[ \left( \frac{\sigma}{r} \right)^{12} - \left( \frac{\sigma}{r} \right)^6 \right]
 \end{align*}
 avec ($\sigma$, $\epsilon$) deux paramètres fixées pour que le système ait les propriétés expérimentales désirées (capacité thermique, température de fusion, température d'ébullition, viscosité$\ldots$). Dans le cas de l'argon, les paramètres sont :
 \begin{align*}
@@ -255,43 +246,43 @@ Ce système simple permet de comprendre ce qu'il se passe lorsque l'on éleve la
 
 Lorsqu'on éleve la température, un solide a peu de liberté de mouvement (cas $T_1$ dans la Fig. \ref{fig:Chp1-LJ}) et les atomes oscillent autour de la position d'équilibre qui se trouve à une distance $r = \sqrt[6]{2} \sigma \approx 1.12 \sigma$. Dans un liquide, les particules ont une plus grande liberté de mouvement, c'est-à-dire qu'elle penvent subir des translations, mais elles ressentent encore le potentiel attractif des particules voisines qui contraignent leurs mouvements (cas $T_2$ dans la Fig. \ref{fig:Chp1-LJ}). Par contre, à température de l'ordre de grandeur de $\epsilon$, les particules ne ressentent plus leurs voisines, le mouvement est libre de toute interaction attractive (cas $T_3$ dans la Fig. \ref{fig:Chp1-LJ}).
 
-\exercice{Comportement thermique des gaz nobles}{
-Les paramètres de Lennard-Jones de quelques gaz nobles ont été optimisés : 
-\begin{minipage}{0.6\textwidth}
-\centering
-\begin{tabular}{ccccc}
-\toprule
-\'{E}lement & & Néon & Argon & Krypton \\
-\midrule
-$\sigma$ & $[\si{\angstrom}]$ & 2.78 & 3.41 & 3.6 \\
-$\epsilon/R$ & $[\si{\kelvin}]$ & 34.9 & 119.8 & 171 \\
-\bottomrule
-\end{tabular}
-\end{minipage}\begin{minipage}{0.4\textwidth}
-
-\captionof{table}{Evolution des paramètres de Lennard-Jones de trois gaz nobles : Ne, Ar, Kr}
-\end{minipage}
-
-\Q Représenter le potentiel de Lennard-Jones de ces trois gaz.
-
-\Q Démontrer qu'à \SI{0}{\kelvin}, la distance entre deux particules de gaz vaut $\sqrt[6]{2}\sigma$. En supposant que tous ces gaz cristallisent dans le système cubique, en mode face centré, donner l'évolution de leurs volumes molaires à l'état solide.
-
-\begin{minipage}{0.6\textwidth}
-\centering
-\begin{tabular}{ccccc}
-\toprule
-\'{E}lement & & Néon & Argon & Krypton \\
-\midrule
-$T_{fus}^\star$ & $[\si{\kelvin}]$ & 24.6 & 83.8 & 116 \\
-$T_{eb}^\star$ & $[\si{\kelvin}]$ & 27.1 & 87.3 & 120 \\
-\bottomrule
-\end{tabular}
-\end{minipage}\begin{minipage}{0.4\textwidth}
-\captionof{table}{Evolution des températures de changement d'état de trois gaz nobles : Ne, Ar, Kr}
-[fus : fusion, eb : ébullition]
-\end{minipage}
-
-\Q Justifier, qualitativement, l'évolution des températures d'ébullition et de fusion de ces trois gaz à pression ambiante.}
+%\exercice{Comportement thermique des gaz nobles}{
+%Les paramètres de Lennard-Jones de quelques gaz nobles ont été optimisés : 
+%\begin{minipage}{0.6\textwidth}
+%\centering
+%\begin{tabular}{ccccc}
+%\toprule
+%\'{E}lement & & Néon & Argon & Krypton \\
+%\midrule
+%$\sigma$ & $[\si{\angstrom}]$ & 2.78 & 3.41 & 3.6 \\
+%$\epsilon/R$ & $[\si{\kelvin}]$ & 34.9 & 119.8 & 171 \\
+%\bottomrule
+%\end{tabular}
+%\end{minipage}\begin{minipage}{0.4\textwidth}
+%
+%\captionof{table}{Evolution des paramètres de Lennard-Jones de trois gaz nobles : Ne, Ar, Kr}
+%\end{minipage}
+%
+%\Q Représenter le potentiel de Lennard-Jones de ces trois gaz.
+%
+%\Q Démontrer qu'à \SI{0}{\kelvin}, la distance entre deux particules de gaz vaut $\sqrt[6]{2}\sigma$. En supposant que tous ces gaz cristallisent dans le système cubique, en mode face centré, donner l'évolution de leurs volumes molaires à l'état solide.
+%
+%\begin{minipage}{0.6\textwidth}
+%\centering
+%\begin{tabular}{ccccc}
+%\toprule
+%\'{E}lement & & Néon & Argon & Krypton \\
+%\midrule
+%$T_{fus}^\star$ & $[\si{\kelvin}]$ & 24.6 & 83.8 & 116 \\
+%$T_{eb}^\star$ & $[\si{\kelvin}]$ & 27.1 & 87.3 & 120 \\
+%\bottomrule
+%\end{tabular}
+%\end{minipage}\begin{minipage}{0.4\textwidth}
+%\captionof{table}{Evolution des températures de changement d'état de trois gaz nobles : Ne, Ar, Kr}
+%[fus : fusion, eb : ébullition]
+%\end{minipage}
+%
+%\Q Justifier, qualitativement, l'évolution des températures d'ébullition et de fusion de ces trois gaz à pression ambiante.}
 
 
 
@@ -299,13 +290,11 @@ $T_{eb}^\star$ & $[\si{\kelvin}]$ & 27.1 & 87.3 & 120 \\
 
 Ces interprétations sur les gaz nobles à l'aide du potentiel de Lennard-Jones sont extrapolables à toutes autres interactions (liaisons covalentes$\ldots$) dans des systèmes plus complexes (molécules$\ldots$). On en tire les propriétés suivantes sur le volume et l'entropie des phases gaz, liquide et solide. 
 
-\propriete{
 L'évolution de la distance "moyenne" entre les particules, à cause de l'agitation thermique, a pour conséquence que l'on peut écrire une inégalité sur le volume molaire (propriété macroscopique) relativement bien vérifiée dans les corps purs : 
 \begin{align*}
 V_m^\star (g) \gg V_m^\star (l) > V_m^\star (s)
 \end{align*}
 Cette inégalité est vérifiée dans le cas du \ce{CO2} comme l'indique la Tab. \ref{tab:Vm_CP}.
-}
 
 \begin{center}
 \begin{minipage}{0.6\textwidth}
@@ -336,7 +325,6 @@ Comme le montre la Fig. \ref{tab:Vm_CP}, il existe des exceptions comme \ce{H2O}
 V_m^\star (g) \gg V_m^\star (s) > V_m^\star (l)
 \end{align*}
 
-\propriete{
 Dans le cas d'un système isolé, Boltzmann a défini l'entropie par la relation : 
 \begin{align*}
 S_m = R \ln \Omega
@@ -346,7 +334,6 @@ avec $\Omega$ le nombre de configuration microscopique que peut occuper le syst�
 \Omega^\star (g) > \Omega^\star (l) > \Omega^\star (s) \\
 S_m^\star (g) > S_m^\star (l) > S_m^\star (s)
 \end{align*}
-}
 
 
 
@@ -369,9 +356,9 @@ Prenons par exemple le cas du phosphore, initialement à l'état solide, et rega
 \includegraphics[width=\textwidth]{figures/Fig05}
 \end{minipage}\begin{minipage}{0.5\textwidth}
 \captionof{figure}{\'{E}volution de l'entropie molaire du phosphore blanc à pression ambiante.}
-[Le phosphore blanc est la variété allotropique du phosphore de motif \ce{P4} tétraèdrique, qui cristallise dans une maille cubique face centrée]
+[Le phosphore blanc est la variété allotropique du phosphore de motif \ce{P4} tétraédrique, qui cristallise dans une maille cubique face centrée]
 \end{minipage}
-\end{center}
+\end{center}%pas clair si c'est ce sont les Td
 
 On observe des discontinuités de l'entropie à chaque transition de phase, qui correspondent à l'entropie de transition de phase. On peut alors estimer ces grandeurs de transitions à pression ambiante : 
 \begin{align*}
@@ -385,20 +372,17 @@ Ce type de transition est aussi observable dans le cas du volume, et de toute au
 
 \definition{Dans le cas d'un transition de phase (changement d'état ou transitions solide/solide) appelées transitions du premier ordre, le volume et l'entropie sont "discontinues" aux transitions.}
 
-\input{Chp1-Ex/Trans-CP-Ex05/Ex.tex}
+%\input{Exos/Trans-CP-Ex05/Ex.tex}
 
-\subsection{Transition solide}%ts de la matière}
-%\subsection{Phases}
-%\subsubsection{Définition}
-%\subsubsection{Transitions de phases}
+\subsection{Transitions solide-solide}
 \subsubsection{Etat cristallin vs état amorphe}
 
 \definition{
-\textbf{Etat cristallin} Microscopiquement, un ensemble d'atome, appelé motif, occupe ds positions périodiques dans l'espace appelées \og n{\oe}uds \fg{}. Un ensemble de n{\oe}uds forment un réseau.
+\textbf{État cristallin} Microscopiquement, un ensemble d'atome, appelé motif, occupe ds positions périodiques dans l'espace appelées \og n{\oe}uds \fg{}. Un ensemble de n{\oe}uds forment un réseau.
 
 La stabilité d'une forme cristalline/ un état cristallin à l'équilibre thermodynamiques dépend des conditions de pression et température.
 
-\textbf{Etat vitreux} Solides vitreux possèdent les mêmes caractéristiques qu'un solide cristallin : rigidité, résistanc à la déformation mais, leur structure microscopique est analogue à un liquide.
+\textbf{État vitreux} Solides vitreux possèdent les mêmes caractéristiques qu'un solide cristallin : rigidité, résistant à la déformation mais, leur structure microscopique est analogue à un liquide.
 }
 
 Dans un solide vitreux (\emph{par ex.} un verre ou un polymère amorphe), il n'y a pas de discontinuité du volume molaire et de l'entropie molaire. Ainsi, lors d'un échauffement isobare, elles augmentent de manière continue.
@@ -411,7 +395,7 @@ Dans un solide vitreux (\emph{par ex.} un verre ou un polymère amorphe), il n'y
 \textbf{Polymorphisme} : Faculté de certains corps composés d'exister sous plusieurs formes cristallines ou moléculaires différentes .
 }
 
-L'allotropie est un phéomène récurrent en chimie du solide. On peut citer deux exemples courant que sont les allotropes du carbone, représentés à la Fig. \ref{fig:C} et les allotropes du fer, représentés à la Fig. \ref{fig:Fe}
+L'allotropie est un phénomène récurrent en chimie du solide. On peut citer deux exemples courant que sont les allotropes du carbone, représentés à la Fig. \ref{fig:C} et les allotropes du fer, représentés à la Fig. \ref{fig:Fe}
 
 \begin{figure}[H]
 \begin{minipage}{0.5\textwidth}
@@ -443,43 +427,10 @@ Le polymorphisme est très souvent rencontré dans des composés organiques ou i
 \subfloat[\label{fig:Chp1-01a}]{\includegraphics[width=6cm]{figures/Fig01a}}\hfill\subfloat[\label{fig:Chp1-01b}]{\includegraphics[width=6cm]{figures/Fig01b}}
 \end{minipage}\hfill\begin{minipage}{0.35\textwidth}
 \caption{Polymorphes du paracétamol \ref{fig:Chp1-01a} monoclinique \& \ref{fig:Chp1-01b} orthorombique.}
-La maille monoclinique (resp. orthorombique) contient 4 molécules (resp. 8 molécules). La forme $n^\circ 1$ est celle préente dans le comprimés pharmaceutiques.
+La maille monoclinique (resp. orthorombique) contient 4 molécules (resp. 8 molécules). La forme $n^\circ 1$ est celle présente dans le comprimés pharmaceutiques.
 \label{fig:paracetamol}
 \end{minipage}
 \end{figure}
-
-\exercice{Allotropie du fer}{
-L'évolution des paramètres de maille a été obtenue à différentes températures : 
-\begin{minipage}{0.6\textwidth}
-\centering
-\begin{tabular}{cccccc}
-\toprule
-Température & [\si{\celsius}] & 20 & 912 & 1394 & 1535 \\ 
-\midrule
-\ce{Fe(\alpha  )} & [\si{\angstrom}] & 2.86 & 2.89 & - & - \\ 
-\ce{Fe(\gamma  )} & [\si{\angstrom}] & - & 3.63 & 3.67 & - \\ 
-\ce{Fe(\delta  )} & [\si{\angstrom}] & - & - & 2.90 & 2.91 \\ 
-\bottomrule
-\end{tabular}
-\end{minipage}\begin{minipage}{0.4\textwidth}
-\captionof{table}{Mesure expérimentale de quelques paramètres de maille $a$ du fer à différentes températures et sous différents allotropies.}
-\end{minipage}
-
-
-\Q Proposer une méthode expérimentale permettant d'acquérir ces paramètres.
-
-\Q En supposant que pour un allotrope donné, le paramètre de maille évolue de manière linéaire avec la température, représenter son évolution avec la température.
-
-\Q En déduire l'évolution du volume avec la température.
-
-La pression a une influence sur la stabilité, en température, des allotropes/phases. Lorsque la pression augmente, on constate que : 
-\begin{align*}
-P \nearrow \implies T_{\alpha \leftrightarrow \gamma}^\star (P) \searrow \\
-P \nearrow \implies T_{\gamma \leftrightarrow \delta}^\star (P) \nearrow \\
-\end{align*}
-
-\Q Justifier qualitativement ce comportement à l'aide de la question précédente.
-}
 
 \section{Description de l'état et des transformations par la thermodynamique}
 
@@ -502,14 +453,17 @@ Au maximum, un diagramme de phase de corps purs présente trois degrés de liber
 
 \subsubsection{Diagramme $(T,P)$}
 
-La projection $(P,T)$ est la plus pratique pour savoir quelle est la phase stable sous des conditions de pression et température donnée : 
+\definition{Le diagramme $(P,T)$ permet de savoir quelles sont les phases stables sous des conditions de pression et température donnée.}
+
+Par exemple, la Fig. \ref{fig:Chp1-07a} et la Fig. \ref{fig:Chp1-07b} représentent les diagrammes de phase pression-température du \ce{H2O} et du \ce{CO2} respectivement.
 
 \begin{figure}[H]
 \begin{center}
 \subfloat[\label{fig:Chp1-07a}]{\includegraphics[width=0.5\textwidth]{figures/Fig07a}}\subfloat[\label{fig:Chp1-07b}]{\includegraphics[width=0.5\textwidth]{figures/Fig07b}}
 \end{center}
 \caption{Diagramme de phase pression-température avec phases solide, liquide, vapeur et supercritique dans le cas de \ref{fig:Chp1-07a} \ce{H2O} et \ref{fig:Chp1-07b} \ce{CO2}.}
-\faWarning ~ Attention, l'axe des ordonnées est en échelle logarithmique.
+{\centering
+\faWarning ~ Attention, l'axe des ordonnées est en échelle logarithmique.}
 \end{figure}
 
 Dans le cas du \ce{CO2} illustré à la Fig. \ref{fig:Chp1-07b}, elle montre bien que l'état solide est un état stable à haute pression et basse température. Tandis que l'état gazeux est un état stable à haute température et basse pression.
@@ -517,36 +471,31 @@ Dans le cas du \ce{CO2} illustré à la Fig. \ref{fig:Chp1-07b}, elle montre bie
 
 Dans le cas de \ce{H2O} illustré à la Fig. \ref{fig:Chp1-07a}, on retrouve bien l'anomalie sur le volume molaire. Si on compare les deux phases condensées, l'état glace I est un état stable à plus basse température et plus basse pression par rapport à l'état liquide. Pour les frontières avec l'état gazeux, on retrouve les mêmes tendances qualitatives que le \ce{CO2}.
 
-\exercice{Sublimation ou fusion ?}{
-\Q Comment peut-on expliquer que la fonte de la banquise ou celle d'un glacier d'altitude conduise à de l'eau liquide, alors qu'un cirrus (nuage de haute altitude formé de cristaux de glace) disparaisse au soleil sans donner de pluie ?
 
-\Q Le dioxyde de carbone possède un point triple de coordonnées $(T_T, P_T) = (-57~ \si{\celsius}, 5 \cdot 10^5 ~ \si{\pascal})$, quel changement d'état observe-t-on lorsqu'on laisse de la carboglace (\ce{CO2} solide) à pression ambiante ?
-}
-
-\input{Chp1-Ex/Diag-PT-Ex01/Ex.tex}
+%\input{Exos/Diag-PT-Ex01/Ex.tex}
 
 \begin{center}
 \begin{minipage}{0.5\textwidth}
 \includegraphics[width=\textwidth]{figures/Fig08}
 \end{minipage}\begin{minipage}{0.5\textwidth}
-\captionof{figure}{Diagramme de phase pression-température, zoomé sur les hautes pressions ($P > 10^8 ~ \si{\pascal}$), en échelle lin-log, où sont représentées les domaines de stabilité, des différents polymorphe de l'eau solide.}
+\captionof{figure}{Diagramme de phase pression-température, zoomé sur les hautes pressions ($P > 10^8 ~ \si{\pascal}$), en échelle lin-log, représentant les domaines de stabilité, des différents polymorphes de l'eau solide.}
 \label{fig:Chp1-glace}
 [la glace $I$ est la variété communément rencontrée au quotidien. On observe qu'il existe de nombreux points triples en présence de plusieurs polymorphes]
 \end{minipage}
 \end{center}
 
-La glace présente la particularité de disposer de nombreux polymorphes. La glace $I$, l plus courante, forme une maille hegaxonale de paramètre $(a,c) = (4.52,7.37) ~ \si{\angstrom}$, dont la structure n'est pas compacte. Sous certains conditions extrêmes de température et pression, comme illustré à la Fig. \ref{fig:Chp1-glace}, d'autres polymorphes de la glace peuvent apparaître.
+La glace présente la particularité de disposer de nombreux polymorphes. La glace $I$, l plus courante, forme une maille hexagonale de paramètre $(a,c) = (4.52,7.37) ~ \si{\angstrom}$, dont la structure n'est pas compacte. Sous certains conditions extrêmes de température et pression, comme illustré à la Fig. \ref{fig:Chp1-glace}, d'autres polymorphes de la glace peuvent apparaître.
 
 %\exercice{Polymorphisme}{
 %Europe est le plus petit satellite naturel de Jupyter. Sa croûte est composée de glace d'eau. Expliquez pourquoi de la glace II peut-être présente sur ce satellite ?
 %}
 
-\input{Chp1-Ex/Allo-CP-Ex01/Ex.tex}
+%\input{Exos/Allo-CP-Ex01/Ex.tex}
 
 \subsubsection{Diagramme $(V,P)$ \& $(V, T)$}
 Les projections avec le volume en abscisse sont utilisées pour interpréter les transformations. En effet, elles permettent de "dessiner" des chemins thermodynamiques entre un état initial et un état final donné permettant de décrire les phénomènes ayant lieu.
 
-Représentons par exemple le diagramme $(V, P)$, dit de Clapeyron, du \ce{CO2}, qui représente est le diagramme le plus courant : 
+Représentons, par exemple, le diagramme $(V, P)$, dit de Clapeyron, du \ce{CO2}, qui présente l'allure la plus couramment rencontrée dans les corps purs : 
 
 \begin{center}
 \begin{minipage}{0.48\textwidth}
@@ -595,16 +544,7 @@ n^\alpha + n^\beta  = n \iff x^\alpha + x^\beta = 1
 
 Ce type de diagramme peut-être étendu à d'autres grandeurs extensives : diagrammes enthalpiques $(H, T)$, diagrammes entropiques $(S, T)\ldots$ 
 
-\exercice{Bouteille brisée}{%Grecias, PCSI, pg 764
-Lorsque l'on place une bouteille de verre, pleine à \SI{95}{\percent} d'eau dehors en plein hiver, contenant \SI{1}{\liter} d'eau, il arrive qu'on la retrouve brisée le lendemain.
-\Q Avant de se briser, la bouteille contient une fraction $x$ de glace. Calculer le volume de glace et le volume d'eau dans la bouteille avant qu'elle ne se brise.
-\Q Quelle discontinuité de changement d'état peut-on déduire de cette observation ? Où doit-on en chercher une explication ?
-\Q Quel est le volume de glace une fois la bouteille brisée ?
-
-\textbf{Données à \SI{0}{\celsius} : } $V_m^\star (\ce{H2O(s)}) = 19.7 ~ \si{\centi\meter\cubed\per\mole}$, $V_m^\star (\ce{H2O(l)}) = 18.1 ~ \si{\centi\meter\cubed\per\mole}$
-}
-
-\subsection{Propriétés thermodynamiques d'une phase, corps pur}
+\subsection{BONUS : Propriétés thermodynamiques d'une phase, corps pur}
 \subsubsection{Variables d'état indépendantes}
 Un gaz et un liquide sont décrits sans aucun soucis à l'aide des variables d'états $(n, V, P, T)$. En effet, vous savez que dans un modèle de gaz simple, comme le gaz parfait, l'équation d'état permet de relier toutes ces grandeurs : 
 \begin{align*}
@@ -676,7 +616,6 @@ Cu       & 315  & 24.5 &  Th & 100 & 26.3 \\
 \captionof{figure}{Température de Debye et valeur de la capacité thermique à température ambiante de plusieurs métaux.}
 \end{center}
 
-\propriete{
 Les capacités thermiques sont liées à la variation d'entropie d'un système à volume ou pression constants : 
 \begin{align*}
 C_V &= T \cdot \left( \frac{\partial S}{\partial T} \right)_V \\
@@ -688,8 +627,6 @@ C_P &= T \cdot \left( \frac{\partial S}{\partial T} \right)_P
 %C_V &= -T \left( \frac{\partial^2 G}{\partial T^2} \right)_V \\
 %C_P &= -T \left( \frac{\partial^2 G}{\partial T^2} \right)_P
 %\end{align*}
-
-}
 
 \subsubsection{C{\oe}fficients thermoélastiques}
 
@@ -746,57 +683,8 @@ Polymères & $80 \cdot 10^{-6}$ & PMMA $5 \cdot 10^{-6}$ & PE $2 \cdot 10^{-4}$\
 \end{center}
 %WARNING FAUTE !!! + Explication
 
-Intruitivement, on peut lier ces tendances à la nature des liaisons chimiques dans les céramiques, métaux et polymères.
+Intuitivement, on peut lier ces tendances à la nature des liaisons chimiques dans les céramiques, métaux et polymères.
 
-\exercice{Détermination expérimentale du c{\oe}fficient de dilatation thermique}{
-La structure de l'alliage, de composition définie \ce{FeSi}, a été étudiée par diffraction  de neutrons sur poudre entre 4 et \SI{1173}{\kelvin}. Aucune transition polymorphique n'a été observée, la structure restant cubique de groupe d'espace $P2_13$ sur toute la plage de température.
-
-\Q Selon vous, quel avantage comporte l'utilisation de la diffraction de neutrons par rapport à la diffraction d'électrons dans ce système ?
-
-\`{A} pression constante, le paramètre de maille a été relevé à différentes températures, permettant le calcul du volume de maille.
-
-\begin{center}
-\begin{minipage}{0.5\textwidth}
-\includegraphics[width=\textwidth]{figures/Fig20}
-\end{minipage}\begin{minipage}{0.5\textwidth}
-\captionof{figure}{\'{E}volution du volume de la maille cubique en fonction de la température en échelle lin-log. Le point $(300 ~ \si{\kelvin}, 90.22 ~ \si{\angstrom\cubed})$ a servi de point de référence à la courbe.}
-Le modèle a pour équation : 
-\begin{align*}
-\frac{V}{V_r} = \exp \left( 4.85 \cdot 10^{-5} \cdot (T-300) \right)
-\end{align*}
-\end{minipage}
-\end{center}
-
-Sachant que le système a une température de Debye de \SI{445}{\kelvin}, on va chercher à évaluer l'évolution du volume pour $T > T_r = 300 ~ \si{\kelvin}$, sachant que ce cristal a un volume de $V_r = V(\SI{300}{\kelvin}) = 90.22(1) \si{\angstrom\cubed}$.
-
-\Q \'{E}crire le developpement limité au premier ordre du volume en fonction de la température.
-
-\Q Faire apparaître le c{\oe}fficient de dilatation thermique $\alpha$.
-
-On va supposer que le solide \ce{FeSi} est faiblement dilatable sur la plage de température d'étude, ce qui permet d'écrire que $\alpha = \alpha_0 = cste$.
-
-\Q Montrer que le volume du solide peut s'écrire comme : 
-\begin{align*}
-V = V_r \exp \left( \alpha_0 (T - T_r) \right)
-\end{align*}
-
-\Q En déduire la valeur de $\alpha_0$ de \ce{FeSi} du modèle simple utilisé.
-
-Un modèle thermodynamique plus complexe, appelé modèle de Grünseisen, a permis d'obtenir l'évolution du c{\oe}fficient de dialatation thermique sur toute la plage de température. 
-
-\begin{center}
-\begin{minipage}{0.5\textwidth}
-\includegraphics[width=\textwidth]{figures/Fig21}
-\end{minipage}\begin{minipage}{0.5\textwidth}
-\captionof{figure}{\'{E}volution du c{\oe}fficient de dilatation thermique à pression constante de \ce{FeSi} entre 4 et \SI{1173}{\kelvin}.}
-\end{minipage}
-\end{center}
-
-\Q Commenter l'allure de la courbe du c{\oe}fficient de dilatation thermique de l'alliage \ce{FeSi}.
-}
-
-
-\propriete{
 Comme les c{\oe}fficients thermiques, ces paramètres peuvent être liées aux dérivées de l'entropie. Les relations de Maxwell de F et G nous donnent : 
 
 \begin{align*}
@@ -819,7 +707,6 @@ Les c{\oe}fficients thermoélastiques ne sont pas indépendants, puisque lié pa
 \begin{align*}
 \alpha = P \cdot \beta \cdot \chi_T
 \end{align*}
-}
 
 \subsubsection{Relation de Mayer}
 \definition{
@@ -896,7 +783,7 @@ Le système thermodynamique $\mathcal{S}$ est composé de deux sous systèmes, t
 \end{align*}
 Ces deux sous-systèmes sont à l'équilibre thermique et mécanique, c'est-à-dire que : 
 \begin{align*}
-T = T_\alpha = T_\beta
+T = T_\alpha = T_\beta \quad
 P = P_\alpha = P_\beta
 \end{align*}
 
@@ -1008,7 +895,7 @@ $\alpha$ Phase Basse Pression $V_{m, \alpha} > V_{m, \beta}$  & $\frac{dP}{dT} >
 \definition{
 La phase, stable à haute température (resp. basse température) est toujours la phase présentant la plus grande entropie molaire (resp. basse entropie molaire).}
 
-\input{Chp1-Ex/Allo-CP-Ex03/Ex.tex}
+%\input{Exos/Allo-CP-Ex03/Ex.tex}
 
 \paragraph{\'{E}volution à température constante}
 
@@ -1062,7 +949,7 @@ La phase, stable à haute pression (resp. basse pression) est toujours la phase 
 \end{center}
 
 
-Comme représenté à la Fig. \ref{fig:Chp1-13}, l'état d'équilibre est l'état présentant l'énergie libre de Gibbs la plus faible (minimum absolu), alors d'un état métastable se touve dans un minimum local d'énergie.
+Comme représenté à la Fig. \ref{fig:Chp1-13}, l'état d'équilibre est l'état présentant l'énergie libre de Gibbs la plus faible (minimum absolu), alors d'un état métastable se trouve dans un minimum local d'énergie.
 \subsection{Origine physique de la métastabilité dans les transitions de phases}
 
 \definition{
@@ -1106,12 +993,12 @@ Ce rayon existe (c.-à-d. est positif), si et seulement si l'enthalpie libre de 
 
 \subsection{Rompre un état de métastabilité}
 
-Pour rompre un état de métastabilité, il faut realiser une nucléation hétérogène : 
+Pour rompre un état de métastabilité, il faut réaliser une nucléation hétérogène : 
 \begin{enumerate}
 \item en introduisant une fraction de la phase condensée (un grain) permettant de passer au-dessus de la taille critique,
 \item en introduisant une amorce (paroi rugueuse $\ldots$) sur laquelle la phase condensée pourra cristalliser.
 \end{enumerate}
 
-\input{Chp1-Ex/Trans-CP-Ex04/Ex.tex}
+%\input{Exos/Trans-CP-Ex04/Ex.tex}
 
 \end{document}

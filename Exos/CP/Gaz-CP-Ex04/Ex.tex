@@ -1,0 +1,85 @@
+\begin{exercise}[Comportement thermique des gaz nobles]
+Les paramètres de Lennard-Jones de quelques gaz nobles ont été optimisés :
+
+\begin{center}
+\begin{minipage}{0.6\textwidth}
+\centering
+\begin{tabular}{ccccc}
+\toprule
+\'{E}lement & & Néon & Argon & Krypton \\
+\midrule
+$\sigma$ & $[\si{\angstrom}]$ & 2.78 & 3.41 & 3.6 \\
+$\epsilon/R$ & $[\si{\kelvin}]$ & 34.9 & 119.8 & 171 \\
+\bottomrule
+\end{tabular}
+\end{minipage}\begin{minipage}{0.4\textwidth}
+
+\captionof{table}{Evolution des paramètres de Lennard-Jones de trois gaz nobles : Ne, Ar, Kr}
+\end{minipage}
+\end{center}
+
+\begin{questions}
+\question Représenter le potentiel de Lennard-Jones de ces trois gaz.
+
+\begin{solution}
+\begin{center} \begin{minipage}{0.8\textwidth}
+\centering
+\includegraphics[width=\textwidth]{{\pathExos}Gaz-CP-Ex04/figures/Corr01.pdf}
+\captionof{figure}{Potentiel de Lennard-Jones des gaz nobles Néon, Argon et Krypton}
+\end{minipage} \end{center}
+\end{solution}
+
+\question Démontrer qu'à \SI{0}{\kelvin}, la distance entre deux particules de gaz vaut $\sqrt[6]{2}\sigma$. En supposant que tous ces gaz cristallisent dans le système cubique, en mode face centré, donner l'évolution de leurs volumes molaires à l'état solide.
+
+\begin{solution}
+On cherche la position du minimum du potentiel de Lennard-Jones. Pour cela, on a besoin d'exprimer la dérivée de l'énergie potentielle : 
+\[\frac{\mathrm{d}E_p}{\mathrm{d}r} = 4\epsilon \left[-12 \left(\frac{\sigma}{r}\right)^{13} + 6 \left(\frac{\sigma}{r}\right)^7 \right]\]
+On cherche la position du minimum en annulant cette dérivée :
+\[\frac{\mathrm{d} E_p}{\mathrm{d}r} (r_{min})= 0 \Leftrightarrow -12 \left(\frac{\sigma}{r_{min}}\right)^{13} + 6 \left(\frac{\sigma}{r_{min}}\right)^7 = 0 \Leftrightarrow \left(\frac{\sigma}{r_{min}}\right)^6 = \frac{1}{2} \Leftrightarrow r_{min} = \sqrt[6]{2} \sigma\]
+On en tire que la distance entre deux particules à \SI{0}{\kelvin} est bien $r_{min} = \sqrt[6]{2} \sigma$.
+
+On peut montrer alors que l'énergie potentielle minimale vaut :
+\[E_p (r_{min}) = -\epsilon\]
+Dans le système cubique en mode face centré, la distance entre deux particules est liée au paramètre de maille $a$ par la relation $r_{min} = \frac{a}{\sqrt{2}}$. On en déduit que le paramètre de maille à \SI{0}{\kelvin} vaut :
+\[a = \sqrt{2} r_{min} = \sqrt{2} \sqrt[6]{2} \sigma = 2^{2/3} \sigma\]
+\end{solution}
+
+\begin{minipage}{0.6\textwidth}
+\centering
+\begin{tabular}{ccccc}
+\toprule
+\'{E}lement & & Néon & Argon & Krypton \\
+\midrule
+$T_{fus}^\star$ & $[\si{\kelvin}]$ & 24.6 & 83.8 & 116 \\
+$T_{eb}^\star$ & $[\si{\kelvin}]$ & 27.1 & 87.3 & 120 \\
+\bottomrule
+\end{tabular}
+\end{minipage}\begin{minipage}{0.4\textwidth}
+\captionof{table}{Evolution des températures de changement d'état de trois gaz nobles : Ne, Ar, Kr}
+[fus : fusion, eb : ébullition]
+\end{minipage}
+
+\question Justifier, qualitativement, l'évolution des températures d'ébullition et de fusion de ces trois gaz à pression ambiante.
+
+\begin{solution}
+Les températures de changement d'état (fusion et ébullition) sont liées à l'énergie nécessaire pour rompre les interactions entre les particules. Plus ces interactions sont fortes, plus les températures de changement d'état seront élevées.
+
+
+
+Dans le cas des gaz nobles, les interactions entre les particules sont principalement dues aux forces de dispersion de London, qui dépendent de la polarizabilité des atomes. La polarizabilité augmente avec la taille de l'atome, ce qui signifie que les atomes plus gros (comme le Krypton) ont des interactions plus fortes que les atomes plus petits (comme le Néon).
+
+\textbf{Nota Bene :} On observe que les températures de transition corrèle linéairement avec le paramètre $\epsilon$ du potentiel de Lennard-Jones, ce qui est cohérent avec l'idée que des interactions plus fortes (plus grand $\epsilon$) nécessitent plus d'énergie (température plus élevée) pour rompre ces interactions.
+
+\begin{center}
+    \begin{minipage}{0.6\textwidth}
+        \includegraphics[width=\textwidth]{{\pathExos}Gaz-CP-Ex04/figures/Corr02.pdf}
+    \end{minipage} \begin{minipage}{0.36\textwidth}
+        \captionof{figure}{Corrélation entre les températures de fusion et d'ébullition des gaz nobles et le paramètre $\epsilon$ du potentiel de Lennard-Jones}
+    \end{minipage}
+\end{center}
+
+\end{solution}
+
+\end{questions}
+
+\end{exercise}

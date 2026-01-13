@@ -1,13 +1,14 @@
-\exercice{Influence de (T, P) sur le potentiel chimique du dibrome}{
+\begin{exercise}[Influence de (T, P) sur le potentiel chimique du dibrome]
 %\label{subsubsection:relation_potentiel_chimique_CP-TP}
 
-\setcounter{equation}{0}
-\setcounter{Q}{0}
+%\setcounter{equation}{0}
+%\setcounter{Q}{0}
 
 On appelle $\mu^\star$ le potentiel chimique d'un corps monophasé, qui dépend de la température et de la pression.
 
-\Q Déterminer la différentielle totale exacte de $\mu^\star (T, P)$.
-\solution{
+\begin{questions}
+\question Déterminer la différentielle totale exacte de $\mu^\star (T, P)$.
+\begin{solution}
 La différentielle totale exacte de G s'écrit : 
 \begin{align*}
 dG = -S dT + V dP + \mu^\star dn
@@ -16,13 +17,13 @@ On peut alors en déduire le potentiel chimique du corps pur :
 \begin{align*}
 d\mu^\star = -S_m dT + V_m dP
 \end{align*}
-}
+\end{solution}
 
 
 On va chercher à représenter l'évolution du potentiel chimique à température $T$ constante.
 
-\Q Tracer l'allure du potentiel chimique $\mu^\star (T, P^\circ) = \mu^{\star \circ} (T)$ du dibrome. Vous expliciterez les hypothèses faites.
-\solution{
+\question Tracer l'allure du potentiel chimique $\mu^\star (T, P^\circ) = \mu^{\star \circ} (T)$ du dibrome. Vous expliciterez les hypothèses faites.
+\begin{solution}
 On cherche à comprendre le comportement en température du potentiel chimique, on a donc besoin de l'entropie molaire du dibrôme.
 \begin{align*}
 S^\star_m = - \frac{\partial \mu^\star}{\partial T}
@@ -41,7 +42,7 @@ Avant de tracer l'allure du potentiel chimique, on peut énumérer trois points 
 On peut donc représenter l'évolution du potentiel chimique avec la température à une pression donnée $P^\circ$ : 
 \begin{center}
 \begin{minipage}{0.48\textwidth}
-\includegraphics[width=\textwidth]{Ex32/Fig01}
+\includegraphics[width=\textwidth]{/home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig01}
 \end{minipage}\begin{minipage}{0.48\textwidth}
 \captionof{figure}{\'{E}volution du potentiel chimique du dibrome en fonction de la température}
 \end{minipage}
@@ -58,10 +59,10 @@ Si la variation de température est modeste, l'entropie devrait variée de mani�
 &= -8.88 \cdot 10^{-2} ~ \si{\joule\per\kelvin\per\mole}
 \end{align*}
 La variation est relativement faible.
-}
+\end{solution}
 
-\Q En travaillant à une température fixée à \SI{298}{\kelvin}, donner la variation de $\mu^\star (\SI{298}{\kelvin}, P)$ lorsque la pression varie et que le corps pur évolue de la phase solide à la phase gazeuse. Vous expliciterez les hypothèses faites.
-\solution{
+\question En travaillant à une température fixée à \SI{298}{\kelvin}, donner la variation de $\mu^\star (\SI{298}{\kelvin}, P)$ lorsque la pression varie et que le corps pur évolue de la phase solide à la phase gazeuse. Vous expliciterez les hypothèses faites.
+\begin{solution}
 On cherche à comprendre le comportement en pression du potentiel chimique, on a donc besoin du volume molaire du dibrome.
 \begin{align*}
 V^\star_m = \frac{\partial \mu^\star}{\partial P}
@@ -84,12 +85,13 @@ d'où on tire :
 On peut donc représenter l'évolution du potentiel chimique avec la pression à une température donnée : 
 \begin{center}
 \begin{minipage}{0.48\textwidth}
-\includegraphics[width=\textwidth]{Ex32/Fig02}
+\includegraphics[width=\textwidth]{/home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig02}
 \end{minipage}\begin{minipage}{0.48\textwidth}
 \captionof{figure}{\'{E}volution du potentiel chimique du dibrome en fonction de la pression à \SI{298}{\kelvin}}
 \end{minipage}
 \end{center}
-}
+\end{solution}
+\end{questions}
 
 \paragraph*{Données à \SI{298}{\kelvin}}
 \begin{itemize}
@@ -98,7 +100,7 @@ On peut donc représenter l'évolution du potentiel chimique avec la pression à
 \begin{center}
 \begin{tabular}{cccc}
 \toprule
-Etat physique & $\ce{Br2 (s)}$ & $\ce{Br2 (l)}$ & $\ce{Br2 (g)}$ \\
+État physique & $\ce{Br2 (s)}$ & $\ce{Br2 (l)}$ & $\ce{Br2 (g)}$ \\
 \midrule
 $S_m^{\star \circ} ~ [\si{\joule\per\mole\per\kelvin}]$ & $112$ & $152$ & $245$\\
 \bottomrule
@@ -108,7 +110,7 @@ $S_m^{\star \circ} ~ [\si{\joule\per\mole\per\kelvin}]$ & $112$ & $152$ & $245$\
 \begin{center}
 \begin{tabular}{ccc}
 \toprule
-Etat physique & $\ce{Br2 (s)}$ & $\ce{Br2 (l)}$ \\
+État physique & $\ce{Br2 (s)}$ & $\ce{Br2 (l)}$ \\
 \midrule
 $\rho ~ [\si{\gram\per\centi\meter\cubed}]$ & $3.1$ & $3.1$\\
 \bottomrule
@@ -118,4 +120,6 @@ $\rho ~ [\si{\gram\per\centi\meter\cubed}]$ & $3.1$ & $3.1$\\
 Nota Bene : le dibrome solide est légèrement plus dense que le dibrome liquide, mais il faut plus de 2 chiffres significatifs.
 
 \item \ce{Br2 (g)} est assimilé à un gaz parfait.
-\end{itemize}}
+\end{itemize}
+
+\end{exercise}

@@ -1,20 +1,22 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper, answers]{exam}
 \synctex=1
 \usepackage[utf8]{inputenc}
+\usepackage[default,oldstyle,scale=0.95]{opensans}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage{chemfig}
 \usepackage{lmodern}
 %\usepackage{hyperref}
-\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref} % liens longs
-\usepackage{fancybox,fancyhdr,verbatim}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref} % liens longs
+%\usepackage{fancybox,fancyhdr,verbatim}
 \usepackage{lastpage}
 \usepackage{graphicx,graphics}
 \usepackage{pgf,tikz}
 \usetikzlibrary{arrows}
 \usepackage{tikzorbital}
 \usepackage{braket}
-\usepackage{caption}
+\usepackage[labelfont={bf},textfont={}]{caption}
 \usepackage{array}
 \usepackage{amsmath,amsfonts,amssymb,mathrsfs}
 \usepackage{enumitem} % Personnalisation des listes à puces
@@ -25,9 +27,14 @@
 \usepackage{amsthm} %theorem style
 \usepackage{array} %adjust size of columns
 \usepackage{multirow}
+\usepackage{multicol}
 \usepackage{amsfonts}
 
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subfig}
 
+\usepackage{booktabs} % tables
 
 %Colors Used
 \definecolor{gray}{gray}{0.65}
@@ -101,88 +108,105 @@
 \newcommand{\deriv}{\mathrm{d}}
 \newcommand\moll{\ensuremath{\;\mathrm{mol\cdot L^{-1}}}}
 
-\pagestyle{fancy}
+%\pagestyle{fancy}
 
-\lhead{Khôlle - Nomenclatures} \chead{} \rhead{ENCPB - PCSI Chimie - 2023-2024}
-\title{Réactivité}
-\author{Jean-François Olivieri (jean-francois.olivieri@universite-paris-saclay.fr)}
-\date{2023-2024} 
+%\lhead{TD n$^\circ 1$ - Analyse Dimensionnelle} \chead{} \rhead{IUT d'Orsay - BUT 3 MAT - Chimie}
+%\title{Incertitudes}
+%\author{Jean-François Olivieri (jean-francois.olivieri@universite-paris-saclay.fr)}
+%\date{2023-2024} 
 
 
+% Add this to your preamble
+\newcounter{exercise}
+\newenvironment{exercise}[1][]{
+  \refstepcounter{exercise}
+  \par\noindent\textbf{Exercice~\theexercise.} #1\par
+}{\par}
 
+% Force rules
+\headrule
+\footrule
+
+%\lhead{TD n$^\circ 1$ - Analyse Dimensionnelle} 
+%\chead{} \rhead{IUT d'Orsay - BUT 3 MAT - Chimie}
+% Header/footer content
+\firstpageheader{TD n$^\circ ~ 1$ - CP}{}{IUT d'Orsay - BUT 2 MAT - Chimie}
+\runningheader{TD n$^\circ ~ 1$ - CP}{}{IUT d'Orsay - BUT 2 MAT - Chimie}
+\firstpagefooter{Jean-François Olivieri}{\includegraphics*[scale=0.03]{cc-by-nc-sa.png}}{\thepage ~ / \numpages}%{Jean-François Olivieri}
+\runningfooter{Jean-François Olivieri}{\includegraphics*[scale=0.03]{cc-by-nc-sa.png}}{\thepage ~ / \numpages}%{Jean-François Olivieri}
+
+
+% Define paths
+\newcommand{\pathExos}{/home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/}
 
 \begin{document}
 
+\begin{center}
+{\Large \bf TD n$^\circ ~ 1$ \\
+Corps purs \\}
+\end{center}
+
 %\maketitle
 
-\graphicspath{{Allo-CP-Ex01/}}
-\input{Allo-CP-Ex01/Ex.tex}
+%\section{Thermodynamique sur quelques gaz simples}
+%\subsection{Échelle microscopiques}
 
-\newpage
+\input{Gaz-CP-Ex04/Ex.tex}
 
-\graphicspath{{Allo-CP-Ex02/}}
-\input{Allo-CP-Ex02/Ex.tex}
+%\subsection{Échelle macroscopique}
+%
+%\input{Gaz-CP-Ex02/Ex.tex}
+%
+%\input{Gaz-CP-Ex03/Ex.tex}
+%
+%\input{Gaz-CP-Ex01/Ex.tex}
 
-\newpage
+\section{Diagrammes de stabilité P-T}
 
-\graphicspath{{Allo-CP-Ex03/}}
-\input{Allo-CP-Ex03/Ex.tex}
-
-\newpage
-
-\graphicspath{{Allo-CP-Ex04/}}
-\input{Allo-CP-Ex04/Ex.tex}
-
-\newpage
-
-\graphicspath{{Diag-PT-Ex01/}}
 \input{Diag-PT-Ex01/Ex.tex}
 
-\newpage
-
-\graphicspath{{Diag-PT-Ex02/}}
 \input{Diag-PT-Ex02/Ex.tex}
 
-\newpage
+\section{Transitions de phase des corps purs}
 
-\graphicspath{{Gaz-CP-Ex01/}}
-\input{Gaz-CP-Ex01/Ex.tex}
+\input{Trans-CP-Ex06/Ex.tex}
 
-\newpage
+\input{Trans-CP-Ex07/Ex.tex}
 
-\graphicspath{{Gaz-CP-Ex02/}}
-\input{Gaz-CP-Ex02/Ex.tex}
-
-\newpage
-
-\graphicspath{{Gaz-CP-Ex03/}}
-\input{Gaz-CP-Ex03/Ex.tex}
-
-\newpage
-
-\graphicspath{{Poly-CP-Ex01/}}
-\input{Poly-CP-Ex01/Ex.tex}
-
-\newpage
-
-\graphicspath{{Poly-CP-Ex02/}}
-\input{Poly-CP-Ex02/Ex.tex}
-
-\newpage
-
-\graphicspath{{Trans-CP-Ex01/}}
 \input{Trans-CP-Ex01/Ex.tex}
 
-\newpage
+%\input{Trans-CP-Ex02/Ex.tex}
 
-\graphicspath{{Trans-CP-Ex02/}}
-\input{Trans-CP-Ex02/Ex.tex}
-
-\newpage
-
-\graphicspath{{Trans-CP-Ex03/}}
 \input{Trans-CP-Ex03/Ex.tex}
 
-\newpage
+\input{Trans-CP-Ex05/Ex.tex}
+
+\input{Trans-CP-Ex04/Ex.tex}
+
+
+\section{Transitions solide-solide}
+
+\subsection{Transitions allotropiques}
+
+\input{Allo-CP-Ex01/Ex.tex}
+
+\input{Allo-CP-Ex05/Ex.tex}
+
+\input{Allo-CP-Ex02/Ex.tex}
+
+\input{Allo-CP-Ex04/Ex.tex}
+
+\input{Allo-CP-Ex03/Ex.tex}
+
+\subsection{Transitions polymorphiques}
+
+\input{Poly-CP-Ex01/Ex.tex}
+
+\input{Poly-CP-Ex02/Ex.tex}
+
+%\section{Détermination des grandeurs thermoélastiques}
+%
+%\input{Coef-ThermElas-Ex01/Ex.tex}
+
 
 \end{document}

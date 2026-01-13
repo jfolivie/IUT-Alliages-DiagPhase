@@ -2,18 +2,15 @@
 
 \synctex=1
 \RequirePackage[utf8]{inputenc}
-\usepackage[default,oldstyle,scale=0.95]{opensans}
-\usepackage[T1]{fontenc}
+\RequirePackage[default,oldstyle,scale=0.95]{opensans}
+\RequirePackage[T1]{fontenc}
 \RequirePackage[french]{babel}
 \RequirePackage{chemfig}
 \RequirePackage{lmodern}
-%\RequirePackage{hyperref}
 \PassOptionsToPackage{hyphens}{url}\RequirePackage{hyperref} % liens longs
 \RequirePackage{fancybox,fancyhdr,verbatim}
-%\RequirePackage{lastpage}
 \RequirePackage{graphicx,graphics}
 
-%\RequirePackage[top=15mm,bottom=15mm,left=5mm,right=20mm]{geometry}
 \RequirePackage{geometry}
 \RequirePackage{adjustbox}
 \RequirePackage{calc}
@@ -47,6 +44,9 @@
 \RequirePackage{array} %adjust size of columns
 \RequirePackage{multirow}
 \RequirePackage{booktabs}
+
+%Add multicols
+\RequirePackage{multicol}
 
 %Setup background
 %\RequirePackage[firstpage=true,pages=some]{background}
@@ -170,7 +170,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Cadre blanc pour élèves
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{boxedminipage}
+\RequirePackage{boxedminipage}
 %\usepackage{changepage}
 
 \newcommand{\cadreblanc}[1]{%
