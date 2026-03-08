@@ -1,14 +1,14 @@
 \babel@toc {french}{}\relax 
 \contentsline {chapter}{\numberline {2}Diagrammes de phases binaires à pression constante}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Variance}{3}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Variance d'un système multiphasé}{4}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Variance particulière d'un système multiphasé}{4}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.1}Variance d'un système multiphase}{4}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Variance particulière d'un système multiphase}{4}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}Anomalies thermiques d'un mélange de deux corps purs}{4}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Eventail des possibilités lors d'un refroidissement}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Éventail des possibilités lors d'un refroidissement}{5}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Relation entre la structure cristallographique et le comportement thermique}{6}{subsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.2.1}Alliage de substitution}{6}{subsubsection.2.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2.2}Alliage d'insertion}{7}{subsubsection.2.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Eventail des possibilités lors d'un refroidissement : DSC et refroidissement thermique}{7}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Éventail des possibilités lors d'un refroidissement : DSC et refroidissement thermique}{7}{subsection.2.2.3}%
 \contentsline {subsubsection}{\numberline {2.2.3.1}Corps purs}{7}{subsubsection.2.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.2.3.2}Mélange homogène (solution solide)}{8}{subsubsection.2.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.2.3.3}Mélange hétérogène}{10}{subsubsection.2.2.3.3}%

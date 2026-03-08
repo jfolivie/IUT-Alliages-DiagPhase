@@ -10,5 +10,5 @@
 \contentsline {subsection}{\numberline {A.2.3}Modélisation d'un échauffement avec changement d'état}{8}{subsection.A.2.3}%
 \contentsline {subsection}{\numberline {A.2.4}Relation entre le signal calorimétrique et l'enthalpie}{10}{subsection.A.2.4}%
 \contentsline {section}{\numberline {A.3}Differential Scanning Calorimetry (DSC)}{10}{section.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}Modélisation idéale : DSC conventionelle, mode $T_1$}{10}{subsection.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.1}Modélisation idéale : DSC conventionnelle, mode $T_1$}{10}{subsection.A.3.1}%
 \contentsline {subsection}{\numberline {A.3.2}Modélisation élaborée : DSC avancée, mode $T_4$}{11}{subsection.A.3.2}%
