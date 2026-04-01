@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.13)  13 JAN 2026 18:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.13)  31 MAR 2026 15:06
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/main
-(/home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/main.tex
+**/home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/n-1_Comportement_thermique_des_CPs/Exos/main
+(/home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/n-1_Comportement_thermique_des_CPs/Exos/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/exam/exam.cls
@@ -1257,7 +1257,7 @@ LaTeX Font Info:    Font shape `T1/opensans-TOsF/b/sc' will be
 File: /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Gaz-CP-Ex04/figures/Corr01.pdf Graphic file (type pdf)
 <use /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Gaz-CP-Ex04/figures/Corr01.pdf>
 Package pdftex.def Info: /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Gaz-CP-Ex04/figures/Corr01.pdf  used on input line 27.
-(pdftex.def)             Requested size: 336.02063pt x 201.61136pt.
+(pdftex.def)             Requested size: 364.19664pt x 218.51653pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 28.
@@ -1265,39 +1265,38 @@ See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 58.
+(caption)                particular \caption on input line 66.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (16.41988pt too wide) in paragraph at lines 47--61
+Overfull \hbox (16.41988pt too wide) in paragraph at lines 55--69
 []$[]$$[]$ 
  []
 
-<cc-by-nc-sa.png, id=28, 1284.8pt x 449.68pt>
-File: cc-by-nc-sa.png Graphic file (type png)
-<use cc-by-nc-sa.png>
-Package pdftex.def Info: cc-by-nc-sa.png  used on input line 62.
-(pdftex.def)             Requested size: 38.54233pt x 13.4898pt.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_p2vepx.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc} </home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Gaz-CP-Ex04/figures/Corr01.pdf> <./cc-by-nc-sa.png>]
-</home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Gaz-CP-Ex04/figures/Corr02.pdf, id=90, 578.16pt x 361.35pt>
+Overfull \hbox (1.7548pt too wide) in paragraph at lines 73--74
+[]\T1/opensans-TOsF/m/sc/10 Les tem-pé-ra-tures de chan-ge-ment d'état (fu-sion et ébul-li-tion) sont liées à l'éner-gie né-ces-saire pour rompre
+ []
+
+</home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Gaz-CP-Ex04/figures/Corr02.pdf, id=28, 578.16pt x 361.35pt>
 File: /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Gaz-CP-Ex04/figures/Corr02.pdf Graphic file (type pdf)
 <use /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Gaz-CP-Ex04/figures/Corr02.pdf>
-Package pdftex.def Info: /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Gaz-CP-Ex04/figures/Corr02.pdf  used on input line 75.
-(pdftex.def)             Requested size: 252.01707pt x 157.51129pt.
-
+Package pdftex.def Info: /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Gaz-CP-Ex04/figures/Corr02.pdf  used on input line 83.
+(pdftex.def)             Requested size: 273.14922pt x 170.71672pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 77.
+(caption)                particular \caption on input line 85.
 See the caption package documentation for explanation.
 
-) (./Diag-PT-Ex01/Ex.tex) (./Diag-PT-Ex02/Ex.tex
+) (./Diag-PT-Ex01/Ex.tex) (./Diag-PT-Ex02/Ex.tex) (./Trans-CP-Ex06/Ex.tex
+<cc-by-nc-sa.png, id=29, 1284.8pt x 449.68pt>
 File: cc-by-nc-sa.png Graphic file (type png)
 <use cc-by-nc-sa.png>
-Package pdftex.def Info: cc-by-nc-sa.png  used on input line 10.
+Package pdftex.def Info: cc-by-nc-sa.png  used on input line 5.
 (pdftex.def)             Requested size: 38.54233pt x 13.4898pt.
- [2 </home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Gaz-CP-Ex04/figures/Corr02.pdf>]) (./Trans-CP-Ex06/Ex.tex) (./Trans-CP-Ex07/Ex.tex) (./Trans-CP-Ex01/Ex.tex) (./Trans-CP-Ex03/Ex.tex
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_p2vepx.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc} <./cc-by-nc-sa.png>]) (./Trans-CP-Ex07/Ex.tex) (./Trans-CP-Ex01/Ex.tex) (./Trans-CP-Ex03/Ex.tex
 
 Package siunitx Warning: Unit macro \bar has been deprecated in this release.
 (siunitx)                
@@ -1309,40 +1308,31 @@ Package siunitx Warning: Unit macro \bar has been deprecated in this release.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 21.
+(caption)                particular \caption on input line 24.
 See the caption package documentation for explanation.
 
+
+Underfull \hbox (badness 5726) in paragraph at lines 24--24
+\T1/opensans-TOsF/m/sc/10 stan-dard des corps purs, à
+ []
+
 ) (./Trans-CP-Ex05/Ex.tex
-File: cc-by-nc-sa.png Graphic file (type png)
-<use cc-by-nc-sa.png>
-Package pdftex.def Info: cc-by-nc-sa.png  used on input line 12.
-(pdftex.def)             Requested size: 38.54233pt x 13.4898pt.
- [3]
-</home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig01.png, id=144, 632.3625pt x 482.80376pt>
+</home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig01.png, id=66, 632.3625pt x 482.80376pt>
 File: /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig01.png Graphic file (type png)
 <use /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig01.png>
 Package pdftex.def Info: /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig01.png  used on input line 45.
-(pdftex.def)             Requested size: 201.60982pt x 153.92574pt.
+(pdftex.def)             Requested size: 218.51521pt x 166.83269pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 47.
 See the caption package documentation for explanation.
 
-File: cc-by-nc-sa.png Graphic file (type png)
-<use cc-by-nc-sa.png>
-Package pdftex.def Info: cc-by-nc-sa.png  used on input line 62.
-(pdftex.def)             Requested size: 38.54233pt x 13.4898pt.
-[4 </home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig01.png>]
-Overfull \hbox (7.12299pt too wide) in paragraph at lines 69--71
-\T1/opensans-TOsF/m/sc/10 Pour une phase conden-sée, on va sup-po-ser que la phase est in-com-pres-sible, d'où $\OML/lmm/m/it/10 V[]$ \T1/opensans-TOsF/m/sc/10 est constante
- []
-
-</home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig02.png, id=161, 628.3475pt x 482.80376pt>
+</home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig02.png, id=67, 628.3475pt x 482.80376pt>
 File: /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig02.png Graphic file (type png)
 <use /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig02.png>
 Package pdftex.def Info: /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig02.png  used on input line 88.
-(pdftex.def)             Requested size: 201.60982pt x 154.90553pt.
+(pdftex.def)             Requested size: 218.51521pt x 167.9009pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 90.
@@ -1358,7 +1348,7 @@ File: cc-by-nc-sa.png Graphic file (type png)
 <use cc-by-nc-sa.png>
 Package pdftex.def Info: cc-by-nc-sa.png  used on input line 108.
 (pdftex.def)             Requested size: 38.54233pt x 13.4898pt.
- [5{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_nvvucy.enc} </home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Trans-CP-Ex05/figures/Fig02.png>]) (./Trans-CP-Ex04/Ex.tex)
+ [2]) (./Trans-CP-Ex04/Ex.tex)
 LaTeX Font Info:    Font shape `T1/opensans-TOsF/m/n' will be
 (Font)              scaled to size 11.39996pt on input line 189.
 LaTeX Font Info:    Font shape `T1/opensans-TOsF/b/n' will be
@@ -1366,9 +1356,9 @@ LaTeX Font Info:    Font shape `T1/opensans-TOsF/b/n' will be
  (./Allo-CP-Ex01/Ex.tex
 File: cc-by-nc-sa.png Graphic file (type png)
 <use cc-by-nc-sa.png>
-Package pdftex.def Info: cc-by-nc-sa.png  used on input line 24.
+Package pdftex.def Info: cc-by-nc-sa.png  used on input line 73.
 (pdftex.def)             Requested size: 38.54233pt x 13.4898pt.
- [6]) (./Allo-CP-Ex05/Ex.tex
+ [3{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_nvvucy.enc}]) (./Allo-CP-Ex05/Ex.tex
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 17.
@@ -1379,12 +1369,8 @@ Underfull \hbox (badness 6708) in paragraph at lines 17--17
 []\T1/opensans-TOsF/b/sc/10 Table 4 ^^U |[]\T1/opensans-TOsF/m/sc/10 Mesure ex-pé-ri-men-tale de
  []
 
-File: cc-by-nc-sa.png Graphic file (type png)
-<use cc-by-nc-sa.png>
-Package pdftex.def Info: cc-by-nc-sa.png  used on input line 24.
-(pdftex.def)             Requested size: 38.54233pt x 13.4898pt.
-[7]) (./Allo-CP-Ex02/Ex.tex) (./Allo-CP-Ex04/Ex.tex) (./Allo-CP-Ex03/Ex.tex
-</home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Allo-CP-Ex03/figures/Fig01.png, id=200, 832.10875pt x 579.16376pt>
+) (./Allo-CP-Ex02/Ex.tex) (./Allo-CP-Ex04/Ex.tex) (./Allo-CP-Ex03/Ex.tex
+</home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Allo-CP-Ex03/figures/Fig01.png, id=111, 832.10875pt x 579.16376pt>
 File: /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Allo-CP-Ex03/figures/Fig01.png Graphic file (type png)
 <use /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Allo-CP-Ex03/figures/Fig01.png>
 Package pdftex.def Info: /home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Allo-CP-Ex03/figures/Fig01.png  used on input line 7.
@@ -1397,9 +1383,9 @@ See the caption package documentation for explanation.
 
 File: cc-by-nc-sa.png Graphic file (type png)
 <use cc-by-nc-sa.png>
-Package pdftex.def Info: cc-by-nc-sa.png  used on input line 31.
+Package pdftex.def Info: cc-by-nc-sa.png  used on input line 8.
 (pdftex.def)             Requested size: 38.54233pt x 13.4898pt.
-[8 </home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Allo-CP-Ex03/figures/Fig01.png>]) (./Poly-CP-Ex01/Ex.tex) (./Poly-CP-Ex02/Ex.tex
+[4]) (./Poly-CP-Ex01/Ex.tex) (./Poly-CP-Ex02/Ex.tex
 Overfull \hbox (8.49066pt too wide) in paragraph at lines 6--7
 []\T1/opensans-TOsF/m/sc/10 Leurs en-thal-pies mo-laires stan-dards de for-ma-tion sont res-pec-ti-ve-ment : $\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 1205\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 72$$[] \OMS/lmsy/m/n/10 ^^A [][]$ \T1/opensans-TOsF/m/sc/10 et $\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 1205\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 90$$[] \OMS/lmsy/m/n/10 ^^A
  []
@@ -1409,7 +1395,7 @@ File: cc-by-nc-sa.png Graphic file (type png)
 <use cc-by-nc-sa.png>
 Package pdftex.def Info: cc-by-nc-sa.png  used on input line 212.
 (pdftex.def)             Requested size: 38.54233pt x 13.4898pt.
- [9]
+ [5 </home/jeff/Documents/IUTOrsay/1-Cours/4p13-Alliages/Cours-TD/Exos/CP/Allo-CP-Ex03/figures/Fig01.png>]
 This exam contains 42 questions with 0 parts, 0 subparts, and 0 subsubparts.
 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -1429,18 +1415,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 43036DC672DF82EAEC2F6E05E8E407C6;969.
  ) 
 Here is how much of TeX's memory you used:
- 39026 strings out of 476039
- 841774 string characters out of 5791729
- 1947975 words of memory out of 5000000
- 60297 multiletter control sequences out of 15000+600000
+ 39010 strings out of 476039
+ 841680 string characters out of 5791729
+ 1955975 words of memory out of 5000000
+ 60293 multiletter control sequences out of 15000+600000
  580958 words of font info for 76 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 117i,22n,121p,819b,1237s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb>
-Output written on main.pdf (9 pages, 524821 bytes).
+ 117i,22n,121p,850b,1265s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb>
+Output written on main.pdf (5 pages, 264983 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 256 compressed objects within 3 object streams
- 90 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
