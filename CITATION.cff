@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Merci de citer ce cours si vous l'utilisez."
-title: "TO_COMPLETE"
+title: "Alliages & Diagrammes de Phase"
 authors:
   - family-names: Olivieri
     given-names: Jean-François
@@ -9,8 +9,10 @@ doi: TO_COMPLETE
 date-released: 2026
 licence: CC-BY-NC-SA 3.0
 abstract: >
-  TO_COMPLETE
+  Ce cours aborde les alliages sous l'angle de leur comportement thermique et de l'observation expérimentale. Le cours traite en premier lieu des corps purs et de leur élaboration (par ex. en étudiant l'exemple du silicium cristallin). Puis, le comportement des mélanges binaires est construit sous un angle expérimental avant d'être éventuellement abordé d'un point de vue théorique.
 keywords:
-  - keyword1
-  - keyword2
-  - keyword3
+  - alliages
+  - diagrammes de phase
+  - mélanges binaires
+  - thermodynamique macroscopique
+  - théorie des mélanges
