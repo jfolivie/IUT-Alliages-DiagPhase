@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Merci de citer ce cours si vous l'utilisez."
+title: "TO_COMPLETE"
+authors:
+  - family-names: Olivieri
+    given-names: Jean-François
+    orcid: "https://orcid.org/0000-0003-0719-1789"
+doi: TO_COMPLETE
+date-released: 2026
+licence: CC-BY-NC-SA 3.0
+abstract: >
+  TO_COMPLETE
+keywords:
+  - keyword1
+  - keyword2
+  - keyword3
