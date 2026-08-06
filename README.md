@@ -1,6 +1,6 @@
 ## Citation
 Merci de citer ce cours comme suit :
-DOI : TO_COMPLETE
+DOI: 10.5281/zenodo.21824988 
 
 ## Public visé
 Étudiants en Bachelor Universitaire de Technologie de Chimie.
