@@ -1,6 +1,6 @@
 ## Citation
 Merci de citer ce cours comme suit :
-DOI: 10.5281/zenodo.21824988 
+OLIVIERI, J.-F. (2026, August 6). Alliages & Diagrammes de Phase. Zenodo. https://doi.org/10.5281/zenodo.21824988
 
 ## Public visé
 Étudiants en Bachelor Universitaire de Technologie de Chimie.
